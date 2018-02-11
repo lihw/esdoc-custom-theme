@@ -1,0 +1,68 @@
+{
+  "destination": "./docs",
+  "source": "./src",
+  "includes": ["\\.js$"],
+  "package": "./package.json",
+  "index": "./README.md",
+  "excludes": ["lib", "node_modules", "test", "webpack.*.*js$"],
+  "plugins": [
+    {
+      "name": "esdoc-ecmascript-proposal-plugin",
+      "option": {
+        "all": true
+      }
+    },
+    {
+      "name": "esdoc-importpath-plugin",
+      "option": {
+        "stripPackageName": true,
+        "replaces": [{"from": "src/.*", "to": ""}, {"from": "/$", "to": ""}]
+      }
+    },
+    {
+      "name": "esdoc-brand-plugin",
+      "option": {
+        "title": "esdoc-custom-theme",
+        "description": "A customizable theme for esdoc",
+        "repository": "https://github.com/sinnerschrader/esdoc-custom-theme",
+        "site": "sinnerschrader.github.io/esdoc-custom-theme",
+        "author": "https://github.com/pixelass"
+      }
+    },
+    {
+      "name": "esdoc-lint-plugin",
+      "option": {
+        "enable": true
+      }
+    },
+    {
+      "name": "esdoc-publish-html-plugin",
+      "option": {
+        "template": "./template"
+      }},
+    {
+      "name": "esdoc-standard-plugin",
+      "option": {
+        "coverage": {
+          "enable": true
+        },
+        "accessor": {
+          "access": ["public"],
+          "autoPrivate": true
+        },
+        "undocumentIdentifier": {
+          "enable": true
+        },
+        "unexportedIdentifier": {
+          "enable": false
+        },
+        "manual": {
+          "index": "./.manual/index.md",
+          "globalIndex": true,
+          "asset": "./.manual/assets",
+          "files": []
+        }
+      }
+    }
+  ]
+}

@@ -14743,9 +14743,10 @@ Object.defineProperty(exports, "__esModule", {
 var _url = __webpack_require__(2);
 
 var getlineNumber = function getlineNumber(hl) {
-  var matched = location.hash.match(/lineNumber([\d]+)/);
+  var matched = _url.hash.match(/lineNumber([\d]+)/);
   if (matched) {
     var lineNumber = parseInt(matched[1], 10);
+    hl.addLineClass(lineNumber - 1, 'wrap', 'CodeMirror-activeline-background');
     hl.scrollIntoView(lineNumber);
   }
 };

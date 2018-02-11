@@ -1583,7 +1583,7 @@
     "__docId__": 99,
     "kind": "file",
     "name": "src/components/searchbar/index.js",
-    "content": "import appStorage from '../store'\nimport {body, searchBox, searchInput, searchResult} from '../global-elements'\n\nimport {openResults, closeResults} from './toggle-result'\nimport searchIndex from './search-index'\nimport search from './search'\nimport select from './select'\nimport activate from './activate'\n\n// CSS file generation\nimport './search-result.scss'\nimport './search-box.scss'\n\nconst sendSearch = e => search(e.target.value.trim().toLowerCase(), searchResult)\nconst sendSelect = e => select(e, searchResult)\nconst sendActivate = e => activate(e.target, searchResult)\n\n// search on keyup (typing)\nsearchInput.addEventListener('keyup', sendSearch)\n// select on keydown (up, down, enter/return)\nsearchInput.addEventListener('keydown', sendSelect)\n\n// select search result when search result is mouse over.\nsearchResult.addEventListener('mousemove', sendActivate)\n\n// Clear search result when body is clicked.\nbody.addEventListener('click', e => {\n  closeResults(searchResult)\n})\n",
+    "content": "import appStorage from '../store'\nimport {body, searchBox, searchInput, searchResult} from '../global-elements'\n\nimport {openResults, closeResults} from './toggle-result'\nimport searchIndex from './search-index'\nimport search from './search'\nimport select from './select'\nimport activate from './activate'\n\n// CSS file generation\nimport './search-result.scss'\nimport './search-box.scss'\n\nconst sendSearch = e =>\n  search(e.target.value.trim().toLowerCase(), searchResult)\nconst sendSelect = e => select(e, searchResult)\nconst sendActivate = e => activate(e.target, searchResult)\n\n// search on keyup (typing)\nsearchInput.addEventListener('keyup', sendSearch)\n// select on keydown (up, down, enter/return)\nsearchInput.addEventListener('keydown', sendSelect)\n\n// select search result when search result is mouse over.\nsearchResult.addEventListener('mousemove', sendActivate)\n\n// Clear search result when body is clicked.\nbody.addEventListener('click', e => {\n  closeResults(searchResult)\n})\n",
     "static": true,
     "longname": "/Users/greada/Documents/workspace/s2/esdoc-custom-theme/src/components/searchbar/index.js",
     "access": "public",
@@ -1631,7 +1631,7 @@
     "importPath": "esdoc-custom-theme",
     "importStyle": null,
     "description": null,
-    "lineNumber": 15,
+    "lineNumber": 16,
     "undocument": true,
     "params": [
       {
@@ -1658,7 +1658,7 @@
     "importPath": "esdoc-custom-theme",
     "importStyle": null,
     "description": null,
-    "lineNumber": 16,
+    "lineNumber": 17,
     "undocument": true,
     "params": [
       {
@@ -2182,7 +2182,7 @@
     "__docId__": 128,
     "kind": "file",
     "name": "src/components/syntax-highlighter/get-line-number.js",
-    "content": "import {hash} from '../url'\n\nconst getlineNumber = hl => {\n  const matched = location.hash.match(/lineNumber([\\d]+)/)\n  if (matched) {\n    const lineNumber = parseInt(matched[1], 10)\n    hl.scrollIntoView(lineNumber)\n  }\n}\n\nexport default getlineNumber\n",
+    "content": "import {hash} from '../url'\n\nconst getlineNumber = hl => {\n  const matched = hash.match(/lineNumber([\\d]+)/)\n  if (matched) {\n    const lineNumber = parseInt(matched[1], 10)\n    hl.addLineClass(lineNumber - 1, 'wrap', 'CodeMirror-activeline-background')\n    hl.scrollIntoView(lineNumber)\n  }\n}\n\nexport default getlineNumber\n",
     "static": true,
     "longname": "/Users/greada/Documents/workspace/s2/esdoc-custom-theme/src/components/syntax-highlighter/get-line-number.js",
     "access": "public",

@@ -11,7 +11,8 @@ import activate from &apos;./activate&apos;
 import &apos;./search-result.scss&apos;
 import &apos;./search-box.scss&apos;
 
-const sendSearch = e =&gt; search(e.target.value.trim().toLowerCase(), searchResult)
+const sendSearch = e =&gt;
+  search(e.target.value.trim().toLowerCase(), searchResult)
 const sendSelect = e =&gt; select(e, searchResult)
 const sendActivate = e =&gt; activate(e.target, searchResult)
 

@@ -11,7 +11,7 @@
     "clean:lib": "rimraf template",
     "clean:modules": "rimraf node_modules",
     "commitmsg": "commitlint -e $GIT_PARAMS",
-    "docs": "esdoc",
+    "docs": "rimraf docs && esdoc",
     "format:js": "prettier --write src/**/*.js",
     "prebuild": "npm run clean:lib",
     "watch": "npm run clean:lib && webpack --watch"

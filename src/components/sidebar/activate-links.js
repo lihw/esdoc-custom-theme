@@ -2,7 +2,7 @@ import {sidebarLeft} from '../global-elements'
 
 const activate = e => {
   const {newURL} = e
-  const url = newURL.replace(/http(s)?:\/\/[:\.\d\w\-]+\/api\/?/, '')
+  const url = newURL.replace(/.*\/manual\//, 'manual/')
   const [slug, hash] = url.split('#')
   const urlLinks = []
   const activatedLinks = [...sidebarLeft.querySelectorAll(`.active-link`)]

@@ -1,0 +1,21 @@
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+thead td,
+thead th {
+  background: var(--thead-background);
+  color: var(--thead-color);
+  border-color: var(--thead-border-color);
+}
+tr {
+  border-bottom: 1px solid var(--main-border-color);
+}
+th,
+td {
+  padding: var(--global-padding);
+  text-align: left;
+  border: 1px solid var(--td-border-color);
+  background: var(--td-background);
+  color: var(--td-color);
+}

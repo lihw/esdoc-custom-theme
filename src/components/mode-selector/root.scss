@@ -1,0 +1,41 @@
+
+:root {
+  --sans-serif:
+  /* Safari for OS X and iOS (San Francisco) */
+  -apple-system,
+  /* Chrome >= 56 for OS X (San Francisco), Windows, Linux and Android */
+  system-ui,
+  /* Chrome < 56 for OS X (San Francisco) */
+  BlinkMacSystemFont,
+  /* Windows */
+  "Segoe UI",
+  /* Android */
+  "Roboto",
+  /* Basic web fallback */
+  "Helvetica Neue", Arial, sans-serif;
+
+  --monospace:
+  /* OSX 99.82% */
+  "Monaco",
+  /* Win 82.97% */
+  "Consolas",
+  /* Win 99.18% */
+  "Lucida Console",
+  /* Basic web fallback */
+  "Andale Mono", "Courier New", monospace;
+
+  --main-header-height: 4rem;
+  --main-footer-height: 4rem;
+  --left-sidebar-width: 18rem;
+  --search-input-width: 24rem;
+  --theme-select-width: 18rem;
+  --main-content-width: 60rem;
+  --search-result-width: var(--search-input-width);
+  --search-result-height: 50vh;
+  --global-padding: 1rem;
+  --global-margin: 1.5rem;
+  --input-icon-size: 1.5rem;
+  --main-focus-width: 2px;
+  --left-sidebar-padding-left: var(--global-padding);
+  --left-sidebar-padding: calc(var(--global-padding) / 2) var(--global-padding) calc(var(--global-padding) / 2) var(--left-sidebar-padding-left);
+}

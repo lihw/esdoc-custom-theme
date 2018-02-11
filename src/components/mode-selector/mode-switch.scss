@@ -1,0 +1,24 @@
+.mode-switch {
+  position: relative;
+  display: flex;
+
+  .icon {
+    display: flex;
+    align-items: center;
+    align-content: center;
+
+    svg {
+      height: var(--input-icon-size);
+      width: var(--input-icon-size);
+      fill: currentColor;
+    }
+  }
+
+  .switch {
+    flex: 1;
+    display: flex;
+    padding: calc(var(--global-padding) / 2) var(--global-padding);
+    color: var(--light-switch-color);
+    background: var(--light-switch-background);
+  }
+}

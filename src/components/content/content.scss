@@ -1,0 +1,6 @@
+.content {
+  min-height: calc(100% - var(--main-footer-height) - var(--global-margin) * 2);
+  max-width: var(--main-content-width);
+  margin: var(--global-margin) auto;
+  padding: 0 var(--global-padding);
+}

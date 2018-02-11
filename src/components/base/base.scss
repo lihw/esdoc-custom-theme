@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*:focus {
+  --focus-color: var(--main-focus-color);
+  outline: 0;
+  box-shadow: inset 0 0 0 var(--main-focus-width) var(--focus-color);
+}
+
+html {
+  font-size: var(--base-font-size, 16px);
+  font-family: var(--sans-serif);
+  background: #fff;
+  color: #000;
+}
+
+body {
+  font-size: 1em;
+  background: var(--main-background);
+  color: var(--main-color);
+}
+
+.no-js body {
+  opacity: 0;
+}
+
+.js body {
+  opacity: 1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  margin: 0 0 0.5em 0;
+  padding: 0.5em 0 0;
+}
+
+input, button, select {
+  font-family: var(--sans-serif);
+  font-size: 1em;
+}

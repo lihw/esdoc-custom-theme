@@ -1,0 +1,23 @@
+.github-link-wrapper {
+  position: relative;
+  display: flex;
+
+  .icon {
+    display: flex;
+    align-items: center;
+    align-content: center;
+
+    svg {
+      height: var(--input-icon-size);
+      width: var(--input-icon-size);
+      fill: currentColor;
+    }
+  }
+
+  .github-link {
+    flex: 1;
+    display: flex;
+    padding: calc(var(--global-padding) / 2) var(--global-padding);
+    color: currentColor;
+  }
+}

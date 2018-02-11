@@ -1,0 +1,13 @@
+.main-footer {
+  height: var(--main-footer-height);
+  padding: 0 var(--global-padding);
+  display: flex;
+  align-items: center;
+  align-content: center;
+
+  .esdoc-logo {
+    height: 2em;
+    width: 2em;
+    margin-right: 0.25em;
+  }
+}

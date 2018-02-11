@@ -1,0 +1,38 @@
+.manual-cards {
+  display: flex;
+  flex-flow: wrap;
+  margin: 0 calc(var(--global-margin) / -2);
+}
+
+.manual-card-wrap {
+  position: relative;
+  overflow: hidden;
+  flex: 0 1 calc(100% / 3 - var(--global-margin));
+  margin: calc(var(--global-margin) / 2);
+  height: 15rem;
+  border: 1px solid var(--main-border-color);
+  border-radius: 3px;
+}
+
+.manual-card-link {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: inherit;
+
+   &:hover {
+    background: var(--card-link-hover-shade);
+  }
+}
+
+.manual-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc((100% - var(--global-padding)) * 3);
+  margin: calc(var(--global-padding) / 2);
+  transform-origin: 0 0;
+  transform: scale(calc(1 / 3));
+}

@@ -1,0 +1,29 @@
+:not(.CodeMirror) code,
+:not(pre) code  {
+  --code-background: var(--main-code-background);
+  --code-border: 1px solid var(--main-code-border-color);
+  --code-color: var(--main-code-color);
+  font-family: var(--monospace);
+  border: var(--code-border);
+  color: var(--code-color);
+  background: var(--code-background);
+  border-radius: 3px;
+  overflow: visible;
+}
+
+.CodeMirror {
+  height: auto;
+  margin: var(--global-margin) 0;
+
+  .CodeMirror-errorline-background {
+    background: var(--pretty-code-error-background);
+  }
+
+  .CodeMirror-errorline-background * {
+    color: var(--pretty-code-error-color)!important;
+  }
+}
+
+.CodeMirror-simple {
+  padding: var(--global-padding);
+}

@@ -1,0 +1,17 @@
+._kind-function,
+.kind-function {
+  --kind-background: var(--kind-function-background);
+  --kind-color: var(--kind-function-color);
+}
+
+._kind-variable,
+.kind-variable {
+  --kind-background: var(--kind-variable-background);
+  --kind-color: var(--kind-variable-color);
+}
+
+._kind-class,
+.kind-class {
+  --kind-background: var(--kind-class-background);
+  --kind-color: var(--kind-class-color);
+}

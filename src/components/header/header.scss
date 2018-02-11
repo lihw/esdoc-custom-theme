@@ -1,0 +1,15 @@
+.main-header {
+  z-index: 10;
+  position: relative;
+  grid-area: Header;
+  height: var(--main-header-height);
+  display: flex;
+  background: var(--main-header-background);
+  color: var(--main-header-color);
+  box-shadow: var(--main-header-shadow);
+
+  a:hover {
+    text-decoration: none;
+    background-image: linear-gradient(var(--main-header-link-hover-shade), var(--main-header-link-hover-shade));
+  }
+}

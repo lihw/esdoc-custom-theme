@@ -1,0 +1,15 @@
+body {
+  font-size: 1em;
+  display: grid;
+  grid-template-columns:
+    var(--left-sidebar-width)
+    calc(100% - var(--left-sidebar-width));
+  grid-template-rows:
+    var(--main-header-height)
+    calc(100vh - var(--main-header-height));
+  grid-template-areas:
+    "Header Header"
+    "Sidebar Main";
+  background: var(--main-background);
+  color: var(--main-color);
+}

@@ -1,0 +1,72 @@
+:root.dark {
+  --main-background: #16181f;
+  --main-color: #fff;
+  --main-border-color: #212429;
+  --main-link-color: #fc0043;
+  --main-focus-color: #fd84ad;
+
+  --main-header-background: #fc0043;
+  --main-header-color: #fff;
+  --main-header-border-color: #7f012a;
+  --main-header-link-hover-shade: rgba(0, 0, 0, 0.1);
+  --main-header-link-active-shade: rgba(0, 0, 0, 0.2);
+  --main-header-shadow: 0 0.175rem 0.25rem rgba(0, 0, 0, 0.35), 0 0.25rem 0.5rem rgba(0, 0, 0, 0.65);
+
+  --left-sidebar-background: #212429;
+  --left-sidebar-background-active: #16181f;
+  --left-sidebar-color-active: #fff;
+  --left-sidebar-color: #fff;
+  --left-sidebar-border-color: #2d3038;
+  --left-sidebar-indent-background: none;
+  --left-sidebar-shadow: none;
+
+  --card-link-hover-shade: rgba(255, 255, 255, 0.1);
+
+  --search-separator-background: #fc0043;
+  --search-separator-color: #fff;
+  --search-result-background: #212429;
+  --search-result-color: #fff;
+  --search-result-border-color: #2d3038;
+  --search-result-selected-background: #16181f;
+  --search-result-selected-color: #fff;
+  --search-result-hover-shade: rgba(255, 255, 255, 0.1);
+  --search-result-focus-color: #fd84ad;
+
+  --search-result-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.35), 0 0.5rem 0.5rem rgba(0, 0, 0, 0.65);
+
+  --main-code-background: #212429;
+  --main-code-color: #8dffdb;
+  --main-code-border-color: #2d3038;
+
+  --pretty-code-background: initial;
+  --pretty-code-color: initial;
+  --pretty-code-border-color: transparent;
+  --pretty-code-shadow: none;
+  --pretty-code-error-background: #7f012a;
+  --pretty-code-error-color: #fff;
+
+  --kind-background: #16181f;
+  --kind-color: #696e76;
+
+  --kind-function-background: hsl(0, 80%, 70%);
+  --kind-function-color: hsl(0, 90%, 20%);
+
+  --kind-class-background: hsl(30, 80%, 70%);
+  --kind-class-color: hsl(30, 90%, 20%);
+
+  --kind-variable-background: hsl(60, 80%, 70%);
+  --kind-variable-color: hsl(60, 90%, 20%);
+
+  --table-color: #fff;
+  --table-background: #16181f;
+  --table-border-color: #212429;
+  --td-color: #fff;
+  --td-background: #16181f;
+  --td-border-color: #212429;
+  --thead-color: #fff;
+  --thead-background: #2d3038;
+  --thead-border-color: #212429;
+
+  --light-switch-color: #000;
+  --light-switch-background: #f2f5f9;
+}

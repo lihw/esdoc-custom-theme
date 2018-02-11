@@ -1,0 +1,2560 @@
+[
+  {
+    "__docId__": 1,
+    "kind": "external",
+    "name": "Infinity",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Infinity",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 2,
+    "kind": "external",
+    "name": "NaN",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~NaN",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 3,
+    "kind": "external",
+    "name": "undefined",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~undefined",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 4,
+    "kind": "external",
+    "name": "null",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~null",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 5,
+    "kind": "external",
+    "name": "Object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 6,
+    "kind": "external",
+    "name": "object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 7,
+    "kind": "external",
+    "name": "Function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 8,
+    "kind": "external",
+    "name": "function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 9,
+    "kind": "external",
+    "name": "Boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 10,
+    "kind": "external",
+    "name": "boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 11,
+    "kind": "external",
+    "name": "Symbol",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Symbol",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 12,
+    "kind": "external",
+    "name": "Error",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Error",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 13,
+    "kind": "external",
+    "name": "EvalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~EvalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 14,
+    "kind": "external",
+    "name": "InternalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~InternalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 15,
+    "kind": "external",
+    "name": "RangeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RangeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 16,
+    "kind": "external",
+    "name": "ReferenceError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ReferenceError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 17,
+    "kind": "external",
+    "name": "SyntaxError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~SyntaxError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 18,
+    "kind": "external",
+    "name": "TypeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~TypeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 19,
+    "kind": "external",
+    "name": "URIError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~URIError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 20,
+    "kind": "external",
+    "name": "Number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 21,
+    "kind": "external",
+    "name": "number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 22,
+    "kind": "external",
+    "name": "Date",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Date",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 23,
+    "kind": "external",
+    "name": "String",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~String",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 24,
+    "kind": "external",
+    "name": "string",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~string",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 25,
+    "kind": "external",
+    "name": "RegExp",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RegExp",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 26,
+    "kind": "external",
+    "name": "Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 27,
+    "kind": "external",
+    "name": "Int8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 28,
+    "kind": "external",
+    "name": "Uint8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 29,
+    "kind": "external",
+    "name": "Uint8ClampedArray",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8ClampedArray",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 30,
+    "kind": "external",
+    "name": "Int16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 31,
+    "kind": "external",
+    "name": "Uint16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 32,
+    "kind": "external",
+    "name": "Int32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 33,
+    "kind": "external",
+    "name": "Uint32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 34,
+    "kind": "external",
+    "name": "Float32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 35,
+    "kind": "external",
+    "name": "Float64Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float64Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 36,
+    "kind": "external",
+    "name": "Map",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Map",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 37,
+    "kind": "external",
+    "name": "Set",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Set",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 38,
+    "kind": "external",
+    "name": "WeakMap",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakMap",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 39,
+    "kind": "external",
+    "name": "WeakSet",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakSet",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 40,
+    "kind": "external",
+    "name": "ArrayBuffer",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ArrayBuffer",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 41,
+    "kind": "external",
+    "name": "DataView",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~DataView",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 42,
+    "kind": "external",
+    "name": "JSON",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~JSON",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 43,
+    "kind": "external",
+    "name": "Promise",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Promise",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 44,
+    "kind": "external",
+    "name": "Generator",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Generator",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 45,
+    "kind": "external",
+    "name": "GeneratorFunction",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~GeneratorFunction",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 46,
+    "kind": "external",
+    "name": "Reflect",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Reflect",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 47,
+    "kind": "external",
+    "name": "Proxy",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Proxy",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 48,
+    "kind": "file",
+    "name": "src/components/base/index.js",
+    "content": "// CSS file generation\nimport './base.scss'\n",
+    "static": true,
+    "longname": "/Users/greada/Documents/workspace/s2/esdoc-custom-theme/src/components/base/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 49,
+    "kind": "file",
+    "name": "src/components/cards/index.js",
+    "content": "import {_$$} from '../global-elements'\n\n// CSS file generation\nimport './cards.scss'\n\n_$$('manualCard').forEach(card => {\n  ;[\n    ...card.querySelectorAll('a'),\n    ...card.querySelectorAll('input'),\n    ...card.querySelectorAll('select'),\n    ...card.querySelectorAll('button'),\n    ...card.querySelectorAll('[tabindex]')\n  ].forEach(tabbable => {\n    tabbable.setAttribute('tabindex', '-1')\n  })\n})\n",
+    "static": true,
+    "longname": "/Users/greada/Documents/workspace/s2/esdoc-custom-theme/src/components/cards/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 50,
+    "kind": "file",
+    "name": "src/components/codemirror/codemirror.js",
+    "content": "import CodeMirror from 'codemirror'\nimport 'codemirror/mode/shell/shell'\nimport 'codemirror/mode/xml/xml'\nimport 'codemirror/mode/htmlmixed/htmlmixed'\nimport 'codemirror/mode/javascript/javascript'\nimport 'codemirror/mode/jsx/jsx'\nimport 'codemirror/mode/css/css'\nimport 'codemirror/mode/sass/sass'\nimport 'codemirror/mode/stylus/stylus'\nimport 'codemirror/addon/runmode/runmode.js'\n\n// CSS file generation\nimport 'codemirror/lib/codemirror.css'\nimport 'codemirror/theme/3024-day.css'\nimport 'codemirror/theme/3024-night.css'\nimport 'codemirror/theme/abcdef.css'\nimport 'codemirror/theme/ambiance-mobile.css'\nimport 'codemirror/theme/ambiance.css'\nimport 'codemirror/theme/base16-dark.css'\nimport 'codemirror/theme/base16-light.css'\nimport 'codemirror/theme/bespin.css'\nimport 'codemirror/theme/blackboard.css'\nimport 'codemirror/theme/cobalt.css'\nimport 'codemirror/theme/colorforth.css'\nimport 'codemirror/theme/dracula.css'\nimport 'codemirror/theme/duotone-dark.css'\nimport 'codemirror/theme/duotone-light.css'\nimport 'codemirror/theme/eclipse.css'\nimport 'codemirror/theme/elegant.css'\nimport 'codemirror/theme/erlang-dark.css'\nimport 'codemirror/theme/hopscotch.css'\nimport 'codemirror/theme/icecoder.css'\nimport 'codemirror/theme/isotope.css'\nimport 'codemirror/theme/lesser-dark.css'\nimport 'codemirror/theme/liquibyte.css'\nimport 'codemirror/theme/material.css'\nimport 'codemirror/theme/mbo.css'\nimport 'codemirror/theme/mdn-like.css'\nimport 'codemirror/theme/midnight.css'\nimport 'codemirror/theme/monokai.css'\nimport 'codemirror/theme/neat.css'\nimport 'codemirror/theme/neo.css'\nimport 'codemirror/theme/night.css'\nimport 'codemirror/theme/oceanic-next.css'\nimport 'codemirror/theme/panda-syntax.css'\nimport 'codemirror/theme/paraiso-dark.css'\nimport 'codemirror/theme/paraiso-light.css'\nimport 'codemirror/theme/pastel-on-dark.css'\nimport 'codemirror/theme/railscasts.css'\nimport 'codemirror/theme/rubyblue.css'\nimport 'codemirror/theme/seti.css'\nimport 'codemirror/theme/shadowfox.css'\nimport 'codemirror/theme/solarized.css'\nimport 'codemirror/theme/the-matrix.css'\nimport 'codemirror/theme/tomorrow-night-bright.css'\nimport 'codemirror/theme/tomorrow-night-eighties.css'\nimport 'codemirror/theme/ttcn.css'\nimport 'codemirror/theme/twilight.css'\nimport 'codemirror/theme/vibrant-ink.css'\nimport 'codemirror/theme/xq-dark.css'\nimport 'codemirror/theme/xq-light.css'\nimport 'codemirror/theme/yeti.css'\nimport 'codemirror/theme/zenburn.css'\n\nexport const colorschemes = [\n  '3024-day',\n  '3024-night',\n  'abcdef',\n  'ambiance-mobile',\n  'ambiance',\n  'base16-dark',\n  'base16-light',\n  'bespin',\n  'blackboard',\n  'cobalt',\n  'colorforth',\n  'dracula',\n  'duotone-dark',\n  'duotone-light',\n  'eclipse',\n  'elegant',\n  'erlang-dark',\n  'hopscotch',\n  'icecoder',\n  'isotope',\n  'lesser-dark',\n  'liquibyte',\n  'material',\n  'mbo',\n  'mdn-like',\n  'midnight',\n  'monokai',\n  'neat',\n  'neo',\n  'night',\n  'oceanic-next',\n  'panda-syntax',\n  'paraiso-dark',\n  'paraiso-light',\n  'pastel-on-dark',\n  'railscasts',\n  'rubyblue',\n  'seti',\n  'shadowfox',\n  'solarized',\n  'the-matrix',\n  'tomorrow-night-bright',\n  'tomorrow-night-eighties',\n  'ttcn',\n  'twilight',\n  'vibrant-ink',\n  'xq-dark',\n  'xq-light',\n  'yeti',\n  'zenburn'\n]\n\nexport const simpleHighligtherClasses = name =>\n  `CodeMirror CodeMirror-simple cm-s-${name}`\n\nexport default CodeMirror\n",
+    "static": true,
+    "longname": "/Users/greada/Documents/workspace/s2/esdoc-custom-theme/src/components/codemirror/codemirror.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 51,
+    "kind": "variable",
+    "name": "colorschemes",
+    "memberof": "src/components/codemirror/codemirror.js",
+    "static": true,
+    "longname": "src/components/codemirror/codemirror.js~colorschemes",
+    "access": "public",
+    "export": true,
+    "importPath": "esdoc-custom-theme",
+    "importStyle": "{colorschemes}",
+    "description": null,
+    "lineNumber": 65,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string[]"
+      ]
+    }
+  },
+  {
+    "__docId__": 52,
+    "kind": "function",
+    "name": "simpleHighligtherClasses",
+    "memberof": "src/components/codemirror/codemirror.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/codemirror/codemirror.js~simpleHighligtherClasses",
+    "access": "public",
+    "export": true,
+    "importPath": "esdoc-custom-theme",
+    "importStyle": "{simpleHighligtherClasses}",
+    "description": null,
+    "lineNumber": 118,
+    "undocument": true,
+    "params": [
+      {
+        "name": "name",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 53,
+    "kind": "file",
+    "name": "src/components/codemirror/full.js",
+    "content": "import CodeMirror from './codemirror'\nimport store from '../store'\n\nconst fullMode = (value, mode, node) => {\n  return {\n    cm: CodeMirror(\n      element => {\n        node.parentNode.replaceChild(element, node)\n      },\n      {\n        value,\n        mode,\n        readOnly: true,\n        lineNumbers: true,\n        lineWrapping: true,\n        theme: store.colorscheme,\n        showCursorWhenSelecting: false,\n        cursorBlinkRate: -1\n      }\n    )\n  }\n}\n\nexport default fullMode\n",
+    "static": true,
+    "longname": "/Users/greada/Documents/workspace/s2/esdoc-custom-theme/src/components/codemirror/full.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 54,
+    "kind": "function",
+    "name": "fullMode",
+    "memberof": "src/components/codemirror/full.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/codemirror/full.js~fullMode",
+    "access": "public",
+    "export": true,
+    "importPath": "esdoc-custom-theme",
+    "importStyle": "fullMode",
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "params": [
+      {
+        "name": "value",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "mode",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "node",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "{\"cm\": *}"
+      ]
+    }
+  },
+  {
+    "__docId__": 55,
+    "kind": "file",
+    "name": "src/components/codemirror/index.js",
+    "content": "// CSS file generation\nimport './codemirror.scss'\n\nexport * from './codemirror'\n\nexport {default as simpleMode} from './simple'\nexport {default as fullMode} from './full'\n",
+    "static": true,
+    "longname": "/Users/greada/Documents/workspace/s2/esdoc-custom-theme/src/components/codemirror/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 56,
+    "kind": "file",
+    "name": "src/components/codemirror/simple.js",
+    "content": "import store from '../store'\nimport CodeMirror, {simpleHighligtherClasses} from './codemirror'\n\nconst simpleMode = (value, mode, node) => {\n  node.className = simpleHighligtherClasses(store.colorscheme)\n  CodeMirror.runMode(value, mode, node)\n  return {\n    hl: node\n  }\n}\n\nexport default simpleMode\n",
+    "static": true,
+    "longname": "/Users/greada/Documents/workspace/s2/esdoc-custom-theme/src/components/codemirror/simple.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 57,
+    "kind": "function",
+    "name": "simpleMode",
+    "memberof": "src/components/codemirror/simple.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/codemirror/simple.js~simpleMode",
+    "access": "public",
+    "export": true,
+    "importPath": "esdoc-custom-theme",
+    "importStyle": "simpleMode",
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "params": [
+      {
+        "name": "value",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "mode",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "node",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "{\"hl\": *}"
+      ]
+    }
+  },
+  {
+    "__docId__": 58,
+    "kind": "file",
+    "name": "src/components/colorscheme-selector/index.js",
+    "content": "// CSS file generation\nimport './colorscheme-selector.scss'\n",
+    "static": true,
+    "longname": "/Users/greada/Documents/workspace/s2/esdoc-custom-theme/src/components/colorscheme-selector/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 59,
+    "kind": "file",
+    "name": "src/components/content/index.js",
+    "content": "// CSS file generation\nimport './content.scss'\n",
+    "static": true,
+    "longname": "/Users/greada/Documents/workspace/s2/esdoc-custom-theme/src/components/content/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 60,
+    "kind": "file",
+    "name": "src/components/footer/index.js",
+    "content": "// CSS file generation\nimport './footer.scss'\n",
+    "static": true,
+    "longname": "/Users/greada/Documents/workspace/s2/esdoc-custom-theme/src/components/footer/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 61,
+    "kind": "file",
+    "name": "src/components/github-link/index.js",
+    "content": "import {githubLink, mainHeader, createElement} from '../global-elements'\n\n// CSS file generation\nimport './github-link.scss'\n\nif (githubLink) {\n  githubLink.removeAttribute('style')\n  githubLink.innerHTML = `\n  <span class='icon github-icon'>\n    <svg viewBox='0 0 24 24'>\n      <path d='M20.38,8.53C20.54,8.13 21.06,6.54 20.21,4.39C20.21,4.39 18.9,4 15.91,6C14.66,5.67 13.33,5.62 12,5.62C10.68,5.62 9.34,5.67 8.09,6C5.1,3.97 3.79,4.39 3.79,4.39C2.94,6.54 3.46,8.13 3.63,8.53C2.61,9.62 2,11 2,12.72C2,19.16 6.16,20.61 12,20.61C17.79,20.61 22,19.16 22,12.72C22,11 21.39,9.62 20.38,8.53M12,19.38C7.88,19.38 4.53,19.19 4.53,15.19C4.53,14.24 5,13.34 5.8,12.61C7.14,11.38 9.43,12.03 12,12.03C14.59,12.03 16.85,11.38 18.2,12.61C19,13.34 19.5,14.23 19.5,15.19C19.5,19.18 16.13,19.38 12,19.38M8.86,13.12C8.04,13.12 7.36,14.12 7.36,15.34C7.36,16.57 8.04,17.58 8.86,17.58C9.69,17.58 10.36,16.58 10.36,15.34C10.36,14.11 9.69,13.12 8.86,13.12M15.14,13.12C14.31,13.12 13.64,14.11 13.64,15.34C13.64,16.58 14.31,17.58 15.14,17.58C15.96,17.58 16.64,16.58 16.64,15.34C16.64,14.11 16,13.12 15.14,13.12Z' />\n    </svg>\n  </span>\n  `\n  githubLink.classList.add('github-link')\n  mainHeader.appendChild(\n    createElement('div', {className: 'github-link-wrapper'}, githubLink)\n  )\n}\n",
+    "static": true,
+    "longname": "/Users/greada/Documents/workspace/s2/esdoc-custom-theme/src/components/github-link/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 62,
+    "kind": "file",
+    "name": "src/components/global-elements/index.js",
+    "content": "export const jsSelector = name => `.js_${name}`\nexport const $$ = (selector, context = document) => [\n  ...context.querySelectorAll(selector)\n]\n\nexport const $ = (selector, context = document) =>\n  context.querySelector(selector)\n\nexport const _$$ = (name, context = document) => [\n  ...context.querySelectorAll(jsSelector(name))\n]\n\nexport const _$ = (name, context = document) =>\n  context.querySelector(jsSelector(name))\n\nexport const createElement = (tag, {className = ''}, child) => {\n  const wrapper = document.createElement(tag)\n  wrapper.classList.add(className)\n  if (child) {\n    wrapper.appendChild(child)\n  }\n  return wrapper\n}\n\nexport const body = document.body\nexport const documentElement = document.documentElement\n\nexport const mainHeader = _$('mainHeader', body)\nexport const sidebarLeft = _$('sidebarLeft', body)\nexport const sidebarRight = _$('sidebarRight', body)\n\nexport const optionsSwitch = _$('optionsSwitch', mainHeader)\nexport const modeSwitch = _$('modeSwitch', mainHeader)\n\nexport const searchBox = _$('searchBox', mainHeader)\n\nexport const searchInput = _$('searchInput', searchBox)\nexport const searchResult = _$('searchResult', searchBox)\nexport const searchIcon = _$('searchIcon', searchBox)\n\nexport const colorschemeOptions = _$('colorschemeOptions', sidebarRight)\nexport const fontOptions = _$('fontOptions', sidebarRight)\n\nexport const githubLink = $(`${jsSelector('mainHeader')} > a:last-child`)\n\nexport const codeBlocks = $$('pre')\n",
+    "static": true,
+    "longname": "/Users/greada/Documents/workspace/s2/esdoc-custom-theme/src/components/global-elements/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 63,
+    "kind": "function",
+    "name": "jsSelector",
+    "memberof": "src/components/global-elements/index.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/global-elements/index.js~jsSelector",
+    "access": "public",
+    "export": true,
+    "importPath": "esdoc-custom-theme",
+    "importStyle": "{jsSelector}",
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "params": [
+      {
+        "name": "name",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 64,
+    "kind": "function",
+    "name": "$$",
+    "memberof": "src/components/global-elements/index.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/global-elements/index.js~$$",
+    "access": "public",
+    "export": true,
+    "importPath": "esdoc-custom-theme",
+    "importStyle": "{$$}",
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "params": [
+      {
+        "name": "selector",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "context",
+        "optional": true,
+        "types": [
+          "*"
+        ],
+        "defaultRaw": "document",
+        "defaultValue": "document"
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 65,
+    "kind": "function",
+    "name": "$",
+    "memberof": "src/components/global-elements/index.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/global-elements/index.js~$",
+    "access": "public",
+    "export": true,
+    "importPath": "esdoc-custom-theme",
+    "importStyle": "{$}",
+    "description": null,
+    "lineNumber": 6,
+    "undocument": true,
+    "params": [
+      {
+        "name": "selector",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "context",
+        "optional": true,
+        "types": [
+          "*"
+        ],
+        "defaultRaw": "document",
+        "defaultValue": "document"
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 66,
+    "kind": "function",
+    "name": "_$$",
+    "memberof": "src/components/global-elements/index.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/global-elements/index.js~_$$",
+    "access": "private",
+    "export": true,
+    "importPath": "esdoc-custom-theme",
+    "importStyle": "{_$$}",
+    "description": null,
+    "lineNumber": 9,
+    "undocument": true,
+    "ignore": true,
+    "params": [
+      {
+        "name": "name",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "context",
+        "optional": true,
+        "types": [
+          "*"
+        ],
+        "defaultRaw": "document",
+        "defaultValue": "document"
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 67,
+    "kind": "function",
+    "name": "_$",
+    "memberof": "src/components/global-elements/index.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/global-elements/index.js~_$",
+    "access": "private",
+    "export": true,
+    "importPath": "esdoc-custom-theme",
+    "importStyle": "{_$}",
+    "description": null,
+    "lineNumber": 13,
+    "undocument": true,
+    "ignore": true,
+    "params": [
+      {
+        "name": "name",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "context",
+        "optional": true,
+        "types": [
+          "*"
+        ],
+        "defaultRaw": "document",
+        "defaultValue": "document"
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 68,
+    "kind": "function",
+    "name": "createElement",
+    "memberof": "src/components/global-elements/index.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/global-elements/index.js~createElement",
+    "access": "public",
+    "export": true,
+    "importPath": "esdoc-custom-theme",
+    "importStyle": "{createElement}",
+    "description": null,
+    "lineNumber": 16,
+    "undocument": true,
+    "params": [
+      {
+        "name": "tag",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "objectPattern1",
+        "types": [
+          "{\"className\": *}"
+        ],
+        "defaultRaw": {
+          "className": null
+        },
+        "defaultValue": "{\"className\":null}"
+      },
+      {
+        "name": "child",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 69,
+    "kind": "variable",
+    "name": "body",
+    "memberof": "src/components/global-elements/index.js",
+    "static": true,
+    "longname": "src/components/global-elements/index.js~body",
+    "access": "public",
+    "export": true,
+    "importPath": "esdoc-custom-theme",
+    "importStyle": "{body}",
+    "description": null,
+    "lineNumber": 25,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 70,
+    "kind": "variable",
+    "name": "documentElement",
+    "memberof": "src/components/global-elements/index.js",
+    "static": true,
+    "longname": "src/components/global-elements/index.js~documentElement",
+    "access": "public",
+    "export": true,
+    "importPath": "esdoc-custom-theme",
+    "importStyle": "{documentElement}",
+    "description": null,
+    "lineNumber": 26,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 71,
+    "kind": "variable",
+    "name": "mainHeader",
+    "memberof": "src/components/global-elements/index.js",
+    "static": true,
+    "longname": "src/components/global-elements/index.js~mainHeader",
+    "access": "public",
+    "export": true,
+    "importPath": "esdoc-custom-theme",
+    "importStyle": "{mainHeader}",
+    "description": null,
+    "lineNumber": 28,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 72,
+    "kind": "variable",
+    "name": "sidebarLeft",
+    "memberof": "src/components/global-elements/index.js",
+    "static": true,
+    "longname": "src/components/global-elements/index.js~sidebarLeft",
+    "access": "public",
+    "export": true,
+    "importPath": "esdoc-custom-theme",
+    "importStyle": "{sidebarLeft}",
+    "description": null,
+    "lineNumber": 29,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 73,
+    "kind": "variable",
+    "name": "sidebarRight",
+    "memberof": "src/components/global-elements/index.js",
+    "static": true,
+    "longname": "src/components/global-elements/index.js~sidebarRight",
+    "access": "public",
+    "export": true,
+    "importPath": "esdoc-custom-theme",
+    "importStyle": "{sidebarRight}",
+    "description": null,
+    "lineNumber": 30,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 74,
+    "kind": "variable",
+    "name": "optionsSwitch",
+    "memberof": "src/components/global-elements/index.js",
+    "static": true,
+    "longname": "src/components/global-elements/index.js~optionsSwitch",
+    "access": "public",
+    "export": true,
+    "importPath": "esdoc-custom-theme",
+    "importStyle": "{optionsSwitch}",
+    "description": null,
+    "lineNumber": 32,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 75,
+    "kind": "variable",
+    "name": "modeSwitch",
+    "memberof": "src/components/global-elements/index.js",
+    "static": true,
+    "longname": "src/components/global-elements/index.js~modeSwitch",
+    "access": "public",
+    "export": true,
+    "importPath": "esdoc-custom-theme",
+    "importStyle": "{modeSwitch}",
+    "description": null,
+    "lineNumber": 33,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 76,
+    "kind": "variable",
+    "name": "searchBox",
+    "memberof": "src/components/global-elements/index.js",
+    "static": true,
+    "longname": "src/components/global-elements/index.js~searchBox",
+    "access": "public",
+    "export": true,
+    "importPath": "esdoc-custom-theme",
+    "importStyle": "{searchBox}",
+    "description": null,
+    "lineNumber": 35,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 77,
+    "kind": "variable",
+    "name": "searchInput",
+    "memberof": "src/components/global-elements/index.js",
+    "static": true,
+    "longname": "src/components/global-elements/index.js~searchInput",
+    "access": "public",
+    "export": true,
+    "importPath": "esdoc-custom-theme",
+    "importStyle": "{searchInput}",
+    "description": null,
+    "lineNumber": 37,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 78,
+    "kind": "variable",
+    "name": "searchResult",
+    "memberof": "src/components/global-elements/index.js",
+    "static": true,
+    "longname": "src/components/global-elements/index.js~searchResult",
+    "access": "public",
+    "export": true,
+    "importPath": "esdoc-custom-theme",
+    "importStyle": "{searchResult}",
+    "description": null,
+    "lineNumber": 38,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 79,
+    "kind": "variable",
+    "name": "searchIcon",
+    "memberof": "src/components/global-elements/index.js",
+    "static": true,
+    "longname": "src/components/global-elements/index.js~searchIcon",
+    "access": "public",
+    "export": true,
+    "importPath": "esdoc-custom-theme",
+    "importStyle": "{searchIcon}",
+    "description": null,
+    "lineNumber": 39,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 80,
+    "kind": "variable",
+    "name": "colorschemeOptions",
+    "memberof": "src/components/global-elements/index.js",
+    "static": true,
+    "longname": "src/components/global-elements/index.js~colorschemeOptions",
+    "access": "public",
+    "export": true,
+    "importPath": "esdoc-custom-theme",
+    "importStyle": "{colorschemeOptions}",
+    "description": null,
+    "lineNumber": 41,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 81,
+    "kind": "variable",
+    "name": "fontOptions",
+    "memberof": "src/components/global-elements/index.js",
+    "static": true,
+    "longname": "src/components/global-elements/index.js~fontOptions",
+    "access": "public",
+    "export": true,
+    "importPath": "esdoc-custom-theme",
+    "importStyle": "{fontOptions}",
+    "description": null,
+    "lineNumber": 42,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 82,
+    "kind": "variable",
+    "name": "githubLink",
+    "memberof": "src/components/global-elements/index.js",
+    "static": true,
+    "longname": "src/components/global-elements/index.js~githubLink",
+    "access": "public",
+    "export": true,
+    "importPath": "esdoc-custom-theme",
+    "importStyle": "{githubLink}",
+    "description": null,
+    "lineNumber": 44,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 83,
+    "kind": "variable",
+    "name": "codeBlocks",
+    "memberof": "src/components/global-elements/index.js",
+    "static": true,
+    "longname": "src/components/global-elements/index.js~codeBlocks",
+    "access": "public",
+    "export": true,
+    "importPath": "esdoc-custom-theme",
+    "importStyle": "{codeBlocks}",
+    "description": null,
+    "lineNumber": 46,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 84,
+    "kind": "file",
+    "name": "src/components/header/index.js",
+    "content": "// CSS file generation\nimport './header.scss'\n",
+    "static": true,
+    "longname": "/Users/greada/Documents/workspace/s2/esdoc-custom-theme/src/components/header/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 85,
+    "kind": "file",
+    "name": "src/components/kind/index.js",
+    "content": "// CSS file generation\nimport './kind.scss'\n",
+    "static": true,
+    "longname": "/Users/greada/Documents/workspace/s2/esdoc-custom-theme/src/components/kind/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 86,
+    "kind": "file",
+    "name": "src/components/layout/index.js",
+    "content": "// CSS file generation\nimport './layout.scss'\n",
+    "static": true,
+    "longname": "/Users/greada/Documents/workspace/s2/esdoc-custom-theme/src/components/layout/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 87,
+    "kind": "file",
+    "name": "src/components/link/index.js",
+    "content": "// CSS file generation\nimport './link.scss'\n",
+    "static": true,
+    "longname": "/Users/greada/Documents/workspace/s2/esdoc-custom-theme/src/components/link/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 88,
+    "kind": "file",
+    "name": "src/components/list/index.js",
+    "content": "// CSS file generation\nimport './list.scss'\n",
+    "static": true,
+    "longname": "/Users/greada/Documents/workspace/s2/esdoc-custom-theme/src/components/list/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 89,
+    "kind": "file",
+    "name": "src/components/main/index.js",
+    "content": "// CSS file generation\nimport './main.scss'\n",
+    "static": true,
+    "longname": "/Users/greada/Documents/workspace/s2/esdoc-custom-theme/src/components/main/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 90,
+    "kind": "file",
+    "name": "src/components/mode-selector/index.js",
+    "content": "import store, {setLocalStorage} from '../store'\nimport {documentElement, modeSwitch} from '../global-elements'\n\n// CSS file generation\nimport './root.scss'\nimport './dark.scss'\nimport './light.scss'\nimport './mode-switch.scss'\n\nconst toggle = (a, b, c) => (a === b ? c : b)\n\nexport const switchLight = e => {\n  e.preventDefault()\n  const {mode} = store\n  const newMode = toggle(mode, 'light', 'dark')\n  store.mode = newMode\n\n  setLocalStorage('mode', newMode)\n  setLight(newMode, mode)\n}\n\nconst setLight = (mode, oldMode) => {\n  documentElement.classList.replace(oldMode, mode)\n}\n\nmodeSwitch.addEventListener('click', switchLight)\nsetLight(store.mode, toggle(store.mode, 'light', 'dark'))\n",
+    "static": true,
+    "longname": "/Users/greada/Documents/workspace/s2/esdoc-custom-theme/src/components/mode-selector/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 91,
+    "kind": "function",
+    "name": "toggle",
+    "memberof": "src/components/mode-selector/index.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/mode-selector/index.js~toggle",
+    "access": "public",
+    "export": false,
+    "importPath": "esdoc-custom-theme",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 10,
+    "undocument": true,
+    "params": [
+      {
+        "name": "a",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "b",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "c",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 92,
+    "kind": "function",
+    "name": "switchLight",
+    "memberof": "src/components/mode-selector/index.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/mode-selector/index.js~switchLight",
+    "access": "public",
+    "export": true,
+    "importPath": "esdoc-custom-theme",
+    "importStyle": "{switchLight}",
+    "description": null,
+    "lineNumber": 12,
+    "undocument": true,
+    "params": [
+      {
+        "name": "e",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 93,
+    "kind": "function",
+    "name": "setLight",
+    "memberof": "src/components/mode-selector/index.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/mode-selector/index.js~setLight",
+    "access": "public",
+    "export": false,
+    "importPath": "esdoc-custom-theme",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 22,
+    "undocument": true,
+    "params": [
+      {
+        "name": "mode",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "oldMode",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 94,
+    "kind": "file",
+    "name": "src/components/navigation/index.js",
+    "content": "// CSS file generation\nimport './main-nav.scss'\n",
+    "static": true,
+    "longname": "/Users/greada/Documents/workspace/s2/esdoc-custom-theme/src/components/navigation/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 95,
+    "kind": "file",
+    "name": "src/components/patch-for-local/index.js",
+    "content": "import {protocol} from '../url'\nimport {$$} from '../global-elements'\n\nif (protocol === 'file:') {\n  const homeLinks = $$('a[href=\"./\"]')\n  homeLinks.forEach(link => {\n    link.href = './index.html'\n  })\n}\n",
+    "static": true,
+    "longname": "/Users/greada/Documents/workspace/s2/esdoc-custom-theme/src/components/patch-for-local/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 96,
+    "kind": "file",
+    "name": "src/components/quote/index.js",
+    "content": "// CSS file generation\nimport './quote.scss'\n",
+    "static": true,
+    "longname": "/Users/greada/Documents/workspace/s2/esdoc-custom-theme/src/components/quote/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 97,
+    "kind": "file",
+    "name": "src/components/searchbar/activate.js",
+    "content": "import store from '../store'\n\nconst activate = (node, target) => {\n  const current = node.children[store.selectedIndex]\n  let li = target\n  while (li) {\n    if (li.nodeName === 'LI') {\n      break\n    }\n    li = li.parentElement\n  }\n\n  if (li) {\n    store.selectedIndex = [...node.children].indexOf(li)\n  }\n}\n\nexport default activate\n",
+    "static": true,
+    "longname": "/Users/greada/Documents/workspace/s2/esdoc-custom-theme/src/components/searchbar/activate.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 98,
+    "kind": "function",
+    "name": "activate",
+    "memberof": "src/components/searchbar/activate.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/searchbar/activate.js~activate",
+    "access": "public",
+    "export": true,
+    "importPath": "esdoc-custom-theme",
+    "importStyle": "activate",
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "params": [
+      {
+        "name": "node",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "target",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 99,
+    "kind": "file",
+    "name": "src/components/searchbar/index.js",
+    "content": "import appStorage from '../store'\nimport {body, searchBox, searchInput, searchResult} from '../global-elements'\n\nimport {openResults, closeResults} from './toggle-result'\nimport searchIndex from './search-index'\nimport search from './search'\nimport select from './select'\nimport activate from './activate'\n\n// CSS file generation\nimport './search-result.scss'\nimport './search-box.scss'\n\nconst sendSearch = e => search(e.target.value.trim().toLowerCase(), searchResult)\nconst sendSelect = e => select(e, searchResult)\nconst sendActivate = e => activate(e.target, searchResult)\n\n// search on keyup (typing)\nsearchInput.addEventListener('keyup', sendSearch)\n// select on keydown (up, down, enter/return)\nsearchInput.addEventListener('keydown', sendSelect)\n\n// select search result when search result is mouse over.\nsearchResult.addEventListener('mousemove', sendActivate)\n\n// Clear search result when body is clicked.\nbody.addEventListener('click', e => {\n  closeResults(searchResult)\n})\n",
+    "static": true,
+    "longname": "/Users/greada/Documents/workspace/s2/esdoc-custom-theme/src/components/searchbar/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 100,
+    "kind": "function",
+    "name": "sendSearch",
+    "memberof": "src/components/searchbar/index.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/searchbar/index.js~sendSearch",
+    "access": "public",
+    "export": false,
+    "importPath": "esdoc-custom-theme",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 14,
+    "undocument": true,
+    "params": [
+      {
+        "name": "e",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 101,
+    "kind": "function",
+    "name": "sendSelect",
+    "memberof": "src/components/searchbar/index.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/searchbar/index.js~sendSelect",
+    "access": "public",
+    "export": false,
+    "importPath": "esdoc-custom-theme",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 15,
+    "undocument": true,
+    "params": [
+      {
+        "name": "e",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 102,
+    "kind": "function",
+    "name": "sendActivate",
+    "memberof": "src/components/searchbar/index.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/searchbar/index.js~sendActivate",
+    "access": "public",
+    "export": false,
+    "importPath": "esdoc-custom-theme",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 16,
+    "undocument": true,
+    "params": [
+      {
+        "name": "e",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 103,
+    "kind": "file",
+    "name": "src/components/searchbar/search-index.js",
+    "content": "export default window.esdocSearchIndex\n",
+    "static": true,
+    "longname": "/Users/greada/Documents/workspace/s2/esdoc-custom-theme/src/components/searchbar/search-index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 104,
+    "kind": "file",
+    "name": "src/components/searchbar/search.js",
+    "content": "import store from '../store'\nimport {closeResults, openResults} from './toggle-result'\nimport searchIndex from './search-index'\n\nconst search = (text, output) => {\n  if (!text) {\n    closeResults(output)\n    return\n  }\n\n  if (text === store.prevText) {\n    return\n  }\n\n  store.prevText = text\n\n  const html = {\n    class: [],\n    method: [],\n    member: [],\n    function: [],\n    variable: [],\n    typedef: [],\n    external: [],\n    file: [],\n    test: [],\n    testFile: []\n  }\n\n  searchIndex.forEach((item, index) => {\n    const [src, href, label, kind] = item\n    if (src.indexOf(text) > -1) {\n      html[kind].push(`\n        <li class=\"search-result-item\">\n          <a class=\"search-result-link\" href=\"${href}\">\n            ${label}\n          </a>\n        </li>\n      `)\n    }\n  })\n\n  const innerHTML = Object.keys(html)\n    .map(kind => {\n      const list = html[kind].join('')\n      if (!list) {\n        return ''\n      }\n      return `\n      <li class=\"search-separator\">\n        ${kind}\n      </li>\n    ${list}`\n    })\n    .join('')\n\n  if (!innerHTML) {\n    closeResults(output)\n    return\n  }\n  openResults(output, innerHTML)\n}\n\nexport default search\n",
+    "static": true,
+    "longname": "/Users/greada/Documents/workspace/s2/esdoc-custom-theme/src/components/searchbar/search.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 105,
+    "kind": "function",
+    "name": "search",
+    "memberof": "src/components/searchbar/search.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/searchbar/search.js~search",
+    "access": "public",
+    "export": true,
+    "importPath": "esdoc-custom-theme",
+    "importStyle": "search",
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "params": [
+      {
+        "name": "text",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "output",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 106,
+    "kind": "file",
+    "name": "src/components/searchbar/select.js",
+    "content": "import store from '../store'\nimport {setHref} from '../url'\n\nconst select = (e, node) => {\n  const {keyCode} = e\n  if (keyCode === 40) {\n    // arrow down\n    const current = node.children[store.selectedIndex]\n    let selected = node.children[store.selectedIndex + 1]\n    if (selected && selected.classList.contains('search-separator')) {\n      selected = node.children[store.selectedIndex + 2]\n      store.selectedIndex++\n    }\n\n    if (selected) {\n      if (current) {\n        current.classList.remove('selected')\n      }\n      store.selectedIndex++\n      selected.classList.add('selected')\n    }\n  } else if (keyCode === 38) {\n    // arrow up\n    const current = node.children[store.selectedIndex]\n    let selected = node.children[store.selectedIndex - 1]\n    if (selected && selected.classList.contains('search-separator')) {\n      selected = node.children[store.selectedIndex - 2]\n      store.selectedIndex--\n    }\n\n    if (selected) {\n      if (current) {\n        current.classList.remove('selected')\n      }\n      store.selectedIndex--\n      selected.classList.add('selected')\n    }\n  } else if (keyCode === 13) {\n    // enter\n    const current = node.children[store.selectedIndex]\n    if (current) {\n      const link = current.querySelector('a')\n      if (link) {\n        setHref(link.href)\n      }\n    }\n  } else {\n    return\n  }\n  e.preventDefault()\n}\n\nexport default select\n",
+    "static": true,
+    "longname": "/Users/greada/Documents/workspace/s2/esdoc-custom-theme/src/components/searchbar/select.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 107,
+    "kind": "function",
+    "name": "select",
+    "memberof": "src/components/searchbar/select.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/searchbar/select.js~select",
+    "access": "public",
+    "export": true,
+    "importPath": "esdoc-custom-theme",
+    "importStyle": "select",
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "params": [
+      {
+        "name": "e",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "node",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 108,
+    "kind": "file",
+    "name": "src/components/searchbar/toggle-result.js",
+    "content": "import store from '../store'\n\nexport const closeResults = node => {\n  store.selectedIndex = -1\n  node.classList.add('hidden')\n  node.innerHTML = ''\n}\n\nexport const openResults = (node, content) => {\n  store.selectedIndex = -1\n  node.innerHTML = content\n  node.classList.remove('hidden')\n}\n",
+    "static": true,
+    "longname": "/Users/greada/Documents/workspace/s2/esdoc-custom-theme/src/components/searchbar/toggle-result.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 109,
+    "kind": "function",
+    "name": "closeResults",
+    "memberof": "src/components/searchbar/toggle-result.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/searchbar/toggle-result.js~closeResults",
+    "access": "public",
+    "export": true,
+    "importPath": "esdoc-custom-theme",
+    "importStyle": "{closeResults}",
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "params": [
+      {
+        "name": "node",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 110,
+    "kind": "function",
+    "name": "openResults",
+    "memberof": "src/components/searchbar/toggle-result.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/searchbar/toggle-result.js~openResults",
+    "access": "public",
+    "export": true,
+    "importPath": "esdoc-custom-theme",
+    "importStyle": "{openResults}",
+    "description": null,
+    "lineNumber": 9,
+    "undocument": true,
+    "params": [
+      {
+        "name": "node",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "content",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 111,
+    "kind": "file",
+    "name": "src/components/sidebar/activate-links.js",
+    "content": "import {sidebarLeft} from '../global-elements'\n\nconst activate = e => {\n  const {newURL} = e\n  const url = newURL.replace(/http(s)?:\\/\\/[:\\.\\d\\w\\-]+\\/api\\/?/, '')\n  const [slug, hash] = url.split('#')\n  const urlLinks = []\n  const activatedLinks = [...sidebarLeft.querySelectorAll(`.active-link`)]\n  const activeLinks = [\n    ...sidebarLeft.querySelectorAll(`[href='${slug}']`),\n    ...sidebarLeft.querySelectorAll(`[href='${url}']`)\n  ]\n  activatedLinks.forEach(link => {\n    link.classList.remove('active-link')\n  })\n  activeLinks.forEach(link => {\n    link.classList.add('active-link')\n  })\n}\n\nexport default activate\n",
+    "static": true,
+    "longname": "/Users/greada/Documents/workspace/s2/esdoc-custom-theme/src/components/sidebar/activate-links.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 112,
+    "kind": "function",
+    "name": "activate",
+    "memberof": "src/components/sidebar/activate-links.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/sidebar/activate-links.js~activate",
+    "access": "public",
+    "export": true,
+    "importPath": "esdoc-custom-theme",
+    "importStyle": "activate",
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "params": [
+      {
+        "name": "e",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 113,
+    "kind": "file",
+    "name": "src/components/sidebar/index.js",
+    "content": "import {href as newURL} from '../url'\nimport activateLinks from './activate-links'\n\n// CSS file generation\nimport './sidebar-left.scss'\nimport './sidebar-right.scss'\n\nactivateLinks({newURL})\nwindow.addEventListener('hashchange', activateLinks)\n",
+    "static": true,
+    "longname": "/Users/greada/Documents/workspace/s2/esdoc-custom-theme/src/components/sidebar/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 114,
+    "kind": "file",
+    "name": "src/components/store/index.js",
+    "content": "export const {localStorage} = window\nexport const storageId = name => `__esdoc-custom-theme__${name}__`\nexport const getLocalStorage = name => localStorage.getItem(storageId(name))\nexport const setLocalStorage = (name, value) =>\n  localStorage.setItem(storageId(name), value)\n\nconst defaultColorscheme = 'zenburn'\nconst defaultMode = 'dark'\n\nconst colorscheme = getLocalStorage('colorscheme') || defaultColorscheme\nconst mode = getLocalStorage('mode') || defaultMode\n\nconst store = {\n  colorscheme,\n  mode,\n  selectedIndex: -1,\n  prevText: ''\n}\n\nexport default store\n",
+    "static": true,
+    "longname": "/Users/greada/Documents/workspace/s2/esdoc-custom-theme/src/components/store/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 115,
+    "kind": "variable",
+    "name": "localStorage",
+    "memberof": "src/components/store/index.js",
+    "static": true,
+    "longname": "src/components/store/index.js~localStorage",
+    "access": "public",
+    "export": true,
+    "importPath": "esdoc-custom-theme",
+    "importStyle": "{localStorage}",
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 116,
+    "kind": "function",
+    "name": "storageId",
+    "memberof": "src/components/store/index.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/store/index.js~storageId",
+    "access": "public",
+    "export": true,
+    "importPath": "esdoc-custom-theme",
+    "importStyle": "{storageId}",
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "params": [
+      {
+        "name": "name",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 117,
+    "kind": "function",
+    "name": "getLocalStorage",
+    "memberof": "src/components/store/index.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/store/index.js~getLocalStorage",
+    "access": "public",
+    "export": true,
+    "importPath": "esdoc-custom-theme",
+    "importStyle": "{getLocalStorage}",
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "params": [
+      {
+        "name": "name",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 118,
+    "kind": "function",
+    "name": "setLocalStorage",
+    "memberof": "src/components/store/index.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/store/index.js~setLocalStorage",
+    "access": "public",
+    "export": true,
+    "importPath": "esdoc-custom-theme",
+    "importStyle": "{setLocalStorage}",
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "params": [
+      {
+        "name": "name",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "value",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 119,
+    "kind": "variable",
+    "name": "defaultColorscheme",
+    "memberof": "src/components/store/index.js",
+    "static": true,
+    "longname": "src/components/store/index.js~defaultColorscheme",
+    "access": "public",
+    "export": false,
+    "importPath": "esdoc-custom-theme",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 7,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 120,
+    "kind": "variable",
+    "name": "defaultMode",
+    "memberof": "src/components/store/index.js",
+    "static": true,
+    "longname": "src/components/store/index.js~defaultMode",
+    "access": "public",
+    "export": false,
+    "importPath": "esdoc-custom-theme",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 8,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 121,
+    "kind": "variable",
+    "name": "colorscheme",
+    "memberof": "src/components/store/index.js",
+    "static": true,
+    "longname": "src/components/store/index.js~colorscheme",
+    "access": "public",
+    "export": false,
+    "importPath": "esdoc-custom-theme",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 10,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 122,
+    "kind": "variable",
+    "name": "mode",
+    "memberof": "src/components/store/index.js",
+    "static": true,
+    "longname": "src/components/store/index.js~mode",
+    "access": "public",
+    "export": false,
+    "importPath": "esdoc-custom-theme",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 11,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 123,
+    "kind": "variable",
+    "name": "store",
+    "memberof": "src/components/store/index.js",
+    "static": true,
+    "longname": "src/components/store/index.js~store",
+    "access": "public",
+    "export": true,
+    "importPath": "esdoc-custom-theme",
+    "importStyle": "store",
+    "description": null,
+    "lineNumber": 13,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{\"colorscheme\": *, \"mode\": *, \"selectedIndex\": *, \"prevText\": *}"
+      ]
+    }
+  },
+  {
+    "__docId__": 124,
+    "kind": "file",
+    "name": "src/components/syntax-highlighter/get-active-lines.js",
+    "content": "import {hash} from '../url'\nimport normalizeLines from './normalize-lines'\n\nconst getActiveLines = hl => {\n  const matched = location.hash.match(/activeLines=([\\d,]+)/)\n  if (matched) {\n    const lines = normalizeLines(matched[1])\n    lines.forEach((line, i) =>\n      hl.addLineClass(line, 'wrap', 'CodeMirror-activeline-background')\n    )\n    hl.scrollIntoView(lines[0])\n  }\n}\n\nexport default getActiveLines\n",
+    "static": true,
+    "longname": "/Users/greada/Documents/workspace/s2/esdoc-custom-theme/src/components/syntax-highlighter/get-active-lines.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 125,
+    "kind": "function",
+    "name": "getActiveLines",
+    "memberof": "src/components/syntax-highlighter/get-active-lines.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/syntax-highlighter/get-active-lines.js~getActiveLines",
+    "access": "public",
+    "export": true,
+    "importPath": "esdoc-custom-theme",
+    "importStyle": "getActiveLines",
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "params": [
+      {
+        "name": "hl",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 126,
+    "kind": "file",
+    "name": "src/components/syntax-highlighter/get-error-lines.js",
+    "content": "import {hash} from '../url'\n\nconst getErrorLines = hl => {\n  const matched = hash.match(/errorLines=([\\d,]+)/)\n  if (matched) {\n    const lines = normalizeLines(matched[1])\n    lines.forEach((line, i) =>\n      hl.addLineClass(line, 'wrap', 'CodeMirror-errorline-background')\n    )\n    hl.scrollIntoView(lines[0])\n  }\n}\n\nexport default getErrorLines\n",
+    "static": true,
+    "longname": "/Users/greada/Documents/workspace/s2/esdoc-custom-theme/src/components/syntax-highlighter/get-error-lines.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 127,
+    "kind": "function",
+    "name": "getErrorLines",
+    "memberof": "src/components/syntax-highlighter/get-error-lines.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/syntax-highlighter/get-error-lines.js~getErrorLines",
+    "access": "public",
+    "export": true,
+    "importPath": "esdoc-custom-theme",
+    "importStyle": "getErrorLines",
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "params": [
+      {
+        "name": "hl",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 128,
+    "kind": "file",
+    "name": "src/components/syntax-highlighter/get-line-number.js",
+    "content": "import {hash} from '../url'\n\nconst getlineNumber = hl => {\n  const matched = location.hash.match(/lineNumber([\\d]+)/)\n  if (matched) {\n    const lineNumber = parseInt(matched[1], 10)\n    hl.scrollIntoView(lineNumber)\n  }\n}\n\nexport default getlineNumber\n",
+    "static": true,
+    "longname": "/Users/greada/Documents/workspace/s2/esdoc-custom-theme/src/components/syntax-highlighter/get-line-number.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 129,
+    "kind": "function",
+    "name": "getlineNumber",
+    "memberof": "src/components/syntax-highlighter/get-line-number.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/syntax-highlighter/get-line-number.js~getlineNumber",
+    "access": "public",
+    "export": true,
+    "importPath": "esdoc-custom-theme",
+    "importStyle": "getlineNumber",
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "params": [
+      {
+        "name": "hl",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 130,
+    "kind": "file",
+    "name": "src/components/syntax-highlighter/highlight.js",
+    "content": "import {pathname} from '../url'\nimport {simpleMode, fullMode} from '../codemirror'\n\nconst highlight = blocks => {\n  return blocks.map(block => {\n    const {innerText: value} = block\n    const code = block.querySelector('code')\n    const lang = !code\n      ? ''\n      : code.className.split(',').filter(x => x.match('lang'))[0] || ''\n    // default to JSX\n    const isJSFile = pathname.match('.js.html')\n    const isTSFile = pathname.match('.ts.html')\n    const isJSXFile = pathname.match('.jsx.html')\n    const isTSXFile = pathname.match('.tsx.html')\n    const isFile = isJSFile || isTSFile || isJSXFile || isTSXFile\n    let mode = lang.replace(/lang(uage)?-/, '')\n    if (isJSFile || isJSXFile) {\n      mode = 'jsx'\n    }\n    if (isTSFile || isTSXFile) {\n      mode = 'tsx'\n    }\n    return isFile\n      ? fullMode(value, mode, block)\n      : simpleMode(value, mode, block)\n  })\n}\n\nexport default highlight\n",
+    "static": true,
+    "longname": "/Users/greada/Documents/workspace/s2/esdoc-custom-theme/src/components/syntax-highlighter/highlight.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 131,
+    "kind": "function",
+    "name": "highlight",
+    "memberof": "src/components/syntax-highlighter/highlight.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/syntax-highlighter/highlight.js~highlight",
+    "access": "public",
+    "export": true,
+    "importPath": "esdoc-custom-theme",
+    "importStyle": "highlight",
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "params": [
+      {
+        "name": "blocks",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 132,
+    "kind": "file",
+    "name": "src/components/syntax-highlighter/index.js",
+    "content": "import CodeMirror, {colorschemes} from '../codemirror'\nimport {codeBlocks} from '../global-elements'\n\nimport highlight from './highlight'\nimport getErrorLines from './get-error-lines'\nimport getActiveLines from './get-active-lines'\nimport getlineNumber from './get-line-number'\n\nconst instances = highlight(codeBlocks)\nconst fullHighlighters = instances.filter(x => Boolean(x.cm)).map(x => x.cm)\nconst simpleHighlighters = instances.filter(x => Boolean(x.hl)).map(x => x.hl)\nconst [fileHighlighter] = fullHighlighters\ngetErrorLines(fileHighlighter)\ngetActiveLines(fileHighlighter)\ngetlineNumber(fileHighlighter)\n",
+    "static": true,
+    "longname": "/Users/greada/Documents/workspace/s2/esdoc-custom-theme/src/components/syntax-highlighter/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 133,
+    "kind": "variable",
+    "name": "instances",
+    "memberof": "src/components/syntax-highlighter/index.js",
+    "static": true,
+    "longname": "src/components/syntax-highlighter/index.js~instances",
+    "access": "public",
+    "export": false,
+    "importPath": "esdoc-custom-theme",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 9,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 134,
+    "kind": "variable",
+    "name": "fullHighlighters",
+    "memberof": "src/components/syntax-highlighter/index.js",
+    "static": true,
+    "longname": "src/components/syntax-highlighter/index.js~fullHighlighters",
+    "access": "public",
+    "export": false,
+    "importPath": "esdoc-custom-theme",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 10,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 135,
+    "kind": "variable",
+    "name": "simpleHighlighters",
+    "memberof": "src/components/syntax-highlighter/index.js",
+    "static": true,
+    "longname": "src/components/syntax-highlighter/index.js~simpleHighlighters",
+    "access": "public",
+    "export": false,
+    "importPath": "esdoc-custom-theme",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 11,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 136,
+    "kind": "variable",
+    "name": "fileHighlighter",
+    "memberof": "src/components/syntax-highlighter/index.js",
+    "static": true,
+    "longname": "src/components/syntax-highlighter/index.js~fileHighlighter",
+    "access": "public",
+    "export": false,
+    "importPath": "esdoc-custom-theme",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 12,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 137,
+    "kind": "file",
+    "name": "src/components/syntax-highlighter/normalize-lines.js",
+    "content": "const normalizeLines = lines =>\n  lines\n    .split(',')\n    .map(line => parseInt(line, 10) - 1)\n    .sort((a, b) => a - b)\n\nexport default normalizeLines\n",
+    "static": true,
+    "longname": "/Users/greada/Documents/workspace/s2/esdoc-custom-theme/src/components/syntax-highlighter/normalize-lines.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 138,
+    "kind": "function",
+    "name": "normalizeLines",
+    "memberof": "src/components/syntax-highlighter/normalize-lines.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/syntax-highlighter/normalize-lines.js~normalizeLines",
+    "access": "public",
+    "export": true,
+    "importPath": "esdoc-custom-theme",
+    "importStyle": "normalizeLines",
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "params": [
+      {
+        "name": "lines",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 139,
+    "kind": "file",
+    "name": "src/components/table/index.js",
+    "content": "// CSS file generation\nimport './table.scss'\n",
+    "static": true,
+    "longname": "/Users/greada/Documents/workspace/s2/esdoc-custom-theme/src/components/table/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 140,
+    "kind": "file",
+    "name": "src/components/url/index.js",
+    "content": "export const {\n  hash,\n  search,\n  protocol,\n  host,\n  hostname,\n  origin,\n  port,\n  pathname,\n  href\n} = window.location\n\nexport const setURL = (type, value) => {\n  window.location[type] = value\n}\n\nexport const setHash = value => {\n  setURL('hash', value)\n}\n\nexport const setHref = value => {\n  setURL('href', value)\n}\n",
+    "static": true,
+    "longname": "/Users/greada/Documents/workspace/s2/esdoc-custom-theme/src/components/url/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 141,
+    "kind": "variable",
+    "name": "hash",
+    "memberof": "src/components/url/index.js",
+    "static": true,
+    "longname": "src/components/url/index.js~hash",
+    "access": "public",
+    "export": true,
+    "importPath": "esdoc-custom-theme",
+    "importStyle": "{hash}",
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 142,
+    "kind": "function",
+    "name": "setURL",
+    "memberof": "src/components/url/index.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/url/index.js~setURL",
+    "access": "public",
+    "export": true,
+    "importPath": "esdoc-custom-theme",
+    "importStyle": "{setURL}",
+    "description": null,
+    "lineNumber": 13,
+    "undocument": true,
+    "params": [
+      {
+        "name": "type",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "value",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 143,
+    "kind": "function",
+    "name": "setHash",
+    "memberof": "src/components/url/index.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/url/index.js~setHash",
+    "access": "public",
+    "export": true,
+    "importPath": "esdoc-custom-theme",
+    "importStyle": "{setHash}",
+    "description": null,
+    "lineNumber": 17,
+    "undocument": true,
+    "params": [
+      {
+        "name": "value",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 144,
+    "kind": "function",
+    "name": "setHref",
+    "memberof": "src/components/url/index.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/url/index.js~setHref",
+    "access": "public",
+    "export": true,
+    "importPath": "esdoc-custom-theme",
+    "importStyle": "{setHref}",
+    "description": null,
+    "lineNumber": 21,
+    "undocument": true,
+    "params": [
+      {
+        "name": "value",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 145,
+    "kind": "file",
+    "name": "src/index.js",
+    "content": "import {documentElement} from './components/global-elements'\n\n/**\n * Elements & layout\n */\nimport './components/base'\nimport './components/layout'\nimport './components/list'\nimport './components/link'\nimport './components/quote'\nimport './components/table'\nimport './components/main'\nimport './components/kind'\n\n/**\n * Code related (colorschemes)\n */\nimport './components/syntax-highlighter'\n\n/**\n * Mode related (dark, light ...)\n */\nimport './components/mode-selector'\n\n/**\n * Manual related\n */\nimport './components/cards'\n\n/**\n * Header related\n */\nimport './components/header'\nimport './components/navigation'\nimport './components/searchbar'\n// Add customizers\nimport './components/mode-selector'\nimport './components/colorscheme-selector'\n// Modify the injected github link\nimport './components/github-link'\n\n/**\n * Main related\n */\nimport './components/main'\nimport './components/content'\n\n/**\n * Footer related\n */\nimport './components/footer'\n\n/**\n * Sidebar related\n */\nimport './components/sidebar'\n\n/**\n * Addons, patches...\n */\nimport './components/patch-for-local'\n\ndocumentElement.classList.replace('no-js', 'js')\n",
+    "static": true,
+    "longname": "/Users/greada/Documents/workspace/s2/esdoc-custom-theme/src/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "kind": "index",
+    "content": "# esdoc-custom-theme\nA custom and configurable theme for esdoc (using modern browser features)\n",
+    "longname": "/Users/greada/Documents/workspace/s2/esdoc-custom-theme/README.md",
+    "name": "./README.md",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "packageJSON",
+    "content": "{\n  \"name\": \"esdoc-custom-theme\",\n  \"version\": \"1.0.0\",\n  \"description\": \"A customizable theme for esdoc\",\n  \"repository\": \"git@github.com:sinnerschrader/esdoc-custom-theme.git\",\n  \"author\": \"Gregor Adams <greg@pixelass.com>\",\n  \"license\": \"MIT\",\n  \"scripts\": {\n    \"build\": \"cross-env NODE_ENV=production webpack\",\n    \"clean\": \"npm run clean:modules; npm run clean:lib\",\n    \"clean:lib\": \"rimraf template\",\n    \"clean:modules\": \"rimraf node_modules\",\n    \"commitmsg\": \"commitlint -e $GIT_PARAMS\",\n    \"docs\": \"esdoc\",\n    \"format:js\": \"prettier --write src/**/*.js\",\n    \"prebuild\": \"npm run clean:lib\",\n    \"watch\": \"npm run clean:lib && webpack --watch\"\n  },\n  \"keywords\": [\n    \"esdoc\",\n    \"theme\",\n    \"jsdoc\",\n    \"esdoc-template\",\n    \"custom-theme\",\n    \"documentation-theme\"\n  ],\n  \"files\": [\n    \"template\"\n  ],\n  \"dependencies\": {\n    \"codemirror\": \"^5.34.0\"\n  },\n  \"devDependencies\": {\n    \"@commitlint/cli\": \"^6.0.2\",\n    \"@commitlint/config-conventional\": \"^6.0.2\",\n    \"babel-core\": \"^6.26.0\",\n    \"babel-loader\": \"^7.1.2\",\n    \"babel-minify-webpack-plugin\": \"^0.3.0\",\n    \"babel-plugin-transform-class-properties\": \"^6.24.1\",\n    \"babel-plugin-transform-decorators-legacy\": \"^1.3.4\",\n    \"babel-preset-env\": \"^1.6.1\",\n    \"babel-preset-stage-2\": \"^6.24.1\",\n    \"copy-webpack-plugin\": \"^4.4.1\",\n    \"cross-env\": \"^5.1.3\",\n    \"css-loader\": \"^0.28.9\",\n    \"esdoc\": \"^1.0.4\",\n    \"esdoc-brand-plugin\": \"^1.0.0\",\n    \"esdoc-ecmascript-proposal-plugin\": \"^1.0.0\",\n    \"esdoc-importpath-plugin\": \"^1.0.1\",\n    \"esdoc-inject-style-plugin\": \"^1.0.0\",\n    \"esdoc-lint-plugin\": \"1.0.1\",\n    \"esdoc-publish-html-plugin\": \"^1.1.0\",\n    \"esdoc-standard-plugin\": \"^1.0.0\",\n    \"extract-text-webpack-plugin\": \"^3.0.2\",\n    \"html-webpack-plugin\": \"^2.30.1\",\n    \"husky\": \"^0.14.3\",\n    \"node-sass\": \"^4.7.2\",\n    \"npm-run-all\": \"^4.1.2\",\n    \"prettier\": \"^1.10.2\",\n    \"rimraf\": \"^2.6.2\",\n    \"sass-loader\": \"^6.0.6\",\n    \"style-loader\": \"^0.20.1\",\n    \"uglifyjs-webpack-plugin\": \"^1.1.8\",\n    \"webpack\": \"^3.10.0\",\n    \"xo\": \"^0.18.2\"\n  }\n}\n",
+    "longname": "/Users/greada/Documents/workspace/s2/esdoc-custom-theme/package.json",
+    "name": "package.json",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "manualIndex",
+    "globalIndex": true,
+    "content": "# ESDOC custom theme\n",
+    "longname": "/Users/greada/Documents/workspace/s2/esdoc-custom-theme/.manual/index.md",
+    "name": "./.manual/index.md",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "manualAsset",
+    "longname": "/Users/greada/Documents/workspace/s2/esdoc-custom-theme/.manual/assets",
+    "name": "./.manual/assets",
+    "static": true,
+    "access": "public"
+  }
+]

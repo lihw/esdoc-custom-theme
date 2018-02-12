@@ -1,28 +1,28 @@
 {
   "type": "File",
   "start": 0,
-  "end": 407,
+  "end": 405,
   "loc": {
     "start": {
       "line": 1,
       "column": 0
     },
     "end": {
-      "line": 23,
+      "line": 22,
       "column": 0
     }
   },
   "program": {
     "type": "Program",
     "start": 0,
-    "end": 407,
+    "end": 405,
     "loc": {
       "start": {
         "line": 1,
         "column": 0
       },
       "end": {
-        "line": 23,
+        "line": 22,
         "column": 0
       }
     },
@@ -103,12 +103,12 @@
           {
             "type": "CommentBlock",
             "value": "*\n * @typedef TestTypeDef2\n *\n * This is just a test for typedef\n * @type Object\n * @property {String} foo About foo\n ",
-            "start": 283,
-            "end": 405,
+            "start": 282,
+            "end": 404,
             "loc": {
               "start": {
                 "line": 15,
-                "column": 1
+                "column": 0
               },
               "end": {
                 "line": 21,
@@ -157,12 +157,12 @@
     {
       "type": "CommentBlock",
       "value": "*\n * @typedef TestTypeDef2\n *\n * This is just a test for typedef\n * @type Object\n * @property {String} foo About foo\n ",
-      "start": 283,
-      "end": 405,
+      "start": 282,
+      "end": 404,
       "loc": {
         "start": {
           "line": 15,
-          "column": 1
+          "column": 0
         },
         "end": {
           "line": 21,
@@ -262,12 +262,12 @@
     {
       "type": "CommentBlock",
       "value": "*\n * @typedef TestTypeDef2\n *\n * This is just a test for typedef\n * @type Object\n * @property {String} foo About foo\n ",
-      "start": 283,
-      "end": 405,
+      "start": 282,
+      "end": 404,
       "loc": {
         "start": {
           "line": 15,
-          "column": 1
+          "column": 0
         },
         "end": {
           "line": 21,
@@ -288,15 +288,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 407,
-      "end": 407,
+      "start": 405,
+      "end": 405,
       "loc": {
         "start": {
-          "line": 23,
+          "line": 22,
           "column": 0
         },
         "end": {
-          "line": 23,
+          "line": 22,
           "column": 0
         }
       }

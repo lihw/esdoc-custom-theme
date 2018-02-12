@@ -567,7 +567,7 @@
     "__docId__": 48,
     "kind": "file",
     "name": "src/components/base/index.js",
-    "content": "import {hash} from '../url'\nimport {$, $$} from '../global-elements'\n\n// CSS file generation\nimport './base.scss'\n\n\nconst markHashTarget = hash => {\n  if (hash) {\n    const target = $(hash)\n    if (target) {\n      target.classList.add('active-target')\n    }\n  }\n}\n\nmarkHashTarget(hash)\n\nwindow.addEventListener('hashchange', e => {\n  $$('.active-target').forEach(target => {\n    target.classList.remove('active-target')\n  })\n  const {newURL} = e\n  const [,hash] = newURL.split('#')\n  if (hash) {\n    markHashTarget(`#${hash}`)\n  }\n})\n",
+    "content": "import {hash} from '../url'\nimport {$, $$} from '../global-elements'\n\n// CSS file generation\nimport './base.scss'\n\nconst markHashTarget = hash => {\n  if (hash) {\n    const target = $(hash)\n    if (target) {\n      target.classList.add('active-target')\n    }\n  }\n}\n\nmarkHashTarget(hash)\n\nwindow.addEventListener('hashchange', e => {\n  $$('.active-target').forEach(target => {\n    target.classList.remove('active-target')\n  })\n  const {newURL} = e\n  const [, hash] = newURL.split('#')\n  if (hash) {\n    markHashTarget(`#${hash}`)\n  }\n})\n",
     "static": true,
     "longname": "/Users/greada/Documents/workspace/s2/esdoc-custom-theme/src/components/base/index.js",
     "access": "public",
@@ -588,7 +588,7 @@
     "importPath": "esdoc-custom-theme",
     "importStyle": null,
     "description": null,
-    "lineNumber": 8,
+    "lineNumber": 7,
     "undocument": true,
     "params": [
       {
@@ -1413,7 +1413,7 @@
     "__docId__": 88,
     "kind": "file",
     "name": "src/components/kind/index.js",
-    "content": "// CSS file generation\nimport './kind.scss'\n\n/**\n * @typedef TestTypeDef1\n *\n * This is just a test for typedef\n * @see {TestTypeDef2}\n * @type {function}\n * @param {!Object} foo Just an object\n * @param {?String} bar This is a string\n * @param {*} [baz=''hello] This anything\n */\n\n /**\n * @typedef TestTypeDef2\n *\n * This is just a test for typedef\n * @type Object\n * @property {String} foo About foo\n */\n\n",
+    "content": "// CSS file generation\nimport './kind.scss'\n\n/**\n * @typedef TestTypeDef1\n *\n * This is just a test for typedef\n * @see {TestTypeDef2}\n * @type {function}\n * @param {!Object} foo Just an object\n * @param {?String} bar This is a string\n * @param {*} [baz=''hello] This anything\n */\n\n/**\n * @typedef TestTypeDef2\n *\n * This is just a test for typedef\n * @type Object\n * @property {String} foo About foo\n */\n",
     "static": true,
     "longname": "/Users/greada/Documents/workspace/s2/esdoc-custom-theme/src/components/kind/index.js",
     "access": "public",
@@ -2394,7 +2394,7 @@
     "__docId__": 137,
     "kind": "file",
     "name": "src/components/syntax-highlighter/highlight.js",
-    "content": "import {pathname} from '../url'\nimport {simpleMode, fullMode} from '../codemirror'\n\nconst CSS = 'css'\nconst SCSS = 'text/x-scss'\nconst LESS = 'text/x-less'\nconst JAVASCRIPT = 'javascript'\nconst JSX = 'jsx'\nconst TYPESCRIPT = 'text/typescript'\nconst JSON_LD = 'application/ld+json'\nconst SHELL = 'shell'\n\nconst modes = {\n  'default': JSX,\n  css: CSS,\n  scss: SCSS,\n  less: LESS,\n  bash: SHELL,\n  shell: SHELL,\n  javascript: JAVASCRIPT,\n  js: JAVASCRIPT,\n  jsx: JSX,\n  typescript: TYPESCRIPT,\n  ts: TYPESCRIPT,\n  tsx: TYPESCRIPT,\n  json: JSON_LD\n}\n\nconst highlight = blocks => {\n  return blocks.map(block => {\n    const {innerText: value} = block\n    const code = block.querySelector('code')\n    const lang = !code\n      ? ''\n      : code.className.split(' ').filter(x => x.match('lang'))[0] || ''\n    // default to JSX\n    const isImportPathCode = code.getAttribute('data-ice') === 'importPathCode'\n    if (isImportPathCode) {\n      return {ip: block}\n    }\n    const isJSFile = pathname.match('.js.html')\n    const isTSFile = pathname.match('.ts.html')\n    const isJSXFile = pathname.match('.jsx.html')\n    const isTSXFile = pathname.match('.tsx.html')\n    const isFile = isJSFile || isTSFile || isJSXFile || isTSXFile\n    let mode = lang.replace(/lang(uage)?-/, '') || 'default'\n\n\n    if (isJSFile || isJSXFile) {\n      mode = 'jsx'\n    }\n    if (isTSFile || isTSXFile) {\n      mode = 'ts'\n    }\n    return isFile\n      ? fullMode(value, modes[mode], block)\n      : simpleMode(value, modes[mode], block)\n  })\n}\n\nexport default highlight\n",
+    "content": "import {pathname} from '../url'\nimport {simpleMode, fullMode} from '../codemirror'\n\nconst CSS = 'css'\nconst SCSS = 'text/x-scss'\nconst LESS = 'text/x-less'\nconst JAVASCRIPT = 'javascript'\nconst JSX = 'jsx'\nconst TYPESCRIPT = 'text/typescript'\nconst JSON_LD = 'application/ld+json'\nconst SHELL = 'shell'\n\nconst modes = {\n  default: JSX,\n  css: CSS,\n  scss: SCSS,\n  less: LESS,\n  bash: SHELL,\n  shell: SHELL,\n  javascript: JAVASCRIPT,\n  js: JAVASCRIPT,\n  jsx: JSX,\n  typescript: TYPESCRIPT,\n  ts: TYPESCRIPT,\n  tsx: TYPESCRIPT,\n  json: JSON_LD\n}\n\nconst isJSFile = pathname.match('.js.html')\nconst isTSFile = pathname.match('.ts.html')\nconst isJSXFile = pathname.match('.jsx.html')\nconst isTSXFile = pathname.match('.tsx.html')\nconst isFile = isJSFile || isTSFile || isJSXFile || isTSXFile\n\nconst simpleOrFull = block => {\n  const {innerText: value} = block\n  const code = block.querySelector('code')\n  let lang = ''\n  if (code) {\n    const classNames = code.className.split(' ')\n    const [langName] = classNames.filter(x => x.match('lang'))\n    if (langName) {\n      lang = langName\n    }\n\n    const isImportPathCode = code.getAttribute('data-ice') === 'importPathCode'\n    if (isImportPathCode) {\n      return {ip: block}\n    }\n  }\n\n  let mode = lang.replace(/lang(uage)?-/, '') || 'default'\n  if (isJSFile || isJSXFile) {\n    mode = 'jsx'\n  }\n  if (isTSFile || isTSXFile) {\n    mode = 'ts'\n  }\n  if (isFile) {\n    return fullMode(value, modes[mode], block)\n  }\n  return simpleMode(value, modes[mode], block)\n}\n\nconst highlight = blocks => blocks.map(simpleOrFull)\n\nexport default highlight\n",
     "static": true,
     "longname": "/Users/greada/Documents/workspace/s2/esdoc-custom-theme/src/components/syntax-highlighter/highlight.js",
     "access": "public",
@@ -2592,6 +2592,142 @@
   },
   {
     "__docId__": 147,
+    "kind": "variable",
+    "name": "isJSFile",
+    "memberof": "src/components/syntax-highlighter/highlight.js",
+    "static": true,
+    "longname": "src/components/syntax-highlighter/highlight.js~isJSFile",
+    "access": "public",
+    "export": false,
+    "importPath": "esdoc-custom-theme",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 29,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 148,
+    "kind": "variable",
+    "name": "isTSFile",
+    "memberof": "src/components/syntax-highlighter/highlight.js",
+    "static": true,
+    "longname": "src/components/syntax-highlighter/highlight.js~isTSFile",
+    "access": "public",
+    "export": false,
+    "importPath": "esdoc-custom-theme",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 30,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 149,
+    "kind": "variable",
+    "name": "isJSXFile",
+    "memberof": "src/components/syntax-highlighter/highlight.js",
+    "static": true,
+    "longname": "src/components/syntax-highlighter/highlight.js~isJSXFile",
+    "access": "public",
+    "export": false,
+    "importPath": "esdoc-custom-theme",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 31,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 150,
+    "kind": "variable",
+    "name": "isTSXFile",
+    "memberof": "src/components/syntax-highlighter/highlight.js",
+    "static": true,
+    "longname": "src/components/syntax-highlighter/highlight.js~isTSXFile",
+    "access": "public",
+    "export": false,
+    "importPath": "esdoc-custom-theme",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 32,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 151,
+    "kind": "variable",
+    "name": "isFile",
+    "memberof": "src/components/syntax-highlighter/highlight.js",
+    "static": true,
+    "longname": "src/components/syntax-highlighter/highlight.js~isFile",
+    "access": "public",
+    "export": false,
+    "importPath": "esdoc-custom-theme",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 33,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 152,
+    "kind": "function",
+    "name": "simpleOrFull",
+    "memberof": "src/components/syntax-highlighter/highlight.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/syntax-highlighter/highlight.js~simpleOrFull",
+    "access": "public",
+    "export": false,
+    "importPath": "esdoc-custom-theme",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 35,
+    "undocument": true,
+    "params": [
+      {
+        "name": "block",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 153,
     "kind": "function",
     "name": "highlight",
     "memberof": "src/components/syntax-highlighter/highlight.js",
@@ -2604,7 +2740,7 @@
     "importPath": "esdoc-custom-theme",
     "importStyle": "highlight",
     "description": null,
-    "lineNumber": 29,
+    "lineNumber": 65,
     "undocument": true,
     "params": [
       {
@@ -2614,14 +2750,10 @@
         ]
       }
     ],
-    "return": {
-      "types": [
-        "*"
-      ]
-    }
+    "return": null
   },
   {
-    "__docId__": 148,
+    "__docId__": 154,
     "kind": "file",
     "name": "src/components/syntax-highlighter/index.js",
     "content": "import CodeMirror, {colorschemes} from '../codemirror'\nimport {codeBlocks} from '../global-elements'\n\nimport highlight from './highlight'\nimport getErrorLines from './get-error-lines'\nimport getActiveLines from './get-active-lines'\nimport getlineNumber from './get-line-number'\n\nconst instances = highlight(codeBlocks)\nexport const fullHighlighters = instances\n  .filter(x => Boolean(x.cm))\n  .map(x => x.cm)\nexport const simpleHighlighters = instances\n  .filter(x => Boolean(x.hl))\n  .map(x => x.hl)\nexport const [fileHighlighter] = fullHighlighters\ngetErrorLines(fileHighlighter)\ngetActiveLines(fileHighlighter)\ngetlineNumber(fileHighlighter)\n",
@@ -2632,7 +2764,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 149,
+    "__docId__": 155,
     "kind": "variable",
     "name": "instances",
     "memberof": "src/components/syntax-highlighter/index.js",
@@ -2653,7 +2785,7 @@
     "ignore": true
   },
   {
-    "__docId__": 150,
+    "__docId__": 156,
     "kind": "variable",
     "name": "fullHighlighters",
     "memberof": "src/components/syntax-highlighter/index.js",
@@ -2673,7 +2805,7 @@
     }
   },
   {
-    "__docId__": 151,
+    "__docId__": 157,
     "kind": "variable",
     "name": "simpleHighlighters",
     "memberof": "src/components/syntax-highlighter/index.js",
@@ -2693,7 +2825,7 @@
     }
   },
   {
-    "__docId__": 152,
+    "__docId__": 158,
     "kind": "variable",
     "name": "fileHighlighter",
     "memberof": "src/components/syntax-highlighter/index.js",
@@ -2713,7 +2845,7 @@
     }
   },
   {
-    "__docId__": 153,
+    "__docId__": 159,
     "kind": "file",
     "name": "src/components/syntax-highlighter/normalize-lines.js",
     "content": "/**\n * Normalizes lines\n *\n * @param  {Array} lines\n *   The lines\n * @return {Array}\n *   sorted and 0 based index\n *\n * @example\n * const lines = normalizeLines(['1', '12', '3', '5'])\n * // => [0, 2, 4, 11]\n */\nconst normalizeLines = lines =>\n  lines\n    .split(',')\n    .map(line => parseInt(line, 10) - 1)\n    .sort((a, b) => a - b)\n\nexport default normalizeLines\n",
@@ -2724,7 +2856,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 154,
+    "__docId__": 160,
     "kind": "function",
     "name": "normalizeLines",
     "memberof": "src/components/syntax-highlighter/normalize-lines.js",
@@ -2763,7 +2895,7 @@
     }
   },
   {
-    "__docId__": 155,
+    "__docId__": 161,
     "kind": "file",
     "name": "src/components/table/index.js",
     "content": "// CSS file generation\nimport './table.scss'\n",
@@ -2774,7 +2906,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 156,
+    "__docId__": 162,
     "kind": "file",
     "name": "src/components/url/index.js",
     "content": "export const {\n  hash,\n  search,\n  protocol,\n  host,\n  hostname,\n  origin,\n  port,\n  pathname,\n  href\n} = window.location\n\nexport const setURL = (type, value) => {\n  window.location[type] = value\n}\n\nexport const setHash = value => {\n  setURL('hash', value)\n}\n\nexport const setHref = value => {\n  setURL('href', value)\n}\n",
@@ -2785,7 +2917,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 157,
+    "__docId__": 163,
     "kind": "variable",
     "name": "hash",
     "memberof": "src/components/url/index.js",
@@ -2805,7 +2937,7 @@
     }
   },
   {
-    "__docId__": 158,
+    "__docId__": 164,
     "kind": "function",
     "name": "setURL",
     "memberof": "src/components/url/index.js",
@@ -2837,7 +2969,7 @@
     "return": null
   },
   {
-    "__docId__": 159,
+    "__docId__": 165,
     "kind": "function",
     "name": "setHash",
     "memberof": "src/components/url/index.js",
@@ -2863,7 +2995,7 @@
     "return": null
   },
   {
-    "__docId__": 160,
+    "__docId__": 166,
     "kind": "function",
     "name": "setHref",
     "memberof": "src/components/url/index.js",
@@ -2889,7 +3021,7 @@
     "return": null
   },
   {
-    "__docId__": 161,
+    "__docId__": 167,
     "kind": "file",
     "name": "src/index.js",
     "content": "import {documentElement} from './components/global-elements'\n\n/**\n * Elements & layout\n */\nimport './components/base'\nimport './components/layout'\nimport './components/list'\nimport './components/link'\nimport './components/quote'\nimport './components/table'\nimport './components/main'\nimport './components/kind'\n\n/**\n * Code related (colorschemes)\n */\nimport './components/syntax-highlighter'\n\n/**\n * Mode related (dark, light ...)\n */\nimport './components/mode-selector'\n\n/**\n * Manual related\n */\nimport './components/cards'\n\n/**\n * Header related\n */\nimport './components/header'\nimport './components/navigation'\nimport './components/searchbar'\n// Add customizers\nimport './components/mode-selector'\nimport './components/colorscheme-selector'\n// Modify the injected github link\nimport './components/github-link'\n\n/**\n * Main related\n */\nimport './components/main'\nimport './components/content'\n\n/**\n * Footer related\n */\nimport './components/footer'\n\n/**\n * Sidebar related\n */\nimport './components/sidebar'\nimport './components/menu-switch'\n\n/**\n * Addons, patches...\n */\nimport './components/patch-for-local'\n\ndocumentElement.classList.replace('no-js', 'js')\n",
@@ -2901,7 +3033,7 @@
   },
   {
     "kind": "index",
-    "content": "# Esdoc custom theme\n\nA custom and configurable theme for esdoc (using modern browser features)\n\n```shell\nyarn add esdoc-custom-theme\n```\n\n## Documentation\n\n[Documentation](https://sinnerschrader.github.io/esdoc-custom-theme/)\n\n© Copyright 2018 [Gregor Adams](https://github.com/pixelass)  \nProudly powered by [Sinnerschrader](https://sinnerschrader.com)([Github](https://github.com/sinnerschrader))\n",
+    "content": "# 🎓 Esdoc custom theme\n\nA customizable theme for esdoc (using modern browser features)\n\n[![npm](https://img.shields.io/npm/v/esdoc-custom-theme.svg?style=flat-square)](https://www.npmjs.com/package/esdoc-custom-theme)\n[![Standard Version](https://img.shields.io/badge/release-standard%20version-44aa44.svg?style=flat-square)](https://github.com/conventional-changelog/standard-version)\n[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://raw.githubusercontent.com/sinnerschrader/esdoc-custom-theme/master/LICENSE)\n[![GitHub issues](https://img.shields.io/github/issues/sinnerschrader/esdoc-custom-theme.svg?style=flat-square)](https://github.com/sinnerschrader/esdoc-custom-theme/issues)\n\n[![Travis branch](https://img.shields.io/travis/sinnerschrader/esdoc-custom-theme/master.svg?style=flat-square)](https://travis-ci.org/sinnerschrader/esdoc-custom-theme)\n[![bitHound](https://img.shields.io/bithound/code/github/sinnerschrader/esdoc-custom-theme.svg?style=flat-square)](https://www.bithound.io/github/sinnerschrader/esdoc-custom-theme)\n[![bitHound](https://img.shields.io/bithound/devDependencies/github/sinnerschrader/esdoc-custom-theme.svg?style=flat-square)](https://www.bithound.io/github/sinnerschrader/esdoc-custom-theme)\n\n\n\n[![yarn](https://img.shields.io/badge/yarn-friendly-2c8ebb.svg?style=flat-square)](https://yarnpkg.com/)\n[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-44aa44.svg?style=flat-square)](http://commitizen.github.io/cz-cli/)\n\n\n```shell\nyarn add esdoc-custom-theme\n```\n\n## Documentation\n\n[Documentation](https://sinnerschrader.github.io/esdoc-custom-theme/)\n\n## Current features\n\n* Search\n* responsive\n* developer customizable\n* reader customizable\n* persistent settings (via localStorage)\n  * repos in the same space will share the storage 👻🎓\n* light and dark mode\n* 49 colorschemes to choose from\n* perfect syntax highlighting for jsx (it's not common)\n\n## Next features\n\n* define default colorscheme per css (custom-properties/css-variable)\n* load custom font via google-fonts (reader customizable)\n\n## Screenshots\n\n### Dark mode\n\n<img src=\"https://cdn.rawgit.com/sinnerschrader/esdoc-custom-theme/master/.github/images/dark-mode.png\" alt=\"dark mode theme\"/>\n\n### Light mode\n\n<img src=\"https://cdn.rawgit.com/sinnerschrader/esdoc-custom-theme/master/.github/images/light-mode.png\" alt=\"light mode theme\"/>\n\n### Search\n\n<img src=\"https://cdn.rawgit.com/sinnerschrader/esdoc-custom-theme/master/.github/images/light-mode-search.png\" alt=\"light mode theme search\"/>\n\n### Responsive\n\n<img src=\"https://cdn.rawgit.com/sinnerschrader/esdoc-custom-theme/master/.github/images/iphone.png\" alt=\"responsive iphone\"/>\n\n<img src=\"https://cdn.rawgit.com/sinnerschrader/esdoc-custom-theme/master/.github/images/iphone-menu.png\" alt=\"responsive iphone-menu\"/>\n\n### Colorschemes\n\n<img src=\"https://cdn.rawgit.com/sinnerschrader/esdoc-custom-theme/master/.github/images/theme-cobalt.png\" alt=\"theme cobalt\"/>\n\n<img src=\"https://cdn.rawgit.com/sinnerschrader/esdoc-custom-theme/master/.github/images/theme-dracula.png\" alt=\"theme dracula\"/>\n\n© Copyright 2018 [Gregor Adams](https://github.com/pixelass)  \nProudly powered by [Sinnerschrader](https://sinnerschrader.com)([Github](https://github.com/sinnerschrader))\n",
     "longname": "/Users/greada/Documents/workspace/s2/esdoc-custom-theme/README.md",
     "name": "./README.md",
     "static": true,
@@ -2909,7 +3041,7 @@
   },
   {
     "kind": "packageJSON",
-    "content": "{\n  \"name\": \"esdoc-custom-theme\",\n  \"version\": \"1.0.0\",\n  \"description\": \"A customizable theme for esdoc\",\n  \"repository\": \"git@github.com:sinnerschrader/esdoc-custom-theme.git\",\n  \"author\": \"Gregor Adams <greg@pixelass.com>\",\n  \"license\": \"MIT\",\n  \"scripts\": {\n    \"build\": \"cross-env NODE_ENV=production webpack\",\n    \"clean\": \"npm run clean:modules; npm run clean:lib\",\n    \"clean:lib\": \"rimraf template\",\n    \"clean:modules\": \"rimraf node_modules\",\n    \"commitmsg\": \"commitlint -e $GIT_PARAMS\",\n    \"docs\": \"rimraf docs && esdoc\",\n    \"format:js\": \"prettier --write src/**/*.js\",\n    \"prebuild\": \"npm run clean:lib\",\n    \"release\": \"standard-version --no-verify\",\n    \"watch\": \"npm run clean:lib && webpack --watch\",\n    \"watch:dev\": \"webpack --config dev.webpack.config --watch\"\n  },\n  \"keywords\": [\n    \"esdoc\",\n    \"theme\",\n    \"jsdoc\",\n    \"esdoc-template\",\n    \"custom-theme\",\n    \"documentation-theme\"\n  ],\n  \"files\": [\n    \"template\"\n  ],\n  \"dependencies\": {\n    \"codemirror\": \"^5.34.0\"\n  },\n  \"devDependencies\": {\n    \"@commitlint/cli\": \"^6.0.2\",\n    \"@commitlint/config-conventional\": \"^6.0.2\",\n    \"babel-core\": \"^6.26.0\",\n    \"babel-loader\": \"^7.1.2\",\n    \"babel-minify-webpack-plugin\": \"^0.3.0\",\n    \"babel-plugin-transform-class-properties\": \"^6.24.1\",\n    \"babel-plugin-transform-decorators-legacy\": \"^1.3.4\",\n    \"babel-preset-env\": \"^1.6.1\",\n    \"babel-preset-stage-2\": \"^6.24.1\",\n    \"copy-webpack-plugin\": \"^4.4.1\",\n    \"cross-env\": \"^5.1.3\",\n    \"css-loader\": \"^0.28.9\",\n    \"esdoc\": \"^1.0.4\",\n    \"esdoc-brand-plugin\": \"^1.0.0\",\n    \"esdoc-ecmascript-proposal-plugin\": \"^1.0.0\",\n    \"esdoc-importpath-plugin\": \"^1.0.1\",\n    \"esdoc-inject-style-plugin\": \"^1.0.0\",\n    \"esdoc-lint-plugin\": \"1.0.1\",\n    \"esdoc-publish-html-plugin\": \"^1.1.0\",\n    \"esdoc-standard-plugin\": \"^1.0.0\",\n    \"extract-text-webpack-plugin\": \"^3.0.2\",\n    \"html-webpack-plugin\": \"^2.30.1\",\n    \"husky\": \"^0.14.3\",\n    \"node-sass\": \"^4.7.2\",\n    \"npm-run-all\": \"^4.1.2\",\n    \"prettier\": \"^1.10.2\",\n    \"rimraf\": \"^2.6.2\",\n    \"sass-loader\": \"^6.0.6\",\n    \"standard-version\": \"^4.3.0\",\n    \"style-loader\": \"^0.20.1\",\n    \"uglifyjs-webpack-plugin\": \"^1.1.8\",\n    \"webpack\": \"^3.10.0\",\n    \"xo\": \"^0.18.2\"\n  }\n}\n",
+    "content": "{\n  \"name\": \"esdoc-custom-theme\",\n  \"version\": \"1.0.1\",\n  \"description\": \"A customizable theme for esdoc\",\n  \"repository\": \"git@github.com:sinnerschrader/esdoc-custom-theme.git\",\n  \"author\": \"Gregor Adams <greg@pixelass.com>\",\n  \"license\": \"MIT\",\n  \"scripts\": {\n    \"build\": \"cross-env NODE_ENV=production webpack\",\n    \"clean\": \"npm run clean:modules; npm run clean:lib\",\n    \"clean:lib\": \"rimraf template\",\n    \"clean:modules\": \"rimraf node_modules\",\n    \"commitmsg\": \"commitlint -e $GIT_PARAMS\",\n    \"docs\": \"rimraf docs && esdoc\",\n    \"format:js\": \"prettier --write src/**/*.js\",\n    \"prebuild\": \"npm run clean:lib\",\n    \"release\": \"standard-version --no-verify\",\n    \"watch\": \"npm run clean:lib && webpack --watch\",\n    \"watch:dev\": \"webpack --config dev.webpack.config --watch\"\n  },\n  \"keywords\": [\n    \"esdoc\",\n    \"theme\",\n    \"jsdoc\",\n    \"esdoc-template\",\n    \"custom-theme\",\n    \"documentation-theme\"\n  ],\n  \"files\": [\n    \"template\"\n  ],\n  \"dependencies\": {\n    \"codemirror\": \"^5.34.0\"\n  },\n  \"devDependencies\": {\n    \"@commitlint/cli\": \"^6.0.2\",\n    \"@commitlint/config-conventional\": \"^6.0.2\",\n    \"babel-core\": \"^6.26.0\",\n    \"babel-loader\": \"^7.1.2\",\n    \"babel-minify-webpack-plugin\": \"^0.3.0\",\n    \"babel-plugin-transform-class-properties\": \"^6.24.1\",\n    \"babel-plugin-transform-decorators-legacy\": \"^1.3.4\",\n    \"babel-preset-env\": \"^1.6.1\",\n    \"babel-preset-stage-2\": \"^6.24.1\",\n    \"copy-webpack-plugin\": \"^4.4.1\",\n    \"cross-env\": \"^5.1.3\",\n    \"css-loader\": \"^0.28.9\",\n    \"esdoc\": \"^1.0.4\",\n    \"esdoc-brand-plugin\": \"^1.0.0\",\n    \"esdoc-ecmascript-proposal-plugin\": \"^1.0.0\",\n    \"esdoc-importpath-plugin\": \"^1.0.1\",\n    \"esdoc-inject-style-plugin\": \"^1.0.0\",\n    \"esdoc-lint-plugin\": \"1.0.1\",\n    \"esdoc-publish-html-plugin\": \"^1.1.0\",\n    \"esdoc-standard-plugin\": \"^1.0.0\",\n    \"extract-text-webpack-plugin\": \"^3.0.2\",\n    \"html-webpack-plugin\": \"^2.30.1\",\n    \"husky\": \"^0.14.3\",\n    \"node-sass\": \"^4.7.2\",\n    \"npm-run-all\": \"^4.1.2\",\n    \"prettier\": \"^1.10.2\",\n    \"rimraf\": \"^2.6.2\",\n    \"sass-loader\": \"^6.0.6\",\n    \"standard-version\": \"^4.3.0\",\n    \"style-loader\": \"^0.20.1\",\n    \"uglifyjs-webpack-plugin\": \"^1.1.8\",\n    \"webpack\": \"^3.10.0\",\n    \"xo\": \"^0.18.2\"\n  }\n}\n",
     "longname": "/Users/greada/Documents/workspace/s2/esdoc-custom-theme/package.json",
     "name": "package.json",
     "static": true,
@@ -2959,7 +3091,7 @@
     "kind": "manual",
     "longname": "/Users/greada/Documents/workspace/s2/esdoc-custom-theme/CHANGELOG.md",
     "name": "./CHANGELOG.md",
-    "content": "# Change Log\n\nAll notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.\n\n<a name=\"1.0.0\"></a>\n# [1.0.0](https://github.com/sinnerschrader/esdoc-custom-theme/compare/v1.0.0-rc1.1...v1.0.0) (2018-02-12)\n\n\n### Bug Fixes\n\n* **kind:** add styles for kind-icons ([773f13d](https://github.com/sinnerschrader/esdoc-custom-theme/commit/773f13d))\n\n\n\n<a name=\"1.0.0-rc1.1\"></a>\n# [1.0.0-rc1.1](https://github.com/sinnerschrader/esdoc-custom-theme/compare/v1.0.0-rc1.0...v1.0.0-rc1.1) (2018-02-12)\n\n\n### Bug Fixes\n\n* **codemirror:** make highlighted and default pre scrollable ([8618585](https://github.com/sinnerschrader/esdoc-custom-theme/commit/8618585))\n* **kind:** add missing kinds ([de449d3](https://github.com/sinnerschrader/esdoc-custom-theme/commit/de449d3))\n* **syntax-highlighter:** add falback and fix matching ([4c67d40](https://github.com/sinnerschrader/esdoc-custom-theme/commit/4c67d40))\n* **syntax-highlighter:** add missing import ([ad8c8ee](https://github.com/sinnerschrader/esdoc-custom-theme/commit/ad8c8ee))\n\n\n### Features\n\n* **base:** activate hash-targets ([5b1e019](https://github.com/sinnerschrader/esdoc-custom-theme/commit/5b1e019))\n\n\n\n<a name=\"1.0.0-rc1.0\"></a>\n# 1.0.0-rc1.0 (2018-02-12)\n\n\n### Bug Fixes\n\n* **settings-switch:** correct classname ([c7369ef](https://github.com/sinnerschrader/esdoc-custom-theme/commit/c7369ef))\n* **sidebar:** fix injected classnames ([694c453](https://github.com/sinnerschrader/esdoc-custom-theme/commit/694c453))\n* **sidebar:** fix kind width ([d821106](https://github.com/sinnerschrader/esdoc-custom-theme/commit/d821106))\n* **sidebar:** parse url correctly ([cf75332](https://github.com/sinnerschrader/esdoc-custom-theme/commit/cf75332))\n* **syntax-highlighter:** activate line number ([50c633e](https://github.com/sinnerschrader/esdoc-custom-theme/commit/50c633e))\n* **syntax-highlighter:** add css modes ([c112551](https://github.com/sinnerschrader/esdoc-custom-theme/commit/c112551))\n* **syntax-highlighter:** better mode handling ([9955d82](https://github.com/sinnerschrader/esdoc-custom-theme/commit/9955d82))\n\n\n### Features\n\n* initial version ([b5d6086](https://github.com/sinnerschrader/esdoc-custom-theme/commit/b5d6086))\n* **colorscheme-selector:** allow setting a colorscheme ([6161148](https://github.com/sinnerschrader/esdoc-custom-theme/commit/6161148))\n* **layout:** responsive layout ([7708cf4](https://github.com/sinnerschrader/esdoc-custom-theme/commit/7708cf4))\n* **layout:** responsive tables ([40e3e52](https://github.com/sinnerschrader/esdoc-custom-theme/commit/40e3e52))\n",
+    "content": "# Change Log\n\nAll notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.\n\n<a name=\"1.0.1\"></a>\n## [1.0.1](https://github.com/sinnerschrader/esdoc-custom-theme/compare/v1.0.0...v1.0.1) (2018-02-12)\n\n\n\n<a name=\"1.0.0\"></a>\n# [1.0.0](https://github.com/sinnerschrader/esdoc-custom-theme/compare/v1.0.0-rc1.1...v1.0.0) (2018-02-12)\n\n\n### Bug Fixes\n\n* **kind:** add styles for kind-icons ([773f13d](https://github.com/sinnerschrader/esdoc-custom-theme/commit/773f13d))\n\n\n\n<a name=\"1.0.0-rc1.1\"></a>\n# [1.0.0-rc1.1](https://github.com/sinnerschrader/esdoc-custom-theme/compare/v1.0.0-rc1.0...v1.0.0-rc1.1) (2018-02-12)\n\n\n### Bug Fixes\n\n* **codemirror:** make highlighted and default pre scrollable ([8618585](https://github.com/sinnerschrader/esdoc-custom-theme/commit/8618585))\n* **kind:** add missing kinds ([de449d3](https://github.com/sinnerschrader/esdoc-custom-theme/commit/de449d3))\n* **syntax-highlighter:** add falback and fix matching ([4c67d40](https://github.com/sinnerschrader/esdoc-custom-theme/commit/4c67d40))\n* **syntax-highlighter:** add missing import ([ad8c8ee](https://github.com/sinnerschrader/esdoc-custom-theme/commit/ad8c8ee))\n\n\n### Features\n\n* **base:** activate hash-targets ([5b1e019](https://github.com/sinnerschrader/esdoc-custom-theme/commit/5b1e019))\n\n\n\n<a name=\"1.0.0-rc1.0\"></a>\n# 1.0.0-rc1.0 (2018-02-12)\n\n\n### Bug Fixes\n\n* **settings-switch:** correct classname ([c7369ef](https://github.com/sinnerschrader/esdoc-custom-theme/commit/c7369ef))\n* **sidebar:** fix injected classnames ([694c453](https://github.com/sinnerschrader/esdoc-custom-theme/commit/694c453))\n* **sidebar:** fix kind width ([d821106](https://github.com/sinnerschrader/esdoc-custom-theme/commit/d821106))\n* **sidebar:** parse url correctly ([cf75332](https://github.com/sinnerschrader/esdoc-custom-theme/commit/cf75332))\n* **syntax-highlighter:** activate line number ([50c633e](https://github.com/sinnerschrader/esdoc-custom-theme/commit/50c633e))\n* **syntax-highlighter:** add css modes ([c112551](https://github.com/sinnerschrader/esdoc-custom-theme/commit/c112551))\n* **syntax-highlighter:** better mode handling ([9955d82](https://github.com/sinnerschrader/esdoc-custom-theme/commit/9955d82))\n\n\n### Features\n\n* initial version ([b5d6086](https://github.com/sinnerschrader/esdoc-custom-theme/commit/b5d6086))\n* **colorscheme-selector:** allow setting a colorscheme ([6161148](https://github.com/sinnerschrader/esdoc-custom-theme/commit/6161148))\n* **layout:** responsive layout ([7708cf4](https://github.com/sinnerschrader/esdoc-custom-theme/commit/7708cf4))\n* **layout:** responsive tables ([40e3e52](https://github.com/sinnerschrader/esdoc-custom-theme/commit/40e3e52))\n",
     "static": true,
     "access": "public"
   }

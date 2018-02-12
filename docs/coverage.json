@@ -1,13 +1,13 @@
 {
-  "coverage": "1.4%",
-  "expectCount": 71,
+  "coverage": "1.29%",
+  "expectCount": 77,
   "actualCount": 1,
   "files": {
     "src/components/base/index.js": {
       "expectCount": 1,
       "actualCount": 0,
       "undocumentLines": [
-        8
+        7
       ]
     },
     "src/components/codemirror/codemirror.js": {
@@ -158,7 +158,7 @@
       ]
     },
     "src/components/syntax-highlighter/highlight.js": {
-      "expectCount": 10,
+      "expectCount": 16,
       "actualCount": 0,
       "undocumentLines": [
         4,
@@ -170,7 +170,13 @@
         10,
         11,
         13,
-        29
+        29,
+        30,
+        31,
+        32,
+        33,
+        35,
+        65
       ]
     },
     "src/components/syntax-highlighter/index.js": {

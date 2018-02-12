@@ -4,7 +4,6 @@ import {$, $$} from &apos;../global-elements&apos;
 // CSS file generation
 import &apos;./base.scss&apos;
 
-
 const markHashTarget = hash =&gt; {
   if (hash) {
     const target = $(hash)
@@ -21,7 +20,7 @@ window.addEventListener(&apos;hashchange&apos;, e =&gt; {
     target.classList.remove(&apos;active-target&apos;)
   })
   const {newURL} = e
-  const [,hash] = newURL.split(&apos;#&apos;)
+  const [, hash] = newURL.split(&apos;#&apos;)
   if (hash) {
     markHashTarget(`#${hash}`)
   }

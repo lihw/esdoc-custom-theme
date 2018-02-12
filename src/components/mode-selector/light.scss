@@ -5,6 +5,10 @@
   --main-link-color: #3300d1;
   --main-focus-color: #7588fb;
 
+  --active-target-background: #212429;
+  --active-target-color: #f2f5f9;
+  --active-target-border-color: #16181f;
+
   --main-header-background: #3300d1;
   --main-header-color: #fff;
   --main-header-border-color: #010049;
@@ -45,8 +49,8 @@
   --search-result-hover-shade: rgba(0, 0, 0, 0.1);
   --search-result-focus-color: #7588fb;
 
-  --main-code-background: #c9d0d5;
-  --main-code-color: #0d6663;
+  --main-code-background: #e3e8eb;
+  --main-code-color: #2d3038;
   --main-code-border-color: #c9d0d5;
 
   --pretty-code-error-background: #7f012a;
@@ -58,11 +62,20 @@
   --kind-function-background: hsl(0, 80%, 70%);
   --kind-function-color: hsl(0, 90%, 20%);
 
-  --kind-class-background: hsl(30, 80%, 70%);
-  --kind-class-color: hsl(30, 90%, 20%);
+  --kind-class-background: hsl(60, 80%, 70%);
+  --kind-class-color: hsl(60, 90%, 20%);
 
-  --kind-variable-background: hsl(60, 80%, 70%);
-  --kind-variable-color: hsl(60, 90%, 20%);
+  --kind-variable-background: hsl(120, 80%, 70%);
+  --kind-variable-color: hsl(120, 90%, 20%);
+
+  --kind-interface-background: hsl(180, 80%, 70%);
+  --kind-interface-color: hsl(180, 90%, 20%);
+
+  --kind-typedef-background: hsl(240, 80%, 70%);
+  --kind-typedef-color: hsl(240, 90%, 20%);
+
+  --kind-external-background: hsl(300, 80%, 70%);
+  --kind-external-color: hsl(300, 90%, 20%);
 
   --table-color: #000;
   --table-background: #f2f5f9;

@@ -41,3 +41,9 @@ input, button, select {
   font-family: var(--sans-serif);
   font-size: 1em;
 }
+
+.active-target {
+  background: var(--active-target-background);
+  color: var(--active-target-color);
+  border-bottom: 1px solid var(--active-target-border-color);
+}

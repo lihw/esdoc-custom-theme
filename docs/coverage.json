@@ -1,8 +1,15 @@
 {
-  "coverage": "0%",
-  "expectCount": 70,
-  "actualCount": 0,
+  "coverage": "1.4%",
+  "expectCount": 71,
+  "actualCount": 1,
   "files": {
+    "src/components/base/index.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        8
+      ]
+    },
     "src/components/codemirror/codemirror.js": {
       "expectCount": 2,
       "actualCount": 0,
@@ -140,7 +147,7 @@
       "expectCount": 1,
       "actualCount": 0,
       "undocumentLines": [
-        3
+        4
       ]
     },
     "src/components/syntax-highlighter/get-line-number.js": {
@@ -163,7 +170,7 @@
         10,
         11,
         13,
-        28
+        29
       ]
     },
     "src/components/syntax-highlighter/index.js": {
@@ -178,10 +185,8 @@
     },
     "src/components/syntax-highlighter/normalize-lines.js": {
       "expectCount": 1,
-      "actualCount": 0,
-      "undocumentLines": [
-        1
-      ]
+      "actualCount": 1,
+      "undocumentLines": []
     },
     "src/components/url/index.js": {
       "expectCount": 4,

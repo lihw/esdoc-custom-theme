@@ -648,6 +648,18 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
+    "src/components/kind/index.js~testtypedef1",
+    "typedef/index.html#static-typedef-TestTypeDef1",
+    "src/components/kind/index.js~TestTypeDef1",
+    "typedef"
+  ],
+  [
+    "src/components/kind/index.js~testtypedef2",
+    "typedef/index.html#static-typedef-TestTypeDef2",
+    "src/components/kind/index.js~TestTypeDef2",
+    "typedef"
+  ],
+  [
     "src/components/layout/index.js",
     "file/src/components/layout/index.js.html",
     "src/components/layout/index.js",

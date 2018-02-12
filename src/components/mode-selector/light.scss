@@ -20,6 +20,10 @@
   --left-sidebar-indent-background: none;
   --left-sidebar-shadow: none;
 
+  @media (max-width: 45rem) {
+    --left-sidebar-shadow: 0.125rem 0 0.25rem rgba(0, 0, 0, 0.25), 0.175rem 0 0.35rem rgba(0, 0, 0, 0.45);
+  }
+
   --right-sidebar-background: #f2f5f9;
   --right-sidebar-background-active: #acb4b7;
   --right-sidebar-color-active: #000;

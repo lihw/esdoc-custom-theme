@@ -1,7 +1,13 @@
 .search-box {
   position: relative;
   display: flex;
+  flex: 1;
   justify-content: flex-end;
+
+  @media (max-width: 45rem) {
+    display: none;
+  }
+
 
   .search-input-wrapper {
     position: relative;

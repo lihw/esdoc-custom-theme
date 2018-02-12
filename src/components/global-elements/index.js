@@ -42,6 +42,7 @@ export const sidebarRight = _$('sidebarRight', body)
 
 export const settingsSwitch = _$('settingsSwitch', mainHeader)
 export const modeSwitch = _$('modeSwitch', mainHeader)
+export const menuSwitch = _$('menuSwitch', mainHeader)
 
 export const searchBox = _$('searchBox', mainHeader)
 

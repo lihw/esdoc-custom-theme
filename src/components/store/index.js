@@ -14,7 +14,8 @@ const store = {
   colorscheme,
   mode,
   selectedIndex: -1,
-  prevText: ''
+  prevText: '',
+  sidebarLeft: getLocalStorage('sideBarLeft') === 'true'
 }
 
 export default store

@@ -54,6 +54,7 @@ import './components/footer'
  * Sidebar related
  */
 import './components/sidebar'
+import './components/menu-switch'
 
 /**
  * Addons, patches...

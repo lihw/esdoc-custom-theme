@@ -13,3 +13,12 @@ body {
   background: var(--main-background);
   color: var(--main-color);
 }
+
+@media (max-width: 45rem) {
+  body {
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "Header"
+      "Main";
+  }
+}

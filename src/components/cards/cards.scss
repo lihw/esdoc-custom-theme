@@ -7,11 +7,27 @@
 .manual-card-wrap {
   position: relative;
   overflow: hidden;
-  flex: 0 1 calc(100% / 3 - var(--global-margin));
+  flex: 0 0 calc(100% / 3 - var(--global-margin));
   margin: calc(var(--global-margin) / 2);
   height: 15rem;
   border: 1px solid var(--main-border-color);
   border-radius: 3px;
+
+  @media (max-width: 55rem) {
+    flex: 0 0 calc(100% / 2 - var(--global-margin));
+  }
+
+  @media (max-width: 45rem) {
+    flex: 0 0 calc(100% / 3 - var(--global-margin));
+  }
+
+  @media (max-width: 40rem) {
+    flex: 0 0 calc(100% / 2 - var(--global-margin));
+  }
+
+  @media (max-width: 30rem) {
+    flex: 0 0 calc(100% - var(--global-margin));
+  }
 }
 
 .manual-card-link {

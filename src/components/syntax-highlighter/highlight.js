@@ -11,6 +11,7 @@ const JSON_LD = 'application/ld+json'
 const SHELL = 'shell'
 
 const modes = {
+  'default': JSX,
   css: CSS,
   scss: SCSS,
   less: LESS,
@@ -31,14 +32,19 @@ const highlight = blocks => {
     const code = block.querySelector('code')
     const lang = !code
       ? ''
-      : code.className.split(',').filter(x => x.match('lang'))[0] || ''
+      : code.className.split(' ').filter(x => x.match('lang'))[0] || ''
     // default to JSX
+    const isImportPathCode = code.getAttribute('data-ice') === 'importPathCode'
+    if (isImportPathCode) {
+      return {ip: block}
+    }
     const isJSFile = pathname.match('.js.html')
     const isTSFile = pathname.match('.ts.html')
     const isJSXFile = pathname.match('.jsx.html')
     const isTSXFile = pathname.match('.tsx.html')
     const isFile = isJSFile || isTSFile || isJSXFile || isTSXFile
-    let mode = lang.replace(/lang(uage)?-/, '')
+    let mode = lang.replace(/lang(uage)?-/, '') || 'default'
+
 
     if (isJSFile || isJSXFile) {
       mode = 'jsx'

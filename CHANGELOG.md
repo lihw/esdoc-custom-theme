@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.1.0"></a>
+# [1.1.0](https://github.com/sinnerschrader/esdoc-custom-theme/compare/v1.0.1...v1.1.0) (2018-02-12)
+
+
+### Bug Fixes
+
+* **menu-switch:** hide on large viewports ([9ace3d1](https://github.com/sinnerschrader/esdoc-custom-theme/commit/9ace3d1)), closes [#1](https://github.com/sinnerschrader/esdoc-custom-theme/issues/1)
+* **syntax-highlighter:** handle hashParsing for link-targets ([5042eb4](https://github.com/sinnerschrader/esdoc-custom-theme/commit/5042eb4)), closes [#3](https://github.com/sinnerschrader/esdoc-custom-theme/issues/3)
+
+
+### Features
+
+* **sidebar:** toggle sidebars on body click ([3290a9c](https://github.com/sinnerschrader/esdoc-custom-theme/commit/3290a9c)), closes [#4](https://github.com/sinnerschrader/esdoc-custom-theme/issues/4)
+
+
+
 <a name="1.0.1"></a>
 ## [1.0.1](https://github.com/sinnerschrader/esdoc-custom-theme/compare/v1.0.0...v1.0.1) (2018-02-12)
 

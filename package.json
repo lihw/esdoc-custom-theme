@@ -14,7 +14,8 @@
     "docs": "rimraf docs && esdoc",
     "format:js": "prettier --write src/**/*.js",
     "prebuild": "npm run clean:lib",
-    "watch": "npm run clean:lib && webpack --watch"
+    "watch": "npm run clean:lib && webpack --watch",
+    "watch:dev": "webpack --config dev.webpack.config --watch"
   },
   "keywords": [
     "esdoc",

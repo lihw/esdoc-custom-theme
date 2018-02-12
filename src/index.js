@@ -1,4 +1,7 @@
+import './index.css'
+
 import {documentElement} from './components/global-elements'
+import './components/fonts'
 
 /**
  * Elements & layout

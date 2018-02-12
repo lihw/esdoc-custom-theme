@@ -7,9 +7,13 @@ import getActiveLines from './get-active-lines'
 import getlineNumber from './get-line-number'
 
 const instances = highlight(codeBlocks)
-const fullHighlighters = instances.filter(x => Boolean(x.cm)).map(x => x.cm)
-const simpleHighlighters = instances.filter(x => Boolean(x.hl)).map(x => x.hl)
-const [fileHighlighter] = fullHighlighters
+export const fullHighlighters = instances
+  .filter(x => Boolean(x.cm))
+  .map(x => x.cm)
+export const simpleHighlighters = instances
+  .filter(x => Boolean(x.hl))
+  .map(x => x.hl)
+export const [fileHighlighter] = fullHighlighters
 getErrorLines(fileHighlighter)
 getActiveLines(fileHighlighter)
 getlineNumber(fileHighlighter)

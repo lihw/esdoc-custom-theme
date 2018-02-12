@@ -14,6 +14,6 @@ if (githubLink) {
   `
   githubLink.classList.add('github-link')
   mainHeader.appendChild(
-    createElement('div', {className: 'github-link-wrapper'}, githubLink)
+    createElement('div', {class: 'github-link-wrapper'}, githubLink)
   )
 }

@@ -1,65 +1,26 @@
 .sidebar-left {
-    z-index: 9;
-    position: relative;
-    grid-area: Sidebar;
-    width: var(--left-sidebar-width);
-    overflow-x: hidden;
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
-    background: var(--left-sidebar-background);
-    color: var(--left-sidebar-color);
-    border-right: 1px solid var(--left-sidebar-border-color);
-    box-shadow: var(--left-sidebar-shadow);
+  position: relative;
+  grid-area: Sidebar;
+  width: var(--left-sidebar-width);
+  transition: transform
+    var(--left-sidebar-speed)
+    var(--left-sidebar-easing);
+  background: var(--left-sidebar-background);
+  color: var(--left-sidebar-color);
+  border-right: 1px solid var(--left-sidebar-border-color);
+  box-shadow: var(--left-sidebar-shadow);
 
-  .nav {
-   /*  */
-  }
-
-  .nav a:hover {
-    text-decoration: none;
-  }
-
-  .nav-list {
-    padding: 0;
-    margin: 0;
-  }
-
-  .nav-item {
-    display: block;
-  }
-
-  .fake-nav-link,
-  .fake-nav-link span,
-  .nav-link {
-    display: flex;
-  }
-
-  .fake-nav-link span{
-    flex: 1;
+  &.closed {
+    transform: translate3d(-100%, 0, 0);
   }
 
   .fake-nav-link .kind {
-    flex: initial;
-    height: 3rem;
-    width: 2rem;
-    padding: 0.25rem;
-    align-items: flex-end;
-    align-content: flex-end;
-    justify-content: flex-end;
-    background: var(--kind-background);
-    color: var(--kind-color);
     border-bottom: 1px solid var(--left-sidebar-border-color);
   }
 
   .fake-nav-link a,
   .nav-link {
     padding: var(--left-sidebar-padding);
-    flex: 1;
-    height: 3rem;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    color: inherit;
     border-bottom: 1px solid var(--left-sidebar-border-color);
   }
 
@@ -105,18 +66,5 @@
   .indent-h4 .nav-link:before,
   ._indent-h4 .nav-link:before {
     width: calc(var(--global-padding) * 2);
-  }
-
-  .fake-nav-link .kind {
-    flex: initial;
-    height: 3rem;
-    width: 2rem;
-    padding: 0.25rem;
-    align-items: flex-end;
-    align-content: flex-end;
-    justify-content: flex-end;
-    background: var(--kind-background);
-    color: var(--kind-color);
-    border-bottom: 1px solid var(--left-sidebar-border-color);
   }
 }

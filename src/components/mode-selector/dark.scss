@@ -10,7 +10,7 @@
   --main-header-border-color: #7f012a;
   --main-header-link-hover-shade: rgba(0, 0, 0, 0.1);
   --main-header-link-active-shade: rgba(0, 0, 0, 0.2);
-  --main-header-shadow: 0 0.175rem 0.25rem rgba(0, 0, 0, 0.35), 0 0.25rem 0.5rem rgba(0, 0, 0, 0.65);
+  --main-header-shadow: 0 0.175rem 0.35rem rgba(0, 0, 0, 0.35), 0 0.25rem 0.5rem rgba(0, 0, 0, 0.65);
 
   --left-sidebar-background: #212429;
   --left-sidebar-background-active: #16181f;
@@ -19,6 +19,14 @@
   --left-sidebar-border-color: #2d3038;
   --left-sidebar-indent-background: none;
   --left-sidebar-shadow: none;
+
+  --right-sidebar-background: #212429;
+  --right-sidebar-background-active: #16181f;
+  --right-sidebar-color-active: #fff;
+  --right-sidebar-color: #fff;
+  --right-sidebar-border-color: #2d3038;
+  --right-sidebar-indent-background: none;
+  --right-sidebar-shadow: -0.125rem 0 0.25rem rgba(0, 0, 0, 0.25), -0.175rem 0 0.35rem rgba(0, 0, 0, 0.45);;
 
   --card-link-hover-shade: rgba(255, 255, 255, 0.1);
 

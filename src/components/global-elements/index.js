@@ -13,11 +13,22 @@ export const _$$ = (name, context = document) => [
 export const _$ = (name, context = document) =>
   context.querySelector(jsSelector(name))
 
-export const createElement = (tag, {className = ''}, child) => {
+export const createElement = (tag, props, child) => {
   const wrapper = document.createElement(tag)
-  wrapper.classList.add(className)
-  if (child) {
-    wrapper.appendChild(child)
+  for (const prop in props) {
+    wrapper.setAttribute(prop, props[prop])
+  }
+  switch (typeof child) {
+    case 'string':
+      wrapper.innerHTML = child
+      break
+    case 'object':
+      if (child.namespaceURI === 'http://www.w3.org/1999/xhtml') {
+        wrapper.appendChild(child)
+      }
+      break
+    default:
+      break
   }
   return wrapper
 }
@@ -29,7 +40,7 @@ export const mainHeader = _$('mainHeader', body)
 export const sidebarLeft = _$('sidebarLeft', body)
 export const sidebarRight = _$('sidebarRight', body)
 
-export const optionsSwitch = _$('optionsSwitch', mainHeader)
+export const settingsSwitch = _$('settingsSwitch', mainHeader)
 export const modeSwitch = _$('modeSwitch', mainHeader)
 
 export const searchBox = _$('searchBox', mainHeader)

@@ -27,6 +27,7 @@
   --main-header-height: 4rem;
   --main-footer-height: 4rem;
   --left-sidebar-width: 18rem;
+  --right-sidebar-width: 18rem;
   --search-input-width: 24rem;
   --theme-select-width: 18rem;
   --main-content-width: 60rem;
@@ -38,4 +39,10 @@
   --main-focus-width: 2px;
   --left-sidebar-padding-left: var(--global-padding);
   --left-sidebar-padding: calc(var(--global-padding) / 2) var(--global-padding) calc(var(--global-padding) / 2) var(--left-sidebar-padding-left);
+  --right-sidebar-padding-left: var(--global-padding);
+  --right-sidebar-padding: calc(var(--global-padding) / 2) var(--global-padding) calc(var(--global-padding) / 2) var(--right-sidebar-padding-left);
+  --left-sidebar-speed: 0.25s;
+  --left-sidebar-easing: ease-in-out;
+  --right-sidebar-speed: 0.25s;
+  --right-sidebar-easing: ease-in-out;
 }

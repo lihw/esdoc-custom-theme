@@ -2,6 +2,21 @@
 
 A customizable theme for esdoc (using modern browser features)
 
+[![npm](https://img.shields.io/npm/v/esdoc-custom-theme.svg?style=flat-square)](https://www.npmjs.com/package/esdoc-custom-theme)
+[![Standard Version](https://img.shields.io/badge/release-standard%20version-44aa44.svg?style=flat-square)](https://github.com/conventional-changelog/standard-version)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://raw.githubusercontent.com/sinnerschrader/esdoc-custom-theme/master/LICENSE)
+[![GitHub issues](https://img.shields.io/github/issues/sinnerschrader/esdoc-custom-theme.svg?style=flat-square)](https://github.com/sinnerschrader/esdoc-custom-theme/issues)
+
+[![Travis branch](https://img.shields.io/travis/sinnerschrader/esdoc-custom-theme/master.svg?style=flat-square)](https://travis-ci.org/sinnerschrader/esdoc-custom-theme)
+[![bitHound](https://img.shields.io/bithound/code/github/sinnerschrader/esdoc-custom-theme.svg?style=flat-square)](https://www.bithound.io/github/sinnerschrader/esdoc-custom-theme)
+[![bitHound](https://img.shields.io/bithound/devDependencies/github/sinnerschrader/esdoc-custom-theme.svg?style=flat-square)](https://www.bithound.io/github/sinnerschrader/esdoc-custom-theme)
+
+
+
+[![yarn](https://img.shields.io/badge/yarn-friendly-2c8ebb.svg?style=flat-square)](https://yarnpkg.com/)
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-44aa44.svg?style=flat-square)](http://commitizen.github.io/cz-cli/)
+
+
 ```shell
 yarn add esdoc-custom-theme
 ```

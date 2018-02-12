@@ -1,4 +1,5 @@
 import {hash} from '../url'
+import normalizeLines from './normalize-lines'
 
 const getErrorLines = hl => {
   const matched = hash.match(/errorLines=([\d,]+)/)

@@ -2522,7 +2522,7 @@ esdoc-brand-plugin@^1.0.0:
   dependencies:
     cheerio "0.22.0"
 
-esdoc-coverage-plugin@^1.0.0:
+esdoc-coverage-plugin@^1.0.0, esdoc-coverage-plugin@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/esdoc-coverage-plugin/-/esdoc-coverage-plugin-1.1.0.tgz#3869869cd7f87891f972625787695a299aece45c"
 
@@ -2533,6 +2533,12 @@ esdoc-ecmascript-proposal-plugin@^1.0.0:
 esdoc-external-ecmascript-plugin@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/esdoc-external-ecmascript-plugin/-/esdoc-external-ecmascript-plugin-1.0.0.tgz#78f565d4a0c5185ac63152614dce1fe1a86688db"
+  dependencies:
+    fs-extra "1.0.0"
+
+esdoc-external-webapi-plugin@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/esdoc-external-webapi-plugin/-/esdoc-external-webapi-plugin-1.0.0.tgz#aa053f0f4e51815b160a403a147acc29b37b55d1"
   dependencies:
     fs-extra "1.0.0"
 

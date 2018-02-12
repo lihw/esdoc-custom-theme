@@ -15,3 +15,21 @@
   --kind-background: var(--kind-class-background);
   --kind-color: var(--kind-class-color);
 }
+
+._kind-typedef,
+.kind-typedef {
+  --kind-background: var(--kind-typedef-background);
+  --kind-color: var(--kind-typedef-color);
+}
+
+._kind-interface,
+.kind-interface {
+  --kind-background: var(--kind-interface-background);
+  --kind-color: var(--kind-interface-color);
+}
+
+._kind-external,
+.kind-external {
+  --kind-background: var(--kind-external-background);
+  --kind-color: var(--kind-external-color);
+}

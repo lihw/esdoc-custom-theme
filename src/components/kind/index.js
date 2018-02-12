@@ -12,11 +12,10 @@ import './kind.scss'
  * @param {*} [baz=''hello] This anything
  */
 
- /**
+/**
  * @typedef TestTypeDef2
  *
  * This is just a test for typedef
  * @type Object
  * @property {String} foo About foo
  */
-

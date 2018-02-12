@@ -14,6 +14,8 @@ const TEMPLATE_SRC = path.join(SRC, 'template')
 const LIB = path.resolve(ROOT)
 const TEMPLATE = path.join(LIB, 'template')
 
+const NAME = isProduction ? '[hash]' : '[name]'
+
 htmlFiles = [
   'class.html',
   'details.html',
@@ -54,7 +56,7 @@ const plugins = [
     alwaysWriteToDisk: true
   }),
   new ExtractTextPlugin({
-    filename: 'css/style.css',
+    filename: `css/${NAME}.css`,
     allChunks: true
   }),
   new CopyWebpackPlugin([
@@ -73,7 +75,6 @@ const plugins = [
       flatten: true,
       transform(content, filePath) {
         const {ext} = path.parse(filePath)
-        console.log(ext)
         if (ext === '.svg') {
           return htmlMinifier(content.toString(), minify)
         }
@@ -96,10 +97,10 @@ module.exports = {
   },
   output: {
     path: TEMPLATE,
-    filename: 'script/[name].js',
+    filename: `script/${NAME}.js`,
     libraryTarget: 'umd'
   },
-  devtool: 'source-map',
+  devtool: isProduction ? false : 'source-map',
   module: {
     rules: [
       {
@@ -108,9 +109,19 @@ module.exports = {
         exclude: /(node_modules)/
       },
       {
-        test: /\.scss$/,
+        test: /\.(woff|woff2)$/,
+        loader: 'file-loader',
+        options: {
+          relativePath: true,
+          outputPath: 'css/fonts/',
+          name: `${NAME}.[ext]`
+        }
+      },
+      {
+        test: /\.(css|scss)$/,
         use: ExtractTextPlugin.extract({
           fallback: 'style-loader',
+          publicPath: '../',
           use: [
             {
               loader: 'css-loader',
@@ -120,23 +131,14 @@ module.exports = {
               }
             },
             {
-              loader: 'sass-loader',
+              loader: 'postcss-loader',
               options: {
                 sourceMap: !isProduction
               }
-            }
-          ]
-        })
-      },
-      {
-        test: /\.css$/,
-        use: ExtractTextPlugin.extract({
-          fallback: 'style-loader',
-          use: [
+            },
             {
-              loader: 'css-loader',
+              loader: 'sass-loader',
               options: {
-                minimize: isProduction,
                 sourceMap: !isProduction
               }
             }

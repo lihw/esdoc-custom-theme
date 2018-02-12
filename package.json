@@ -6,18 +6,20 @@
   "author": "Gregor Adams <greg@pixelass.com>",
   "license": "MIT",
   "scripts": {
+    "build:dev": "npm run clean:lib && webpack",
     "build": "cross-env NODE_ENV=production webpack",
     "clean": "npm run clean:modules; npm run clean:lib",
     "clean:lib": "rimraf template",
     "clean:modules": "rimraf node_modules",
     "commitmsg": "commitlint -e $GIT_PARAMS",
+    "develop": "npm run build:dev && npm run docs && npm run watch:dev",
     "docs": "rimraf docs && esdoc",
     "format:js": "prettier --write src/**/*.js",
     "prebuild": "npm run clean:lib",
     "prerelease": "npm run build",
     "release": "standard-version --no-verify",
     "watch": "npm run clean:lib && webpack --watch",
-    "watch:dev": "webpack --config dev.webpack.config --watch"
+    "watch:dev": "webpack --config webpack.dev.config --watch"
   },
   "keywords": [
     "esdoc",
@@ -36,6 +38,7 @@
   "devDependencies": {
     "@commitlint/cli": "^6.0.2",
     "@commitlint/config-conventional": "^6.0.2",
+    "autoprefixer": "^8.0.0",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-minify-webpack-plugin": "^0.3.0",
@@ -59,17 +62,19 @@
     "esdoc-publish-html-plugin": "^1.1.0",
     "esdoc-standard-plugin": "^1.0.0",
     "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.6",
     "html-webpack-plugin": "^2.30.1",
     "husky": "^0.14.3",
     "node-sass": "^4.7.2",
     "npm-run-all": "^4.1.2",
+    "postcss-loader": "^2.1.0",
+    "postcss-normalize": "^4.0.0",
     "prettier": "^1.10.2",
     "rimraf": "^2.6.2",
     "sass-loader": "^6.0.6",
     "standard-version": "^4.3.0",
     "style-loader": "^0.20.1",
     "uglifyjs-webpack-plugin": "^1.1.8",
-    "webpack": "^3.10.0",
-    "xo": "^0.18.2"
+    "webpack": "^3.10.0"
   }
 }

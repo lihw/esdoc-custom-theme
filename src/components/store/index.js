@@ -15,7 +15,7 @@ const store = {
   mode,
   selectedIndex: -1,
   prevText: '',
-  sidebarLeft: getLocalStorage('sideBarLeft') === 'true'
+  sidebarLeft: false
 }
 
 export default store

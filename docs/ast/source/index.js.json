@@ -1,28 +1,28 @@
 {
   "type": "File",
   "start": 0,
-  "end": 1163,
+  "end": 1148,
   "loc": {
     "start": {
       "line": 1,
       "column": 0
     },
     "end": {
-      "line": 65,
+      "line": 64,
       "column": 0
     }
   },
   "program": {
     "type": "Program",
     "start": 0,
-    "end": 1163,
+    "end": 1148,
     "loc": {
       "start": {
         "line": 1,
         "column": 0
       },
       "end": {
-        "line": 65,
+        "line": 64,
         "column": 0
       }
     },
@@ -445,9 +445,9 @@
         "trailingComments": [
           {
             "type": "CommentBlock",
-            "value": "*\n * Code related (colorschemes)\n ",
+            "value": "*\n * Mode related (dark, light ...)\n ",
             "start": 312,
-            "end": 350,
+            "end": 353,
             "loc": {
               "start": {
                 "line": 15,
@@ -463,8 +463,8 @@
       },
       {
         "type": "ImportDeclaration",
-        "start": 351,
-        "end": 391,
+        "start": 354,
+        "end": 389,
         "loc": {
           "start": {
             "line": 18,
@@ -472,14 +472,14 @@
           },
           "end": {
             "line": 18,
-            "column": 40
+            "column": 35
           }
         },
         "specifiers": [],
         "source": {
           "type": "StringLiteral",
-          "start": 358,
-          "end": 391,
+          "start": 361,
+          "end": 389,
           "loc": {
             "start": {
               "line": 18,
@@ -487,23 +487,23 @@
             },
             "end": {
               "line": 18,
-              "column": 40
+              "column": 35
             }
           },
           "extra": {
-            "rawValue": "./components/syntax-highlighter",
-            "raw": "'./components/syntax-highlighter'"
+            "rawValue": "./components/mode-selector",
+            "raw": "'./components/mode-selector'"
           },
-          "value": "./components/syntax-highlighter",
+          "value": "./components/mode-selector",
           "leadingComments": null,
           "trailingComments": null
         },
         "leadingComments": [
           {
             "type": "CommentBlock",
-            "value": "*\n * Code related (colorschemes)\n ",
+            "value": "*\n * Mode related (dark, light ...)\n ",
             "start": 312,
-            "end": 350,
+            "end": 353,
             "loc": {
               "start": {
                 "line": 15,
@@ -519,9 +519,9 @@
         "trailingComments": [
           {
             "type": "CommentBlock",
-            "value": "*\n * Mode related (dark, light ...)\n ",
-            "start": 393,
-            "end": 434,
+            "value": "*\n * Code related (colorschemes)\n ",
+            "start": 391,
+            "end": 429,
             "loc": {
               "start": {
                 "line": 20,
@@ -537,7 +537,7 @@
       },
       {
         "type": "ImportDeclaration",
-        "start": 435,
+        "start": 430,
         "end": 470,
         "loc": {
           "start": {
@@ -546,13 +546,13 @@
           },
           "end": {
             "line": 23,
-            "column": 35
+            "column": 40
           }
         },
         "specifiers": [],
         "source": {
           "type": "StringLiteral",
-          "start": 442,
+          "start": 437,
           "end": 470,
           "loc": {
             "start": {
@@ -561,23 +561,23 @@
             },
             "end": {
               "line": 23,
-              "column": 35
+              "column": 40
             }
           },
           "extra": {
-            "rawValue": "./components/mode-selector",
-            "raw": "'./components/mode-selector'"
+            "rawValue": "./components/syntax-highlighter",
+            "raw": "'./components/syntax-highlighter'"
           },
-          "value": "./components/mode-selector",
+          "value": "./components/syntax-highlighter",
           "leadingComments": null,
           "trailingComments": null
         },
         "leadingComments": [
           {
             "type": "CommentBlock",
-            "value": "*\n * Code related (colorschemes)\n ",
+            "value": "*\n * Mode related (dark, light ...)\n ",
             "start": 312,
-            "end": 350,
+            "end": 353,
             "loc": {
               "start": {
                 "line": 15,
@@ -591,9 +591,9 @@
           },
           {
             "type": "CommentBlock",
-            "value": "*\n * Mode related (dark, light ...)\n ",
-            "start": 393,
-            "end": 434,
+            "value": "*\n * Code related (colorschemes)\n ",
+            "start": 391,
+            "end": 429,
             "loc": {
               "start": {
                 "line": 20,
@@ -665,9 +665,9 @@
         "leadingComments": [
           {
             "type": "CommentBlock",
-            "value": "*\n * Code related (colorschemes)\n ",
+            "value": "*\n * Mode related (dark, light ...)\n ",
             "start": 312,
-            "end": 350,
+            "end": 353,
             "loc": {
               "start": {
                 "line": 15,
@@ -681,9 +681,9 @@
           },
           {
             "type": "CommentBlock",
-            "value": "*\n * Mode related (dark, light ...)\n ",
-            "start": 393,
-            "end": 434,
+            "value": "*\n * Code related (colorschemes)\n ",
+            "start": 391,
+            "end": 429,
             "loc": {
               "start": {
                 "line": 20,
@@ -1362,7 +1362,7 @@
       {
         "type": "ImportDeclaration",
         "start": 1075,
-        "end": 1112,
+        "end": 1109,
         "loc": {
           "start": {
             "line": 62,
@@ -1370,14 +1370,14 @@
           },
           "end": {
             "line": 62,
-            "column": 37
+            "column": 34
           }
         },
         "specifiers": [],
         "source": {
           "type": "StringLiteral",
           "start": 1082,
-          "end": 1112,
+          "end": 1109,
           "loc": {
             "start": {
               "line": 62,
@@ -1385,14 +1385,14 @@
             },
             "end": {
               "line": 62,
-              "column": 37
+              "column": 34
             }
           },
           "extra": {
-            "rawValue": "./components/patch-for-local",
-            "raw": "'./components/patch-for-local'"
+            "rawValue": "./components/hash-targets",
+            "raw": "'./components/hash-targets'"
           },
-          "value": "./components/patch-for-local",
+          "value": "./components/hash-targets",
           "leadingComments": null
         },
         "leadingComments": [
@@ -1415,158 +1415,39 @@
         ]
       },
       {
-        "type": "ExpressionStatement",
-        "start": 1114,
-        "end": 1162,
+        "type": "ImportDeclaration",
+        "start": 1110,
+        "end": 1147,
         "loc": {
           "start": {
-            "line": 64,
+            "line": 63,
             "column": 0
           },
           "end": {
-            "line": 64,
-            "column": 48
+            "line": 63,
+            "column": 37
           }
         },
-        "expression": {
-          "type": "CallExpression",
-          "start": 1114,
-          "end": 1162,
+        "specifiers": [],
+        "source": {
+          "type": "StringLiteral",
+          "start": 1117,
+          "end": 1147,
           "loc": {
             "start": {
-              "line": 64,
-              "column": 0
+              "line": 63,
+              "column": 7
             },
             "end": {
-              "line": 64,
-              "column": 48
+              "line": 63,
+              "column": 37
             }
           },
-          "callee": {
-            "type": "MemberExpression",
-            "start": 1114,
-            "end": 1147,
-            "loc": {
-              "start": {
-                "line": 64,
-                "column": 0
-              },
-              "end": {
-                "line": 64,
-                "column": 33
-              }
-            },
-            "object": {
-              "type": "MemberExpression",
-              "start": 1114,
-              "end": 1139,
-              "loc": {
-                "start": {
-                  "line": 64,
-                  "column": 0
-                },
-                "end": {
-                  "line": 64,
-                  "column": 25
-                }
-              },
-              "object": {
-                "type": "Identifier",
-                "start": 1114,
-                "end": 1129,
-                "loc": {
-                  "start": {
-                    "line": 64,
-                    "column": 0
-                  },
-                  "end": {
-                    "line": 64,
-                    "column": 15
-                  },
-                  "identifierName": "documentElement"
-                },
-                "name": "documentElement"
-              },
-              "property": {
-                "type": "Identifier",
-                "start": 1130,
-                "end": 1139,
-                "loc": {
-                  "start": {
-                    "line": 64,
-                    "column": 16
-                  },
-                  "end": {
-                    "line": 64,
-                    "column": 25
-                  },
-                  "identifierName": "classList"
-                },
-                "name": "classList"
-              },
-              "computed": false
-            },
-            "property": {
-              "type": "Identifier",
-              "start": 1140,
-              "end": 1147,
-              "loc": {
-                "start": {
-                  "line": 64,
-                  "column": 26
-                },
-                "end": {
-                  "line": 64,
-                  "column": 33
-                },
-                "identifierName": "replace"
-              },
-              "name": "replace"
-            },
-            "computed": false
+          "extra": {
+            "rawValue": "./components/patch-for-local",
+            "raw": "'./components/patch-for-local'"
           },
-          "arguments": [
-            {
-              "type": "StringLiteral",
-              "start": 1148,
-              "end": 1155,
-              "loc": {
-                "start": {
-                  "line": 64,
-                  "column": 34
-                },
-                "end": {
-                  "line": 64,
-                  "column": 41
-                }
-              },
-              "extra": {
-                "rawValue": "no-js",
-                "raw": "'no-js'"
-              },
-              "value": "no-js"
-            },
-            {
-              "type": "StringLiteral",
-              "start": 1157,
-              "end": 1161,
-              "loc": {
-                "start": {
-                  "line": 64,
-                  "column": 43
-                },
-                "end": {
-                  "line": 64,
-                  "column": 47
-                }
-              },
-              "extra": {
-                "rawValue": "js",
-                "raw": "'js'"
-              },
-              "value": "js"
-            }
-          ]
+          "value": "./components/patch-for-local"
         }
       }
     ],
@@ -1591,9 +1472,9 @@
     },
     {
       "type": "CommentBlock",
-      "value": "*\n * Code related (colorschemes)\n ",
+      "value": "*\n * Mode related (dark, light ...)\n ",
       "start": 312,
-      "end": 350,
+      "end": 353,
       "loc": {
         "start": {
           "line": 15,
@@ -1607,9 +1488,9 @@
     },
     {
       "type": "CommentBlock",
-      "value": "*\n * Mode related (dark, light ...)\n ",
-      "start": 393,
-      "end": 434,
+      "value": "*\n * Code related (colorschemes)\n ",
+      "start": 391,
+      "end": 429,
       "loc": {
         "start": {
           "line": 20,
@@ -2366,9 +2247,9 @@
     },
     {
       "type": "CommentBlock",
-      "value": "*\n * Code related (colorschemes)\n ",
+      "value": "*\n * Mode related (dark, light ...)\n ",
       "start": 312,
-      "end": 350,
+      "end": 353,
       "loc": {
         "start": {
           "line": 15,
@@ -2395,8 +2276,8 @@
         "updateContext": null
       },
       "value": "import",
-      "start": 351,
-      "end": 357,
+      "start": 354,
+      "end": 360,
       "loc": {
         "start": {
           "line": 18,
@@ -2421,9 +2302,9 @@
         "binop": null,
         "updateContext": null
       },
-      "value": "./components/syntax-highlighter",
-      "start": 358,
-      "end": 391,
+      "value": "./components/mode-selector",
+      "start": 361,
+      "end": 389,
       "loc": {
         "start": {
           "line": 18,
@@ -2431,15 +2312,15 @@
         },
         "end": {
           "line": 18,
-          "column": 40
+          "column": 35
         }
       }
     },
     {
       "type": "CommentBlock",
-      "value": "*\n * Mode related (dark, light ...)\n ",
-      "start": 393,
-      "end": 434,
+      "value": "*\n * Code related (colorschemes)\n ",
+      "start": 391,
+      "end": 429,
       "loc": {
         "start": {
           "line": 20,
@@ -2466,8 +2347,8 @@
         "updateContext": null
       },
       "value": "import",
-      "start": 435,
-      "end": 441,
+      "start": 430,
+      "end": 436,
       "loc": {
         "start": {
           "line": 23,
@@ -2492,8 +2373,8 @@
         "binop": null,
         "updateContext": null
       },
-      "value": "./components/mode-selector",
-      "start": 442,
+      "value": "./components/syntax-highlighter",
+      "start": 437,
       "end": 470,
       "loc": {
         "start": {
@@ -2502,7 +2383,7 @@
         },
         "end": {
           "line": 23,
-          "column": 35
+          "column": 40
         }
       }
     },
@@ -3335,9 +3216,9 @@
         "binop": null,
         "updateContext": null
       },
-      "value": "./components/patch-for-local",
+      "value": "./components/hash-targets",
       "start": 1082,
-      "end": 1112,
+      "end": 1109,
       "loc": {
         "start": {
           "line": 62,
@@ -3345,13 +3226,14 @@
         },
         "end": {
           "line": 62,
-          "column": 37
+          "column": 34
         }
       }
     },
     {
       "type": {
-        "label": "name",
+        "label": "import",
+        "keyword": "import",
         "beforeExpr": false,
         "startsExpr": true,
         "rightAssociative": false,
@@ -3359,27 +3241,28 @@
         "isAssign": false,
         "prefix": false,
         "postfix": false,
-        "binop": null
+        "binop": null,
+        "updateContext": null
       },
-      "value": "documentElement",
-      "start": 1114,
-      "end": 1129,
+      "value": "import",
+      "start": 1110,
+      "end": 1116,
       "loc": {
         "start": {
-          "line": 64,
+          "line": 63,
           "column": 0
         },
         "end": {
-          "line": 64,
-          "column": 15
+          "line": 63,
+          "column": 6
         }
       }
     },
     {
       "type": {
-        "label": ".",
+        "label": "string",
         "beforeExpr": false,
-        "startsExpr": false,
+        "startsExpr": true,
         "rightAssociative": false,
         "isLoop": false,
         "isAssign": false,
@@ -3388,224 +3271,17 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 1129,
-      "end": 1130,
-      "loc": {
-        "start": {
-          "line": 64,
-          "column": 15
-        },
-        "end": {
-          "line": 64,
-          "column": 16
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "name",
-        "beforeExpr": false,
-        "startsExpr": true,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null
-      },
-      "value": "classList",
-      "start": 1130,
-      "end": 1139,
-      "loc": {
-        "start": {
-          "line": 64,
-          "column": 16
-        },
-        "end": {
-          "line": 64,
-          "column": 25
-        }
-      }
-    },
-    {
-      "type": {
-        "label": ".",
-        "beforeExpr": false,
-        "startsExpr": false,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null,
-        "updateContext": null
-      },
-      "start": 1139,
-      "end": 1140,
-      "loc": {
-        "start": {
-          "line": 64,
-          "column": 25
-        },
-        "end": {
-          "line": 64,
-          "column": 26
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "name",
-        "beforeExpr": false,
-        "startsExpr": true,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null
-      },
-      "value": "replace",
-      "start": 1140,
+      "value": "./components/patch-for-local",
+      "start": 1117,
       "end": 1147,
       "loc": {
         "start": {
-          "line": 64,
-          "column": 26
+          "line": 63,
+          "column": 7
         },
         "end": {
-          "line": 64,
-          "column": 33
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "(",
-        "beforeExpr": true,
-        "startsExpr": true,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null
-      },
-      "start": 1147,
-      "end": 1148,
-      "loc": {
-        "start": {
-          "line": 64,
-          "column": 33
-        },
-        "end": {
-          "line": 64,
-          "column": 34
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "string",
-        "beforeExpr": false,
-        "startsExpr": true,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null,
-        "updateContext": null
-      },
-      "value": "no-js",
-      "start": 1148,
-      "end": 1155,
-      "loc": {
-        "start": {
-          "line": 64,
-          "column": 34
-        },
-        "end": {
-          "line": 64,
-          "column": 41
-        }
-      }
-    },
-    {
-      "type": {
-        "label": ",",
-        "beforeExpr": true,
-        "startsExpr": false,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null,
-        "updateContext": null
-      },
-      "start": 1155,
-      "end": 1156,
-      "loc": {
-        "start": {
-          "line": 64,
-          "column": 41
-        },
-        "end": {
-          "line": 64,
-          "column": 42
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "string",
-        "beforeExpr": false,
-        "startsExpr": true,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null,
-        "updateContext": null
-      },
-      "value": "js",
-      "start": 1157,
-      "end": 1161,
-      "loc": {
-        "start": {
-          "line": 64,
-          "column": 43
-        },
-        "end": {
-          "line": 64,
-          "column": 47
-        }
-      }
-    },
-    {
-      "type": {
-        "label": ")",
-        "beforeExpr": false,
-        "startsExpr": false,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null
-      },
-      "start": 1161,
-      "end": 1162,
-      "loc": {
-        "start": {
-          "line": 64,
-          "column": 47
-        },
-        "end": {
-          "line": 64,
-          "column": 48
+          "line": 63,
+          "column": 37
         }
       }
     },
@@ -3622,15 +3298,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 1163,
-      "end": 1163,
+      "start": 1148,
+      "end": 1148,
       "loc": {
         "start": {
-          "line": 65,
+          "line": 64,
           "column": 0
         },
         "end": {
-          "line": 65,
+          "line": 64,
           "column": 0
         }
       }

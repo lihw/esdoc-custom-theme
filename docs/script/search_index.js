@@ -12,6 +12,18 @@ window.esdocSearchIndex = [
     "function"
   ],
   [
+    "esdoc-custom-theme~_$$",
+    "function/index.html#static-function-_$$",
+    "<span>_$$</span> <span class=\"search-result-import-path\">esdoc-custom-theme</span>",
+    "function"
+  ],
+  [
+    "esdoc-custom-theme~_$",
+    "function/index.html#static-function-_$",
+    "<span>_$</span> <span class=\"search-result-import-path\">esdoc-custom-theme</span>",
+    "function"
+  ],
+  [
     "esdoc-custom-theme~activate",
     "function/index.html#static-function-activate",
     "<span>activate</span> <span class=\"search-result-import-path\">esdoc-custom-theme</span>",
@@ -33,6 +45,12 @@ window.esdocSearchIndex = [
     "esdoc-custom-theme~closeresults",
     "function/index.html#static-function-closeResults",
     "<span>closeResults</span> <span class=\"search-result-import-path\">esdoc-custom-theme</span>",
+    "function"
+  ],
+  [
+    "esdoc-custom-theme~closesidebar",
+    "function/index.html#static-function-closeSidebar",
+    "<span>closeSidebar</span> <span class=\"search-result-import-path\">esdoc-custom-theme</span>",
     "function"
   ],
   [
@@ -174,6 +192,12 @@ window.esdocSearchIndex = [
     "function"
   ],
   [
+    "esdoc-custom-theme~opensidebar",
+    "function/index.html#static-function-openSidebar",
+    "<span>openSidebar</span> <span class=\"search-result-import-path\">esdoc-custom-theme</span>",
+    "function"
+  ],
+  [
     "esdoc-custom-theme~search",
     "function/index.html#static-function-search",
     "<span>search</span> <span class=\"search-result-import-path\">esdoc-custom-theme</span>",
@@ -285,6 +309,12 @@ window.esdocSearchIndex = [
     "esdoc-custom-theme~switchlight",
     "function/index.html#static-function-switchLight",
     "<span>switchLight</span> <span class=\"search-result-import-path\">esdoc-custom-theme</span>",
+    "function"
+  ],
+  [
+    "esdoc-custom-theme~togglesidebar",
+    "function/index.html#static-function-toggleSidebar",
+    "<span>toggleSidebar</span> <span class=\"search-result-import-path\">esdoc-custom-theme</span>",
     "function"
   ],
   [
@@ -570,6 +600,54 @@ window.esdocSearchIndex = [
     "external"
   ],
   [
+    "src/.external-webapi.js~audiocontext",
+    "https://developer.mozilla.org/en/docs/Web/API/AudioContext",
+    "src/.external-webapi.js~AudioContext",
+    "external"
+  ],
+  [
+    "src/.external-webapi.js~canvasrenderingcontext2d",
+    "https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D",
+    "src/.external-webapi.js~CanvasRenderingContext2D",
+    "external"
+  ],
+  [
+    "src/.external-webapi.js~documentfragment",
+    "https://developer.mozilla.org/en-US/docs/Web/API/DocumentFragment",
+    "src/.external-webapi.js~DocumentFragment",
+    "external"
+  ],
+  [
+    "src/.external-webapi.js~element",
+    "https://developer.mozilla.org/en-US/docs/Web/API/Element",
+    "src/.external-webapi.js~Element",
+    "external"
+  ],
+  [
+    "src/.external-webapi.js~event",
+    "https://developer.mozilla.org/en-US/docs/Web/API/Event",
+    "src/.external-webapi.js~Event",
+    "external"
+  ],
+  [
+    "src/.external-webapi.js~node",
+    "https://developer.mozilla.org/en-US/docs/Web/API/Node",
+    "src/.external-webapi.js~Node",
+    "external"
+  ],
+  [
+    "src/.external-webapi.js~nodelist",
+    "https://developer.mozilla.org/en-US/docs/Web/API/NodeList",
+    "src/.external-webapi.js~NodeList",
+    "external"
+  ],
+  [
+    "src/.external-webapi.js~xmlhttprequest",
+    "https://developer.mozilla.org/en/docs/Web/API/XMLHttpRequest",
+    "src/.external-webapi.js~XMLHttpRequest",
+    "external"
+  ],
+  [
     "src/components/base/index.js",
     "file/src/components/base/index.js.html",
     "src/components/base/index.js",
@@ -633,6 +711,12 @@ window.esdocSearchIndex = [
     "src/components/global-elements/index.js",
     "file/src/components/global-elements/index.js.html",
     "src/components/global-elements/index.js",
+    "file"
+  ],
+  [
+    "src/components/hash-targets/index.js",
+    "file/src/components/hash-targets/index.js.html",
+    "src/components/hash-targets/index.js",
     "file"
   ],
   [

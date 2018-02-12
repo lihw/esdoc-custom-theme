@@ -564,10 +564,106 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 48,
+    "__docId__": 49,
+    "kind": "external",
+    "name": "CanvasRenderingContext2D",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D",
+    "memberof": "src/.external-webapi.js",
+    "static": true,
+    "longname": "src/.external-webapi.js~CanvasRenderingContext2D",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 50,
+    "kind": "external",
+    "name": "DocumentFragment",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/API/DocumentFragment",
+    "memberof": "src/.external-webapi.js",
+    "static": true,
+    "longname": "src/.external-webapi.js~DocumentFragment",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 51,
+    "kind": "external",
+    "name": "Element",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/API/Element",
+    "memberof": "src/.external-webapi.js",
+    "static": true,
+    "longname": "src/.external-webapi.js~Element",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 52,
+    "kind": "external",
+    "name": "Event",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/API/Event",
+    "memberof": "src/.external-webapi.js",
+    "static": true,
+    "longname": "src/.external-webapi.js~Event",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 53,
+    "kind": "external",
+    "name": "Node",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/API/Node",
+    "memberof": "src/.external-webapi.js",
+    "static": true,
+    "longname": "src/.external-webapi.js~Node",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 54,
+    "kind": "external",
+    "name": "NodeList",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/API/NodeList",
+    "memberof": "src/.external-webapi.js",
+    "static": true,
+    "longname": "src/.external-webapi.js~NodeList",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 55,
+    "kind": "external",
+    "name": "XMLHttpRequest",
+    "externalLink": "https://developer.mozilla.org/en/docs/Web/API/XMLHttpRequest",
+    "memberof": "src/.external-webapi.js",
+    "static": true,
+    "longname": "src/.external-webapi.js~XMLHttpRequest",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 56,
+    "kind": "external",
+    "name": "AudioContext",
+    "externalLink": "https://developer.mozilla.org/en/docs/Web/API/AudioContext",
+    "memberof": "src/.external-webapi.js",
+    "static": true,
+    "longname": "src/.external-webapi.js~AudioContext",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 57,
     "kind": "file",
     "name": "src/components/base/index.js",
-    "content": "import {hash} from '../url'\nimport {$, $$} from '../global-elements'\n\n// CSS file generation\nimport './base.scss'\n\nconst markHashTarget = hash => {\n  if (hash) {\n    const target = $(hash)\n    if (target) {\n      target.classList.add('active-target')\n    }\n  }\n}\n\nmarkHashTarget(hash)\n\nwindow.addEventListener('hashchange', e => {\n  $$('.active-target').forEach(target => {\n    target.classList.remove('active-target')\n  })\n  const {newURL} = e\n  const [, hash] = newURL.split('#')\n  if (hash) {\n    markHashTarget(`#${hash}`)\n  }\n})\n",
+    "content": "// CSS file generation\nimport './base.scss'\n",
     "static": true,
     "longname": "/Users/greada/Documents/workspace/s2/esdoc-custom-theme/src/components/base/index.js",
     "access": "public",
@@ -575,34 +671,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 49,
-    "kind": "function",
-    "name": "markHashTarget",
-    "memberof": "src/components/base/index.js",
-    "generator": false,
-    "async": false,
-    "static": true,
-    "longname": "src/components/base/index.js~markHashTarget",
-    "access": "public",
-    "export": false,
-    "importPath": "esdoc-custom-theme",
-    "importStyle": null,
-    "description": null,
-    "lineNumber": 7,
-    "undocument": true,
-    "params": [
-      {
-        "name": "hash",
-        "types": [
-          "*"
-        ]
-      }
-    ],
-    "return": null,
-    "ignore": true
-  },
-  {
-    "__docId__": 50,
+    "__docId__": 58,
     "kind": "file",
     "name": "src/components/cards/index.js",
     "content": "import {_$$} from '../global-elements'\n\n// CSS file generation\nimport './cards.scss'\n\n_$$('manualCard').forEach(card => {\n  ;[\n    ...card.querySelectorAll('a'),\n    ...card.querySelectorAll('input'),\n    ...card.querySelectorAll('select'),\n    ...card.querySelectorAll('button'),\n    ...card.querySelectorAll('[tabindex]')\n  ].forEach(tabbable => {\n    tabbable.setAttribute('tabindex', '-1')\n  })\n})\n",
@@ -613,7 +682,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 51,
+    "__docId__": 59,
     "kind": "file",
     "name": "src/components/codemirror/codemirror.js",
     "content": "import CodeMirror from 'codemirror'\nimport 'codemirror/mode/shell/shell'\nimport 'codemirror/mode/xml/xml'\nimport 'codemirror/mode/htmlmixed/htmlmixed'\nimport 'codemirror/mode/javascript/javascript'\nimport 'codemirror/mode/jsx/jsx'\nimport 'codemirror/mode/css/css'\nimport 'codemirror/mode/sass/sass'\nimport 'codemirror/mode/stylus/stylus'\nimport 'codemirror/addon/runmode/runmode.js'\n\n// CSS file generation\nimport 'codemirror/lib/codemirror.css'\nimport 'codemirror/theme/3024-day.css'\nimport 'codemirror/theme/3024-night.css'\nimport 'codemirror/theme/abcdef.css'\nimport 'codemirror/theme/ambiance-mobile.css'\nimport 'codemirror/theme/ambiance.css'\nimport 'codemirror/theme/base16-dark.css'\nimport 'codemirror/theme/base16-light.css'\nimport 'codemirror/theme/bespin.css'\nimport 'codemirror/theme/blackboard.css'\nimport 'codemirror/theme/cobalt.css'\nimport 'codemirror/theme/colorforth.css'\nimport 'codemirror/theme/dracula.css'\nimport 'codemirror/theme/duotone-dark.css'\nimport 'codemirror/theme/duotone-light.css'\nimport 'codemirror/theme/eclipse.css'\nimport 'codemirror/theme/elegant.css'\nimport 'codemirror/theme/erlang-dark.css'\nimport 'codemirror/theme/hopscotch.css'\nimport 'codemirror/theme/icecoder.css'\nimport 'codemirror/theme/isotope.css'\nimport 'codemirror/theme/lesser-dark.css'\nimport 'codemirror/theme/liquibyte.css'\nimport 'codemirror/theme/material.css'\nimport 'codemirror/theme/mbo.css'\nimport 'codemirror/theme/mdn-like.css'\nimport 'codemirror/theme/midnight.css'\nimport 'codemirror/theme/monokai.css'\nimport 'codemirror/theme/neat.css'\nimport 'codemirror/theme/neo.css'\nimport 'codemirror/theme/night.css'\nimport 'codemirror/theme/oceanic-next.css'\nimport 'codemirror/theme/panda-syntax.css'\nimport 'codemirror/theme/paraiso-dark.css'\nimport 'codemirror/theme/paraiso-light.css'\nimport 'codemirror/theme/pastel-on-dark.css'\nimport 'codemirror/theme/railscasts.css'\nimport 'codemirror/theme/rubyblue.css'\nimport 'codemirror/theme/seti.css'\nimport 'codemirror/theme/shadowfox.css'\nimport 'codemirror/theme/solarized.css'\nimport 'codemirror/theme/the-matrix.css'\nimport 'codemirror/theme/tomorrow-night-bright.css'\nimport 'codemirror/theme/tomorrow-night-eighties.css'\nimport 'codemirror/theme/ttcn.css'\nimport 'codemirror/theme/twilight.css'\nimport 'codemirror/theme/vibrant-ink.css'\nimport 'codemirror/theme/xq-dark.css'\nimport 'codemirror/theme/xq-light.css'\nimport 'codemirror/theme/yeti.css'\nimport 'codemirror/theme/zenburn.css'\n\nexport const colorschemes = [\n  '3024-day',\n  '3024-night',\n  'abcdef',\n  'ambiance-mobile',\n  'ambiance',\n  'base16-dark',\n  'base16-light',\n  'bespin',\n  'blackboard',\n  'cobalt',\n  'colorforth',\n  'dracula',\n  'duotone-dark',\n  'duotone-light',\n  'eclipse',\n  'elegant',\n  'erlang-dark',\n  'hopscotch',\n  'icecoder',\n  'isotope',\n  'lesser-dark',\n  'liquibyte',\n  'material',\n  'mbo',\n  'mdn-like',\n  'midnight',\n  'monokai',\n  'neat',\n  'neo',\n  'night',\n  'oceanic-next',\n  'panda-syntax',\n  'paraiso-dark',\n  'paraiso-light',\n  'pastel-on-dark',\n  'railscasts',\n  'rubyblue',\n  'seti',\n  'shadowfox',\n  'solarized',\n  'the-matrix',\n  'tomorrow-night-bright',\n  'tomorrow-night-eighties',\n  'ttcn',\n  'twilight',\n  'vibrant-ink',\n  'xq-dark',\n  'xq-light',\n  'yeti',\n  'zenburn'\n]\n\nexport const simpleHighligtherClasses = name =>\n  `CodeMirror CodeMirror-simple cm-s-${name}`\n\nexport default CodeMirror\n",
@@ -624,7 +693,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 52,
+    "__docId__": 60,
     "kind": "variable",
     "name": "colorschemes",
     "memberof": "src/components/codemirror/codemirror.js",
@@ -644,7 +713,7 @@
     }
   },
   {
-    "__docId__": 53,
+    "__docId__": 61,
     "kind": "function",
     "name": "simpleHighligtherClasses",
     "memberof": "src/components/codemirror/codemirror.js",
@@ -670,7 +739,7 @@
     "return": null
   },
   {
-    "__docId__": 54,
+    "__docId__": 62,
     "kind": "file",
     "name": "src/components/codemirror/full.js",
     "content": "import CodeMirror from './codemirror'\nimport store from '../store'\n\nconst fullMode = (value, mode, node) => {\n  return {\n    cm: CodeMirror(\n      element => {\n        node.parentNode.replaceChild(element, node)\n      },\n      {\n        value,\n        mode,\n        readOnly: true,\n        lineNumbers: true,\n        lineWrapping: true,\n        theme: store.colorscheme,\n        showCursorWhenSelecting: false,\n        cursorBlinkRate: -1\n      }\n    )\n  }\n}\n\nexport default fullMode\n",
@@ -681,7 +750,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 55,
+    "__docId__": 63,
     "kind": "function",
     "name": "fullMode",
     "memberof": "src/components/codemirror/full.js",
@@ -723,7 +792,7 @@
     }
   },
   {
-    "__docId__": 56,
+    "__docId__": 64,
     "kind": "file",
     "name": "src/components/codemirror/index.js",
     "content": "// CSS file generation\nimport './codemirror.scss'\n\nexport * from './codemirror'\n\nexport {default as simpleMode} from './simple'\nexport {default as fullMode} from './full'\n",
@@ -734,7 +803,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 57,
+    "__docId__": 65,
     "kind": "file",
     "name": "src/components/codemirror/simple.js",
     "content": "import store from '../store'\nimport CodeMirror, {simpleHighligtherClasses} from './codemirror'\n\nconst simpleMode = (value, mode, node) => {\n  node.className = simpleHighligtherClasses(store.colorscheme)\n  CodeMirror.runMode(value, mode, node)\n  return {\n    hl: node\n  }\n}\n\nexport default simpleMode\n",
@@ -745,7 +814,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 58,
+    "__docId__": 66,
     "kind": "function",
     "name": "simpleMode",
     "memberof": "src/components/codemirror/simple.js",
@@ -787,7 +856,7 @@
     }
   },
   {
-    "__docId__": 59,
+    "__docId__": 67,
     "kind": "file",
     "name": "src/components/colorscheme-selector/index.js",
     "content": "import store, {setLocalStorage} from '../store'\nimport {\n  $,\n  sidebarRight,\n  createElement,\n  colorschemeOptions\n} from '../global-elements'\nimport {colorschemes, simpleHighligtherClasses} from '../codemirror'\n\nimport {fullHighlighters, simpleHighlighters} from '../syntax-highlighter'\n\n// CSS file generation\nimport './colorscheme-selector.scss'\n\ncolorschemes.forEach(colorscheme => {\n  const a = createElement(\n    'a',\n    {\n      class: `nav-link${\n        colorscheme === store.colorscheme ? ' active-link' : ''\n      }`,\n      href: '#'\n    },\n    colorscheme\n  )\n  a.addEventListener('click', e => {\n    e.preventDefault()\n    setLocalStorage('colorscheme', colorscheme)\n    setColorscheme(colorscheme)\n    $('.active-link', sidebarRight).classList.remove('active-link')\n    a.classList.add('active-link')\n  })\n  const li = createElement('li', {class: 'nav-item'}, a)\n  colorschemeOptions.appendChild(li)\n})\n\nconst setColorscheme = colorscheme => {\n  fullHighlighters.forEach(hl => {\n    hl.setOption('theme', colorscheme)\n  })\n  simpleHighlighters.forEach(hl => {\n    hl.className = simpleHighligtherClasses(colorscheme)\n  })\n}\n\nsetColorscheme(store.colorscheme)\n",
@@ -798,7 +867,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 60,
+    "__docId__": 68,
     "kind": "function",
     "name": "setColorscheme",
     "memberof": "src/components/colorscheme-selector/index.js",
@@ -825,7 +894,7 @@
     "ignore": true
   },
   {
-    "__docId__": 61,
+    "__docId__": 69,
     "kind": "file",
     "name": "src/components/content/index.js",
     "content": "// CSS file generation\nimport './content.scss'\n",
@@ -836,7 +905,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 62,
+    "__docId__": 70,
     "kind": "file",
     "name": "src/components/footer/index.js",
     "content": "// CSS file generation\nimport './footer.scss'\n",
@@ -847,7 +916,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 63,
+    "__docId__": 71,
     "kind": "file",
     "name": "src/components/github-link/index.js",
     "content": "import {githubLink, mainHeader, createElement} from '../global-elements'\n\n// CSS file generation\nimport './github-link.scss'\n\nif (githubLink) {\n  githubLink.removeAttribute('style')\n  githubLink.innerHTML = `\n  <span class='icon github-icon'>\n    <svg viewBox='0 0 24 24'>\n      <path d='M20.38,8.53C20.54,8.13 21.06,6.54 20.21,4.39C20.21,4.39 18.9,4 15.91,6C14.66,5.67 13.33,5.62 12,5.62C10.68,5.62 9.34,5.67 8.09,6C5.1,3.97 3.79,4.39 3.79,4.39C2.94,6.54 3.46,8.13 3.63,8.53C2.61,9.62 2,11 2,12.72C2,19.16 6.16,20.61 12,20.61C17.79,20.61 22,19.16 22,12.72C22,11 21.39,9.62 20.38,8.53M12,19.38C7.88,19.38 4.53,19.19 4.53,15.19C4.53,14.24 5,13.34 5.8,12.61C7.14,11.38 9.43,12.03 12,12.03C14.59,12.03 16.85,11.38 18.2,12.61C19,13.34 19.5,14.23 19.5,15.19C19.5,19.18 16.13,19.38 12,19.38M8.86,13.12C8.04,13.12 7.36,14.12 7.36,15.34C7.36,16.57 8.04,17.58 8.86,17.58C9.69,17.58 10.36,16.58 10.36,15.34C10.36,14.11 9.69,13.12 8.86,13.12M15.14,13.12C14.31,13.12 13.64,14.11 13.64,15.34C13.64,16.58 14.31,17.58 15.14,17.58C15.96,17.58 16.64,16.58 16.64,15.34C16.64,14.11 16,13.12 15.14,13.12Z' />\n    </svg>\n  </span>\n  `\n  githubLink.classList.add('github-link')\n  mainHeader.appendChild(\n    createElement('div', {class: 'github-link-wrapper'}, githubLink)\n  )\n}\n",
@@ -858,7 +927,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 64,
+    "__docId__": 72,
     "kind": "file",
     "name": "src/components/global-elements/index.js",
     "content": "export const jsSelector = name => `.js_${name}`\nexport const $$ = (selector, context = document) => [\n  ...context.querySelectorAll(selector)\n]\n\nexport const $ = (selector, context = document) =>\n  context.querySelector(selector)\n\nexport const _$$ = (name, context = document) => [\n  ...context.querySelectorAll(jsSelector(name))\n]\n\nexport const _$ = (name, context = document) =>\n  context.querySelector(jsSelector(name))\n\nexport const createElement = (tag, props, child) => {\n  const wrapper = document.createElement(tag)\n  for (const prop in props) {\n    wrapper.setAttribute(prop, props[prop])\n  }\n  switch (typeof child) {\n    case 'string':\n      wrapper.innerHTML = child\n      break\n    case 'object':\n      if (child.namespaceURI === 'http://www.w3.org/1999/xhtml') {\n        wrapper.appendChild(child)\n      }\n      break\n    default:\n      break\n  }\n  return wrapper\n}\n\nexport const body = document.body\nexport const documentElement = document.documentElement\n\nexport const mainHeader = _$('mainHeader', body)\nexport const sidebarLeft = _$('sidebarLeft', body)\nexport const sidebarRight = _$('sidebarRight', body)\n\nexport const settingsSwitch = _$('settingsSwitch', mainHeader)\nexport const modeSwitch = _$('modeSwitch', mainHeader)\nexport const menuSwitch = _$('menuSwitch', mainHeader)\n\nexport const searchBox = _$('searchBox', mainHeader)\n\nexport const searchInput = _$('searchInput', searchBox)\nexport const searchResult = _$('searchResult', searchBox)\nexport const searchIcon = _$('searchIcon', searchBox)\n\nexport const colorschemeOptions = _$('colorschemeOptions', sidebarRight)\nexport const fontOptions = _$('fontOptions', sidebarRight)\n\nexport const githubLink = $(`${jsSelector('mainHeader')} > a:last-child`)\n\nexport const codeBlocks = $$('pre')\n",
@@ -869,7 +938,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 65,
+    "__docId__": 73,
     "kind": "function",
     "name": "jsSelector",
     "memberof": "src/components/global-elements/index.js",
@@ -895,7 +964,7 @@
     "return": null
   },
   {
-    "__docId__": 66,
+    "__docId__": 74,
     "kind": "function",
     "name": "$$",
     "memberof": "src/components/global-elements/index.js",
@@ -930,7 +999,7 @@
     "return": null
   },
   {
-    "__docId__": 67,
+    "__docId__": 75,
     "kind": "function",
     "name": "$",
     "memberof": "src/components/global-elements/index.js",
@@ -965,7 +1034,7 @@
     "return": null
   },
   {
-    "__docId__": 68,
+    "__docId__": 76,
     "kind": "function",
     "name": "_$$",
     "memberof": "src/components/global-elements/index.js",
@@ -980,7 +1049,6 @@
     "description": null,
     "lineNumber": 9,
     "undocument": true,
-    "ignore": true,
     "params": [
       {
         "name": "name",
@@ -1001,7 +1069,7 @@
     "return": null
   },
   {
-    "__docId__": 69,
+    "__docId__": 77,
     "kind": "function",
     "name": "_$",
     "memberof": "src/components/global-elements/index.js",
@@ -1016,7 +1084,6 @@
     "description": null,
     "lineNumber": 13,
     "undocument": true,
-    "ignore": true,
     "params": [
       {
         "name": "name",
@@ -1037,7 +1104,7 @@
     "return": null
   },
   {
-    "__docId__": 70,
+    "__docId__": 78,
     "kind": "function",
     "name": "createElement",
     "memberof": "src/components/global-elements/index.js",
@@ -1079,7 +1146,7 @@
     }
   },
   {
-    "__docId__": 71,
+    "__docId__": 79,
     "kind": "variable",
     "name": "body",
     "memberof": "src/components/global-elements/index.js",
@@ -1099,7 +1166,7 @@
     }
   },
   {
-    "__docId__": 72,
+    "__docId__": 80,
     "kind": "variable",
     "name": "documentElement",
     "memberof": "src/components/global-elements/index.js",
@@ -1119,7 +1186,7 @@
     }
   },
   {
-    "__docId__": 73,
+    "__docId__": 81,
     "kind": "variable",
     "name": "mainHeader",
     "memberof": "src/components/global-elements/index.js",
@@ -1139,7 +1206,7 @@
     }
   },
   {
-    "__docId__": 74,
+    "__docId__": 82,
     "kind": "variable",
     "name": "sidebarLeft",
     "memberof": "src/components/global-elements/index.js",
@@ -1159,7 +1226,7 @@
     }
   },
   {
-    "__docId__": 75,
+    "__docId__": 83,
     "kind": "variable",
     "name": "sidebarRight",
     "memberof": "src/components/global-elements/index.js",
@@ -1179,7 +1246,7 @@
     }
   },
   {
-    "__docId__": 76,
+    "__docId__": 84,
     "kind": "variable",
     "name": "settingsSwitch",
     "memberof": "src/components/global-elements/index.js",
@@ -1199,7 +1266,7 @@
     }
   },
   {
-    "__docId__": 77,
+    "__docId__": 85,
     "kind": "variable",
     "name": "modeSwitch",
     "memberof": "src/components/global-elements/index.js",
@@ -1219,7 +1286,7 @@
     }
   },
   {
-    "__docId__": 78,
+    "__docId__": 86,
     "kind": "variable",
     "name": "menuSwitch",
     "memberof": "src/components/global-elements/index.js",
@@ -1239,7 +1306,7 @@
     }
   },
   {
-    "__docId__": 79,
+    "__docId__": 87,
     "kind": "variable",
     "name": "searchBox",
     "memberof": "src/components/global-elements/index.js",
@@ -1259,7 +1326,7 @@
     }
   },
   {
-    "__docId__": 80,
+    "__docId__": 88,
     "kind": "variable",
     "name": "searchInput",
     "memberof": "src/components/global-elements/index.js",
@@ -1279,7 +1346,7 @@
     }
   },
   {
-    "__docId__": 81,
+    "__docId__": 89,
     "kind": "variable",
     "name": "searchResult",
     "memberof": "src/components/global-elements/index.js",
@@ -1299,7 +1366,7 @@
     }
   },
   {
-    "__docId__": 82,
+    "__docId__": 90,
     "kind": "variable",
     "name": "searchIcon",
     "memberof": "src/components/global-elements/index.js",
@@ -1319,7 +1386,7 @@
     }
   },
   {
-    "__docId__": 83,
+    "__docId__": 91,
     "kind": "variable",
     "name": "colorschemeOptions",
     "memberof": "src/components/global-elements/index.js",
@@ -1339,7 +1406,7 @@
     }
   },
   {
-    "__docId__": 84,
+    "__docId__": 92,
     "kind": "variable",
     "name": "fontOptions",
     "memberof": "src/components/global-elements/index.js",
@@ -1359,7 +1426,7 @@
     }
   },
   {
-    "__docId__": 85,
+    "__docId__": 93,
     "kind": "variable",
     "name": "githubLink",
     "memberof": "src/components/global-elements/index.js",
@@ -1379,7 +1446,7 @@
     }
   },
   {
-    "__docId__": 86,
+    "__docId__": 94,
     "kind": "variable",
     "name": "codeBlocks",
     "memberof": "src/components/global-elements/index.js",
@@ -1399,7 +1466,93 @@
     }
   },
   {
-    "__docId__": 87,
+    "__docId__": 95,
+    "kind": "file",
+    "name": "src/components/hash-targets/index.js",
+    "content": "import {hash} from '../url'\nimport {$, $$} from '../global-elements'\n\n// CSS file generation\nimport './hash-targets.scss'\n\nconst validIdPattern = /#([\\w\\d\\-_]+)/\nconst isValidId = str => str.replace(validIdPattern, '') === ''\n\nconst markHashTarget = hash => {\n  if (hash && isValidId(hash)) {\n    const target = $(hash)\n    if (target) {\n      target.classList.add('active-target')\n    }\n  }\n}\n\nmarkHashTarget(hash)\n\nwindow.addEventListener('hashchange', e => {\n  $$('.active-target').forEach(target => {\n    target.classList.remove('active-target')\n  })\n  const {newURL} = e\n  const [, hash] = newURL.split('#')\n  if (hash) {\n    markHashTarget(`#${hash}`)\n  }\n})\n",
+    "static": true,
+    "longname": "/Users/greada/Documents/workspace/s2/esdoc-custom-theme/src/components/hash-targets/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 96,
+    "kind": "variable",
+    "name": "validIdPattern",
+    "memberof": "src/components/hash-targets/index.js",
+    "static": true,
+    "longname": "src/components/hash-targets/index.js~validIdPattern",
+    "access": "public",
+    "export": false,
+    "importPath": "esdoc-custom-theme",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 7,
+    "undocument": true,
+    "type": {
+      "types": [
+        "undefined"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 97,
+    "kind": "function",
+    "name": "isValidId",
+    "memberof": "src/components/hash-targets/index.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/hash-targets/index.js~isValidId",
+    "access": "public",
+    "export": false,
+    "importPath": "esdoc-custom-theme",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 8,
+    "undocument": true,
+    "params": [
+      {
+        "name": "str",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 98,
+    "kind": "function",
+    "name": "markHashTarget",
+    "memberof": "src/components/hash-targets/index.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/hash-targets/index.js~markHashTarget",
+    "access": "public",
+    "export": false,
+    "importPath": "esdoc-custom-theme",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 10,
+    "undocument": true,
+    "params": [
+      {
+        "name": "hash",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 99,
     "kind": "file",
     "name": "src/components/header/index.js",
     "content": "// CSS file generation\nimport './header.scss'\n",
@@ -1410,7 +1563,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 88,
+    "__docId__": 100,
     "kind": "file",
     "name": "src/components/kind/index.js",
     "content": "// CSS file generation\nimport './kind.scss'\n\n/**\n * @typedef TestTypeDef1\n *\n * This is just a test for typedef\n * @see {TestTypeDef2}\n * @type {function}\n * @param {!Object} foo Just an object\n * @param {?String} bar This is a string\n * @param {*} [baz=''hello] This anything\n */\n\n/**\n * @typedef TestTypeDef2\n *\n * This is just a test for typedef\n * @type Object\n * @property {String} foo About foo\n */\n",
@@ -1421,7 +1574,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 89,
+    "__docId__": 101,
     "kind": "typedef",
     "name": "TestTypeDef1",
     "memberof": "src/components/kind/index.js",
@@ -1475,7 +1628,7 @@
     }
   },
   {
-    "__docId__": 90,
+    "__docId__": 102,
     "kind": "typedef",
     "name": "TestTypeDef2",
     "memberof": "src/components/kind/index.js",
@@ -1504,7 +1657,7 @@
     }
   },
   {
-    "__docId__": 91,
+    "__docId__": 103,
     "kind": "file",
     "name": "src/components/layout/index.js",
     "content": "// CSS file generation\nimport './layout.scss'\n",
@@ -1515,7 +1668,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 92,
+    "__docId__": 104,
     "kind": "file",
     "name": "src/components/link/index.js",
     "content": "// CSS file generation\nimport './link.scss'\n",
@@ -1526,7 +1679,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 93,
+    "__docId__": 105,
     "kind": "file",
     "name": "src/components/list/index.js",
     "content": "// CSS file generation\nimport './list.scss'\n",
@@ -1537,7 +1690,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 94,
+    "__docId__": 106,
     "kind": "file",
     "name": "src/components/main/index.js",
     "content": "// CSS file generation\nimport './main.scss'\n",
@@ -1548,10 +1701,10 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 95,
+    "__docId__": 107,
     "kind": "file",
     "name": "src/components/menu-switch/index.js",
-    "content": "import store, {setLocalStorage} from '../store'\nimport {sidebarLeft, menuSwitch} from '../global-elements'\n\n// CSS file generation\nimport './menu-switch.scss'\n\nmenuSwitch.addEventListener('click', e => {\n  e.preventDefault()\n  const open = store.sidebarLeft === true\n  sidebarLeft.classList.remove('initial')\n  sidebarLeft.classList.toggle('closed', open)\n  setLocalStorage('sideBarLeft', !open)\n  store.sidebarLeft = !open\n})\n\nsidebarLeft.classList.toggle('closed', !store.sidebarLeft)\n",
+    "content": "import store, {setLocalStorage} from '../store'\nimport {body, sidebarLeft, menuSwitch} from '../global-elements'\n\n// CSS file generation\nimport './menu-switch.scss'\n\nmenuSwitch.addEventListener('click', e => {\n  e.preventDefault()\n  console.log()\n  toggleSidebar(store.sidebarLeft)\n  store.sidebarLeft = !store.sidebarLeft\n})\n\nexport const closeSidebar = () => {\n  sidebarLeft.classList.remove('initial')\n  store.sidebarLeft = false\n  toggleSidebar(true)\n}\n\nexport const openSidebar = () => {\n  sidebarLeft.classList.remove('initial')\n  store.sidebarLeft = true\n  toggleSidebar(false)\n}\n\nexport const toggleSidebar = open => {\n  sidebarLeft.classList.toggle('closed', open)\n}\n\ntoggleSidebar(!store.sidebarLeft)\n\nbody.addEventListener('click', e => {\n  const {path} = e\n  if (path.indexOf(menuSwitch) < 0) {\n    closeSidebar()\n  }\n})\n",
     "static": true,
     "longname": "/Users/greada/Documents/workspace/s2/esdoc-custom-theme/src/components/menu-switch/index.js",
     "access": "public",
@@ -1559,10 +1712,74 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 96,
+    "__docId__": 108,
+    "kind": "function",
+    "name": "closeSidebar",
+    "memberof": "src/components/menu-switch/index.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/menu-switch/index.js~closeSidebar",
+    "access": "public",
+    "export": true,
+    "importPath": "esdoc-custom-theme",
+    "importStyle": "{closeSidebar}",
+    "description": null,
+    "lineNumber": 14,
+    "undocument": true,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 109,
+    "kind": "function",
+    "name": "openSidebar",
+    "memberof": "src/components/menu-switch/index.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/menu-switch/index.js~openSidebar",
+    "access": "public",
+    "export": true,
+    "importPath": "esdoc-custom-theme",
+    "importStyle": "{openSidebar}",
+    "description": null,
+    "lineNumber": 20,
+    "undocument": true,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 110,
+    "kind": "function",
+    "name": "toggleSidebar",
+    "memberof": "src/components/menu-switch/index.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/menu-switch/index.js~toggleSidebar",
+    "access": "public",
+    "export": true,
+    "importPath": "esdoc-custom-theme",
+    "importStyle": "{toggleSidebar}",
+    "description": null,
+    "lineNumber": 26,
+    "undocument": true,
+    "params": [
+      {
+        "name": "open",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 111,
     "kind": "file",
     "name": "src/components/mode-selector/index.js",
-    "content": "import store, {setLocalStorage} from '../store'\nimport {documentElement, modeSwitch} from '../global-elements'\n\n// CSS file generation\nimport './root.scss'\nimport './dark.scss'\nimport './light.scss'\nimport './mode-switch.scss'\n\nconst toggle = (a, b, c) => (a === b ? c : b)\n\nexport const switchLight = e => {\n  e.preventDefault()\n  const {mode} = store\n  const newMode = toggle(mode, 'light', 'dark')\n  store.mode = newMode\n\n  setLocalStorage('mode', newMode)\n  setLight(newMode, mode)\n}\n\nconst setLight = (mode, oldMode) => {\n  documentElement.classList.replace(oldMode, mode)\n}\n\nmodeSwitch.addEventListener('click', switchLight)\nsetLight(store.mode, toggle(store.mode, 'light', 'dark'))\n",
+    "content": "import store, {setLocalStorage} from '../store'\nimport {documentElement, modeSwitch} from '../global-elements'\n\n// CSS file generation\nimport './root.scss'\nimport './dark.scss'\nimport './light.scss'\nimport './mode-switch.scss'\n\nconst toggle = (a, b, c) => (a === b ? c : b)\n\nconst setLight = (mode, oldMode) => {\n  documentElement.classList.replace(oldMode, mode)\n  documentElement.classList.replace('no-js', 'js')\n}\n\nexport const switchLight = e => {\n  e.preventDefault()\n  const {mode} = store\n  const newMode = toggle(mode, 'light', 'dark')\n  store.mode = newMode\n\n  setLocalStorage('mode', newMode)\n  setLight(newMode, mode)\n}\n\nmodeSwitch.addEventListener('click', switchLight)\nsetLight(store.mode, toggle(store.mode, 'light', 'dark'))\n",
     "static": true,
     "longname": "/Users/greada/Documents/workspace/s2/esdoc-custom-theme/src/components/mode-selector/index.js",
     "access": "public",
@@ -1570,7 +1787,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 97,
+    "__docId__": 112,
     "kind": "function",
     "name": "toggle",
     "memberof": "src/components/mode-selector/index.js",
@@ -1609,33 +1826,7 @@
     "ignore": true
   },
   {
-    "__docId__": 98,
-    "kind": "function",
-    "name": "switchLight",
-    "memberof": "src/components/mode-selector/index.js",
-    "generator": false,
-    "async": false,
-    "static": true,
-    "longname": "src/components/mode-selector/index.js~switchLight",
-    "access": "public",
-    "export": true,
-    "importPath": "esdoc-custom-theme",
-    "importStyle": "{switchLight}",
-    "description": null,
-    "lineNumber": 12,
-    "undocument": true,
-    "params": [
-      {
-        "name": "e",
-        "types": [
-          "*"
-        ]
-      }
-    ],
-    "return": null
-  },
-  {
-    "__docId__": 99,
+    "__docId__": 113,
     "kind": "function",
     "name": "setLight",
     "memberof": "src/components/mode-selector/index.js",
@@ -1648,7 +1839,7 @@
     "importPath": "esdoc-custom-theme",
     "importStyle": null,
     "description": null,
-    "lineNumber": 22,
+    "lineNumber": 12,
     "undocument": true,
     "params": [
       {
@@ -1668,7 +1859,33 @@
     "ignore": true
   },
   {
-    "__docId__": 100,
+    "__docId__": 114,
+    "kind": "function",
+    "name": "switchLight",
+    "memberof": "src/components/mode-selector/index.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/mode-selector/index.js~switchLight",
+    "access": "public",
+    "export": true,
+    "importPath": "esdoc-custom-theme",
+    "importStyle": "{switchLight}",
+    "description": null,
+    "lineNumber": 17,
+    "undocument": true,
+    "params": [
+      {
+        "name": "e",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 115,
     "kind": "file",
     "name": "src/components/navigation/index.js",
     "content": "// CSS file generation\nimport './main-nav.scss'\n",
@@ -1679,7 +1896,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 101,
+    "__docId__": 116,
     "kind": "file",
     "name": "src/components/patch-for-local/index.js",
     "content": "import {protocol} from '../url'\nimport {$$} from '../global-elements'\n\nif (protocol === 'file:') {\n  const homeLinks = $$('a[href=\"./\"]')\n  homeLinks.forEach(link => {\n    link.href = './index.html'\n  })\n}\n",
@@ -1690,7 +1907,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 102,
+    "__docId__": 117,
     "kind": "file",
     "name": "src/components/quote/index.js",
     "content": "// CSS file generation\nimport './quote.scss'\n",
@@ -1701,7 +1918,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 103,
+    "__docId__": 118,
     "kind": "file",
     "name": "src/components/searchbar/activate.js",
     "content": "import store from '../store'\n\nconst activate = (node, target) => {\n  const current = node.children[store.selectedIndex]\n  let li = target\n  while (li) {\n    if (li.nodeName === 'LI') {\n      break\n    }\n    li = li.parentElement\n  }\n\n  if (li) {\n    store.selectedIndex = [...node.children].indexOf(li)\n  }\n}\n\nexport default activate\n",
@@ -1712,7 +1929,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 104,
+    "__docId__": 119,
     "kind": "function",
     "name": "activate",
     "memberof": "src/components/searchbar/activate.js",
@@ -1744,7 +1961,7 @@
     "return": null
   },
   {
-    "__docId__": 105,
+    "__docId__": 120,
     "kind": "file",
     "name": "src/components/searchbar/index.js",
     "content": "import appStorage from '../store'\nimport {body, searchBox, searchInput, searchResult} from '../global-elements'\n\nimport {openResults, closeResults} from './toggle-result'\nimport searchIndex from './search-index'\nimport search from './search'\nimport select from './select'\nimport activate from './activate'\n\n// CSS file generation\nimport './search-result.scss'\nimport './search-box.scss'\n\nconst sendSearch = e =>\n  search(e.target.value.trim().toLowerCase(), searchResult)\nconst sendSelect = e => select(e, searchResult)\nconst sendActivate = e => activate(e.target, searchResult)\n\n// search on keyup (typing)\nsearchInput.addEventListener('keyup', sendSearch)\n// select on keydown (up, down, enter/return)\nsearchInput.addEventListener('keydown', sendSelect)\n\n// select search result when search result is mouse over.\nsearchResult.addEventListener('mousemove', sendActivate)\n\n// Clear search result when body is clicked.\nbody.addEventListener('click', e => {\n  closeResults(searchResult)\n})\n",
@@ -1755,7 +1972,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 106,
+    "__docId__": 121,
     "kind": "function",
     "name": "sendSearch",
     "memberof": "src/components/searchbar/index.js",
@@ -1782,7 +1999,7 @@
     "ignore": true
   },
   {
-    "__docId__": 107,
+    "__docId__": 122,
     "kind": "function",
     "name": "sendSelect",
     "memberof": "src/components/searchbar/index.js",
@@ -1809,7 +2026,7 @@
     "ignore": true
   },
   {
-    "__docId__": 108,
+    "__docId__": 123,
     "kind": "function",
     "name": "sendActivate",
     "memberof": "src/components/searchbar/index.js",
@@ -1836,7 +2053,7 @@
     "ignore": true
   },
   {
-    "__docId__": 109,
+    "__docId__": 124,
     "kind": "file",
     "name": "src/components/searchbar/search-index.js",
     "content": "export default window.esdocSearchIndex\n",
@@ -1847,7 +2064,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 110,
+    "__docId__": 125,
     "kind": "file",
     "name": "src/components/searchbar/search.js",
     "content": "import store from '../store'\nimport {closeResults, openResults} from './toggle-result'\nimport searchIndex from './search-index'\n\nconst search = (text, output) => {\n  if (!text) {\n    closeResults(output)\n    return\n  }\n\n  if (text === store.prevText) {\n    return\n  }\n\n  store.prevText = text\n\n  const html = {\n    class: [],\n    method: [],\n    member: [],\n    function: [],\n    variable: [],\n    typedef: [],\n    external: [],\n    file: [],\n    test: [],\n    testFile: []\n  }\n\n  searchIndex.forEach((item, index) => {\n    const [src, href, label, kind] = item\n    if (src.indexOf(text) > -1) {\n      html[kind].push(`\n        <li class=\"search-result-item\">\n          <a class=\"search-result-link\" href=\"${href}\">\n            ${label}\n          </a>\n        </li>\n      `)\n    }\n  })\n\n  const innerHTML = Object.keys(html)\n    .map(kind => {\n      const list = html[kind].join('')\n      if (!list) {\n        return ''\n      }\n      return `\n      <li class=\"search-separator\">\n        ${kind}\n      </li>\n    ${list}`\n    })\n    .join('')\n\n  if (!innerHTML) {\n    closeResults(output)\n    return\n  }\n  openResults(output, innerHTML)\n}\n\nexport default search\n",
@@ -1858,7 +2075,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 111,
+    "__docId__": 126,
     "kind": "function",
     "name": "search",
     "memberof": "src/components/searchbar/search.js",
@@ -1890,7 +2107,7 @@
     "return": null
   },
   {
-    "__docId__": 112,
+    "__docId__": 127,
     "kind": "file",
     "name": "src/components/searchbar/select.js",
     "content": "import store from '../store'\nimport {setHref} from '../url'\n\nconst select = (e, node) => {\n  const {keyCode} = e\n  if (keyCode === 40) {\n    // arrow down\n    const current = node.children[store.selectedIndex]\n    let selected = node.children[store.selectedIndex + 1]\n    if (selected && selected.classList.contains('search-separator')) {\n      selected = node.children[store.selectedIndex + 2]\n      store.selectedIndex++\n    }\n\n    if (selected) {\n      if (current) {\n        current.classList.remove('selected')\n      }\n      store.selectedIndex++\n      selected.classList.add('selected')\n    }\n  } else if (keyCode === 38) {\n    // arrow up\n    const current = node.children[store.selectedIndex]\n    let selected = node.children[store.selectedIndex - 1]\n    if (selected && selected.classList.contains('search-separator')) {\n      selected = node.children[store.selectedIndex - 2]\n      store.selectedIndex--\n    }\n\n    if (selected) {\n      if (current) {\n        current.classList.remove('selected')\n      }\n      store.selectedIndex--\n      selected.classList.add('selected')\n    }\n  } else if (keyCode === 13) {\n    // enter\n    const current = node.children[store.selectedIndex]\n    if (current) {\n      const link = current.querySelector('a')\n      if (link) {\n        setHref(link.href)\n      }\n    }\n  } else {\n    return\n  }\n  e.preventDefault()\n}\n\nexport default select\n",
@@ -1901,7 +2118,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 113,
+    "__docId__": 128,
     "kind": "function",
     "name": "select",
     "memberof": "src/components/searchbar/select.js",
@@ -1933,7 +2150,7 @@
     "return": null
   },
   {
-    "__docId__": 114,
+    "__docId__": 129,
     "kind": "file",
     "name": "src/components/searchbar/toggle-result.js",
     "content": "import store from '../store'\n\nexport const closeResults = node => {\n  store.selectedIndex = -1\n  node.classList.add('hidden')\n  node.innerHTML = ''\n}\n\nexport const openResults = (node, content) => {\n  store.selectedIndex = -1\n  node.innerHTML = content\n  node.classList.remove('hidden')\n}\n",
@@ -1944,7 +2161,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 115,
+    "__docId__": 130,
     "kind": "function",
     "name": "closeResults",
     "memberof": "src/components/searchbar/toggle-result.js",
@@ -1970,7 +2187,7 @@
     "return": null
   },
   {
-    "__docId__": 116,
+    "__docId__": 131,
     "kind": "function",
     "name": "openResults",
     "memberof": "src/components/searchbar/toggle-result.js",
@@ -2002,7 +2219,7 @@
     "return": null
   },
   {
-    "__docId__": 117,
+    "__docId__": 132,
     "kind": "file",
     "name": "src/components/sidebar/activate-links.js",
     "content": "import {sidebarLeft} from '../global-elements'\n\nconst activate = e => {\n  const {newURL} = e\n  const url = newURL.replace(/.*\\/manual\\//, 'manual/')\n  const [slug, hash] = url.split('#')\n  const urlLinks = []\n  const activatedLinks = [...sidebarLeft.querySelectorAll(`.active-link`)]\n  const activeLinks = [\n    ...sidebarLeft.querySelectorAll(`[href='${slug}']`),\n    ...sidebarLeft.querySelectorAll(`[href='${url}']`)\n  ]\n  activatedLinks.forEach(link => {\n    link.classList.remove('active-link')\n  })\n  activeLinks.forEach(link => {\n    link.classList.add('active-link')\n  })\n}\n\nexport default activate\n",
@@ -2013,7 +2230,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 118,
+    "__docId__": 133,
     "kind": "function",
     "name": "activate",
     "memberof": "src/components/sidebar/activate-links.js",
@@ -2039,7 +2256,7 @@
     "return": null
   },
   {
-    "__docId__": 119,
+    "__docId__": 134,
     "kind": "file",
     "name": "src/components/sidebar/index.js",
     "content": "import {href as newURL} from '../url'\nimport activateLinks from './activate-links'\nimport './toggle-sidebar'\n\n// CSS file generation\nimport './sidebar.scss'\nimport './sidebar-left.scss'\nimport './sidebar-right.scss'\n\nactivateLinks({newURL})\nwindow.addEventListener('hashchange', activateLinks)\n",
@@ -2050,10 +2267,10 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 120,
+    "__docId__": 135,
     "kind": "file",
     "name": "src/components/sidebar/toggle-sidebar.js",
-    "content": "import {sidebarRight, settingsSwitch} from '../global-elements'\n\nsettingsSwitch.addEventListener('click', e => {\n  e.preventDefault()\n  sidebarRight.classList.toggle('closed')\n})\n",
+    "content": "import {body, sidebarRight, settingsSwitch} from '../global-elements'\n\nsettingsSwitch.addEventListener('click', e => {\n  e.preventDefault()\n  sidebarRight.classList.toggle('closed')\n})\n\n// This section will close the right sidebar\nbody.addEventListener('click', e => {\n  const {path} = e\n  const switchClick = path.indexOf(settingsSwitch) >= 0\n  const menuClick = path.indexOf(sidebarRight) >= 0\n  if (!switchClick && !menuClick) {\n    sidebarRight.classList.add('closed')\n  }\n})\n",
     "static": true,
     "longname": "/Users/greada/Documents/workspace/s2/esdoc-custom-theme/src/components/sidebar/toggle-sidebar.js",
     "access": "public",
@@ -2061,10 +2278,10 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 121,
+    "__docId__": 136,
     "kind": "file",
     "name": "src/components/store/index.js",
-    "content": "export const {localStorage} = window\nexport const storageId = name => `__esdoc-custom-theme__${name}__`\nexport const getLocalStorage = name => localStorage.getItem(storageId(name))\nexport const setLocalStorage = (name, value) =>\n  localStorage.setItem(storageId(name), value)\n\nconst defaultColorscheme = 'zenburn'\nconst defaultMode = 'dark'\n\nconst colorscheme = getLocalStorage('colorscheme') || defaultColorscheme\nconst mode = getLocalStorage('mode') || defaultMode\n\nconst store = {\n  colorscheme,\n  mode,\n  selectedIndex: -1,\n  prevText: '',\n  sidebarLeft: getLocalStorage('sideBarLeft') === 'true'\n}\n\nexport default store\n",
+    "content": "export const {localStorage} = window\nexport const storageId = name => `__esdoc-custom-theme__${name}__`\nexport const getLocalStorage = name => localStorage.getItem(storageId(name))\nexport const setLocalStorage = (name, value) =>\n  localStorage.setItem(storageId(name), value)\n\nconst defaultColorscheme = 'zenburn'\nconst defaultMode = 'dark'\n\nconst colorscheme = getLocalStorage('colorscheme') || defaultColorscheme\nconst mode = getLocalStorage('mode') || defaultMode\n\nconst store = {\n  colorscheme,\n  mode,\n  selectedIndex: -1,\n  prevText: '',\n  sidebarLeft: false\n}\n\nexport default store\n",
     "static": true,
     "longname": "/Users/greada/Documents/workspace/s2/esdoc-custom-theme/src/components/store/index.js",
     "access": "public",
@@ -2072,7 +2289,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 122,
+    "__docId__": 137,
     "kind": "variable",
     "name": "localStorage",
     "memberof": "src/components/store/index.js",
@@ -2092,7 +2309,7 @@
     }
   },
   {
-    "__docId__": 123,
+    "__docId__": 138,
     "kind": "function",
     "name": "storageId",
     "memberof": "src/components/store/index.js",
@@ -2118,7 +2335,7 @@
     "return": null
   },
   {
-    "__docId__": 124,
+    "__docId__": 139,
     "kind": "function",
     "name": "getLocalStorage",
     "memberof": "src/components/store/index.js",
@@ -2144,7 +2361,7 @@
     "return": null
   },
   {
-    "__docId__": 125,
+    "__docId__": 140,
     "kind": "function",
     "name": "setLocalStorage",
     "memberof": "src/components/store/index.js",
@@ -2176,7 +2393,7 @@
     "return": null
   },
   {
-    "__docId__": 126,
+    "__docId__": 141,
     "kind": "variable",
     "name": "defaultColorscheme",
     "memberof": "src/components/store/index.js",
@@ -2197,7 +2414,7 @@
     "ignore": true
   },
   {
-    "__docId__": 127,
+    "__docId__": 142,
     "kind": "variable",
     "name": "defaultMode",
     "memberof": "src/components/store/index.js",
@@ -2218,7 +2435,7 @@
     "ignore": true
   },
   {
-    "__docId__": 128,
+    "__docId__": 143,
     "kind": "variable",
     "name": "colorscheme",
     "memberof": "src/components/store/index.js",
@@ -2239,7 +2456,7 @@
     "ignore": true
   },
   {
-    "__docId__": 129,
+    "__docId__": 144,
     "kind": "variable",
     "name": "mode",
     "memberof": "src/components/store/index.js",
@@ -2260,7 +2477,7 @@
     "ignore": true
   },
   {
-    "__docId__": 130,
+    "__docId__": 145,
     "kind": "variable",
     "name": "store",
     "memberof": "src/components/store/index.js",
@@ -2280,7 +2497,7 @@
     }
   },
   {
-    "__docId__": 131,
+    "__docId__": 146,
     "kind": "file",
     "name": "src/components/syntax-highlighter/get-active-lines.js",
     "content": "import {hash} from '../url'\nimport normalizeLines from './normalize-lines'\n\nconst getActiveLines = hl => {\n  const matched = location.hash.match(/activeLines=([\\d,]+)/)\n  if (matched) {\n    const lines = normalizeLines(matched[1])\n    lines.forEach((line, i) =>\n      hl.addLineClass(line, 'wrap', 'CodeMirror-activeline-background')\n    )\n    hl.scrollIntoView(lines[0])\n  }\n}\n\nexport default getActiveLines\n",
@@ -2291,7 +2508,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 132,
+    "__docId__": 147,
     "kind": "function",
     "name": "getActiveLines",
     "memberof": "src/components/syntax-highlighter/get-active-lines.js",
@@ -2317,7 +2534,7 @@
     "return": null
   },
   {
-    "__docId__": 133,
+    "__docId__": 148,
     "kind": "file",
     "name": "src/components/syntax-highlighter/get-error-lines.js",
     "content": "import {hash} from '../url'\nimport normalizeLines from './normalize-lines'\n\nconst getErrorLines = hl => {\n  const matched = hash.match(/errorLines=([\\d,]+)/)\n  if (matched) {\n    const lines = normalizeLines(matched[1])\n    lines.forEach((line, i) =>\n      hl.addLineClass(line, 'wrap', 'CodeMirror-errorline-background')\n    )\n    hl.scrollIntoView(lines[0])\n  }\n}\n\nexport default getErrorLines\n",
@@ -2328,7 +2545,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 134,
+    "__docId__": 149,
     "kind": "function",
     "name": "getErrorLines",
     "memberof": "src/components/syntax-highlighter/get-error-lines.js",
@@ -2354,7 +2571,7 @@
     "return": null
   },
   {
-    "__docId__": 135,
+    "__docId__": 150,
     "kind": "file",
     "name": "src/components/syntax-highlighter/get-line-number.js",
     "content": "import {hash} from '../url'\n\nconst getlineNumber = hl => {\n  const matched = hash.match(/lineNumber([\\d]+)/)\n  if (matched) {\n    const lineNumber = parseInt(matched[1], 10)\n    hl.addLineClass(lineNumber - 1, 'wrap', 'CodeMirror-activeline-background')\n    hl.scrollIntoView(lineNumber)\n  }\n}\n\nexport default getlineNumber\n",
@@ -2365,7 +2582,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 136,
+    "__docId__": 151,
     "kind": "function",
     "name": "getlineNumber",
     "memberof": "src/components/syntax-highlighter/get-line-number.js",
@@ -2391,7 +2608,7 @@
     "return": null
   },
   {
-    "__docId__": 137,
+    "__docId__": 152,
     "kind": "file",
     "name": "src/components/syntax-highlighter/highlight.js",
     "content": "import {pathname} from '../url'\nimport {simpleMode, fullMode} from '../codemirror'\n\nconst CSS = 'css'\nconst SCSS = 'text/x-scss'\nconst LESS = 'text/x-less'\nconst JAVASCRIPT = 'javascript'\nconst JSX = 'jsx'\nconst TYPESCRIPT = 'text/typescript'\nconst JSON_LD = 'application/ld+json'\nconst SHELL = 'shell'\n\nconst modes = {\n  default: JSX,\n  css: CSS,\n  scss: SCSS,\n  less: LESS,\n  bash: SHELL,\n  shell: SHELL,\n  javascript: JAVASCRIPT,\n  js: JAVASCRIPT,\n  jsx: JSX,\n  typescript: TYPESCRIPT,\n  ts: TYPESCRIPT,\n  tsx: TYPESCRIPT,\n  json: JSON_LD\n}\n\nconst isJSFile = pathname.match('.js.html')\nconst isTSFile = pathname.match('.ts.html')\nconst isJSXFile = pathname.match('.jsx.html')\nconst isTSXFile = pathname.match('.tsx.html')\nconst isFile = isJSFile || isTSFile || isJSXFile || isTSXFile\n\nconst simpleOrFull = block => {\n  const {innerText: value} = block\n  const code = block.querySelector('code')\n  let lang = ''\n  if (code) {\n    const classNames = code.className.split(' ')\n    const [langName] = classNames.filter(x => x.match('lang'))\n    if (langName) {\n      lang = langName\n    }\n\n    const isImportPathCode = code.getAttribute('data-ice') === 'importPathCode'\n    if (isImportPathCode) {\n      return {ip: block}\n    }\n  }\n\n  let mode = lang.replace(/lang(uage)?-/, '') || 'default'\n  if (isJSFile || isJSXFile) {\n    mode = 'jsx'\n  }\n  if (isTSFile || isTSXFile) {\n    mode = 'ts'\n  }\n  if (isFile) {\n    return fullMode(value, modes[mode], block)\n  }\n  return simpleMode(value, modes[mode], block)\n}\n\nconst highlight = blocks => blocks.map(simpleOrFull)\n\nexport default highlight\n",
@@ -2402,7 +2619,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 138,
+    "__docId__": 153,
     "kind": "variable",
     "name": "CSS",
     "memberof": "src/components/syntax-highlighter/highlight.js",
@@ -2423,7 +2640,7 @@
     "ignore": true
   },
   {
-    "__docId__": 139,
+    "__docId__": 154,
     "kind": "variable",
     "name": "SCSS",
     "memberof": "src/components/syntax-highlighter/highlight.js",
@@ -2444,7 +2661,7 @@
     "ignore": true
   },
   {
-    "__docId__": 140,
+    "__docId__": 155,
     "kind": "variable",
     "name": "LESS",
     "memberof": "src/components/syntax-highlighter/highlight.js",
@@ -2465,7 +2682,7 @@
     "ignore": true
   },
   {
-    "__docId__": 141,
+    "__docId__": 156,
     "kind": "variable",
     "name": "JAVASCRIPT",
     "memberof": "src/components/syntax-highlighter/highlight.js",
@@ -2486,7 +2703,7 @@
     "ignore": true
   },
   {
-    "__docId__": 142,
+    "__docId__": 157,
     "kind": "variable",
     "name": "JSX",
     "memberof": "src/components/syntax-highlighter/highlight.js",
@@ -2507,7 +2724,7 @@
     "ignore": true
   },
   {
-    "__docId__": 143,
+    "__docId__": 158,
     "kind": "variable",
     "name": "TYPESCRIPT",
     "memberof": "src/components/syntax-highlighter/highlight.js",
@@ -2528,7 +2745,7 @@
     "ignore": true
   },
   {
-    "__docId__": 144,
+    "__docId__": 159,
     "kind": "variable",
     "name": "JSON_LD",
     "memberof": "src/components/syntax-highlighter/highlight.js",
@@ -2549,7 +2766,7 @@
     "ignore": true
   },
   {
-    "__docId__": 145,
+    "__docId__": 160,
     "kind": "variable",
     "name": "SHELL",
     "memberof": "src/components/syntax-highlighter/highlight.js",
@@ -2570,7 +2787,7 @@
     "ignore": true
   },
   {
-    "__docId__": 146,
+    "__docId__": 161,
     "kind": "variable",
     "name": "modes",
     "memberof": "src/components/syntax-highlighter/highlight.js",
@@ -2591,7 +2808,7 @@
     "ignore": true
   },
   {
-    "__docId__": 147,
+    "__docId__": 162,
     "kind": "variable",
     "name": "isJSFile",
     "memberof": "src/components/syntax-highlighter/highlight.js",
@@ -2612,7 +2829,7 @@
     "ignore": true
   },
   {
-    "__docId__": 148,
+    "__docId__": 163,
     "kind": "variable",
     "name": "isTSFile",
     "memberof": "src/components/syntax-highlighter/highlight.js",
@@ -2633,7 +2850,7 @@
     "ignore": true
   },
   {
-    "__docId__": 149,
+    "__docId__": 164,
     "kind": "variable",
     "name": "isJSXFile",
     "memberof": "src/components/syntax-highlighter/highlight.js",
@@ -2654,7 +2871,7 @@
     "ignore": true
   },
   {
-    "__docId__": 150,
+    "__docId__": 165,
     "kind": "variable",
     "name": "isTSXFile",
     "memberof": "src/components/syntax-highlighter/highlight.js",
@@ -2675,7 +2892,7 @@
     "ignore": true
   },
   {
-    "__docId__": 151,
+    "__docId__": 166,
     "kind": "variable",
     "name": "isFile",
     "memberof": "src/components/syntax-highlighter/highlight.js",
@@ -2696,7 +2913,7 @@
     "ignore": true
   },
   {
-    "__docId__": 152,
+    "__docId__": 167,
     "kind": "function",
     "name": "simpleOrFull",
     "memberof": "src/components/syntax-highlighter/highlight.js",
@@ -2727,7 +2944,7 @@
     "ignore": true
   },
   {
-    "__docId__": 153,
+    "__docId__": 168,
     "kind": "function",
     "name": "highlight",
     "memberof": "src/components/syntax-highlighter/highlight.js",
@@ -2753,7 +2970,7 @@
     "return": null
   },
   {
-    "__docId__": 154,
+    "__docId__": 169,
     "kind": "file",
     "name": "src/components/syntax-highlighter/index.js",
     "content": "import CodeMirror, {colorschemes} from '../codemirror'\nimport {codeBlocks} from '../global-elements'\n\nimport highlight from './highlight'\nimport getErrorLines from './get-error-lines'\nimport getActiveLines from './get-active-lines'\nimport getlineNumber from './get-line-number'\n\nconst instances = highlight(codeBlocks)\nexport const fullHighlighters = instances\n  .filter(x => Boolean(x.cm))\n  .map(x => x.cm)\nexport const simpleHighlighters = instances\n  .filter(x => Boolean(x.hl))\n  .map(x => x.hl)\nexport const [fileHighlighter] = fullHighlighters\ngetErrorLines(fileHighlighter)\ngetActiveLines(fileHighlighter)\ngetlineNumber(fileHighlighter)\n",
@@ -2764,7 +2981,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 155,
+    "__docId__": 170,
     "kind": "variable",
     "name": "instances",
     "memberof": "src/components/syntax-highlighter/index.js",
@@ -2785,7 +3002,7 @@
     "ignore": true
   },
   {
-    "__docId__": 156,
+    "__docId__": 171,
     "kind": "variable",
     "name": "fullHighlighters",
     "memberof": "src/components/syntax-highlighter/index.js",
@@ -2805,7 +3022,7 @@
     }
   },
   {
-    "__docId__": 157,
+    "__docId__": 172,
     "kind": "variable",
     "name": "simpleHighlighters",
     "memberof": "src/components/syntax-highlighter/index.js",
@@ -2825,7 +3042,7 @@
     }
   },
   {
-    "__docId__": 158,
+    "__docId__": 173,
     "kind": "variable",
     "name": "fileHighlighter",
     "memberof": "src/components/syntax-highlighter/index.js",
@@ -2845,7 +3062,7 @@
     }
   },
   {
-    "__docId__": 159,
+    "__docId__": 174,
     "kind": "file",
     "name": "src/components/syntax-highlighter/normalize-lines.js",
     "content": "/**\n * Normalizes lines\n *\n * @param  {Array} lines\n *   The lines\n * @return {Array}\n *   sorted and 0 based index\n *\n * @example\n * const lines = normalizeLines(['1', '12', '3', '5'])\n * // => [0, 2, 4, 11]\n */\nconst normalizeLines = lines =>\n  lines\n    .split(',')\n    .map(line => parseInt(line, 10) - 1)\n    .sort((a, b) => a - b)\n\nexport default normalizeLines\n",
@@ -2856,7 +3073,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 160,
+    "__docId__": 175,
     "kind": "function",
     "name": "normalizeLines",
     "memberof": "src/components/syntax-highlighter/normalize-lines.js",
@@ -2895,7 +3112,7 @@
     }
   },
   {
-    "__docId__": 161,
+    "__docId__": 176,
     "kind": "file",
     "name": "src/components/table/index.js",
     "content": "// CSS file generation\nimport './table.scss'\n",
@@ -2906,7 +3123,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 162,
+    "__docId__": 177,
     "kind": "file",
     "name": "src/components/url/index.js",
     "content": "export const {\n  hash,\n  search,\n  protocol,\n  host,\n  hostname,\n  origin,\n  port,\n  pathname,\n  href\n} = window.location\n\nexport const setURL = (type, value) => {\n  window.location[type] = value\n}\n\nexport const setHash = value => {\n  setURL('hash', value)\n}\n\nexport const setHref = value => {\n  setURL('href', value)\n}\n",
@@ -2917,7 +3134,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 163,
+    "__docId__": 178,
     "kind": "variable",
     "name": "hash",
     "memberof": "src/components/url/index.js",
@@ -2937,7 +3154,7 @@
     }
   },
   {
-    "__docId__": 164,
+    "__docId__": 179,
     "kind": "function",
     "name": "setURL",
     "memberof": "src/components/url/index.js",
@@ -2969,7 +3186,7 @@
     "return": null
   },
   {
-    "__docId__": 165,
+    "__docId__": 180,
     "kind": "function",
     "name": "setHash",
     "memberof": "src/components/url/index.js",
@@ -2995,7 +3212,7 @@
     "return": null
   },
   {
-    "__docId__": 166,
+    "__docId__": 181,
     "kind": "function",
     "name": "setHref",
     "memberof": "src/components/url/index.js",
@@ -3021,10 +3238,10 @@
     "return": null
   },
   {
-    "__docId__": 167,
+    "__docId__": 182,
     "kind": "file",
     "name": "src/index.js",
-    "content": "import {documentElement} from './components/global-elements'\n\n/**\n * Elements & layout\n */\nimport './components/base'\nimport './components/layout'\nimport './components/list'\nimport './components/link'\nimport './components/quote'\nimport './components/table'\nimport './components/main'\nimport './components/kind'\n\n/**\n * Code related (colorschemes)\n */\nimport './components/syntax-highlighter'\n\n/**\n * Mode related (dark, light ...)\n */\nimport './components/mode-selector'\n\n/**\n * Manual related\n */\nimport './components/cards'\n\n/**\n * Header related\n */\nimport './components/header'\nimport './components/navigation'\nimport './components/searchbar'\n// Add customizers\nimport './components/mode-selector'\nimport './components/colorscheme-selector'\n// Modify the injected github link\nimport './components/github-link'\n\n/**\n * Main related\n */\nimport './components/main'\nimport './components/content'\n\n/**\n * Footer related\n */\nimport './components/footer'\n\n/**\n * Sidebar related\n */\nimport './components/sidebar'\nimport './components/menu-switch'\n\n/**\n * Addons, patches...\n */\nimport './components/patch-for-local'\n\ndocumentElement.classList.replace('no-js', 'js')\n",
+    "content": "import {documentElement} from './components/global-elements'\n\n/**\n * Elements & layout\n */\nimport './components/base'\nimport './components/layout'\nimport './components/list'\nimport './components/link'\nimport './components/quote'\nimport './components/table'\nimport './components/main'\nimport './components/kind'\n\n/**\n * Mode related (dark, light ...)\n */\nimport './components/mode-selector'\n\n/**\n * Code related (colorschemes)\n */\nimport './components/syntax-highlighter'\n\n/**\n * Manual related\n */\nimport './components/cards'\n\n/**\n * Header related\n */\nimport './components/header'\nimport './components/navigation'\nimport './components/searchbar'\n// Add customizers\nimport './components/mode-selector'\nimport './components/colorscheme-selector'\n// Modify the injected github link\nimport './components/github-link'\n\n/**\n * Main related\n */\nimport './components/main'\nimport './components/content'\n\n/**\n * Footer related\n */\nimport './components/footer'\n\n/**\n * Sidebar related\n */\nimport './components/sidebar'\nimport './components/menu-switch'\n\n/**\n * Addons, patches...\n */\nimport './components/hash-targets'\nimport './components/patch-for-local'\n",
     "static": true,
     "longname": "/Users/greada/Documents/workspace/s2/esdoc-custom-theme/src/index.js",
     "access": "public",
@@ -3041,7 +3258,7 @@
   },
   {
     "kind": "packageJSON",
-    "content": "{\n  \"name\": \"esdoc-custom-theme\",\n  \"version\": \"1.0.1\",\n  \"description\": \"A customizable theme for esdoc\",\n  \"repository\": \"git@github.com:sinnerschrader/esdoc-custom-theme.git\",\n  \"author\": \"Gregor Adams <greg@pixelass.com>\",\n  \"license\": \"MIT\",\n  \"scripts\": {\n    \"build\": \"cross-env NODE_ENV=production webpack\",\n    \"clean\": \"npm run clean:modules; npm run clean:lib\",\n    \"clean:lib\": \"rimraf template\",\n    \"clean:modules\": \"rimraf node_modules\",\n    \"commitmsg\": \"commitlint -e $GIT_PARAMS\",\n    \"docs\": \"rimraf docs && esdoc\",\n    \"format:js\": \"prettier --write src/**/*.js\",\n    \"prebuild\": \"npm run clean:lib\",\n    \"release\": \"standard-version --no-verify\",\n    \"watch\": \"npm run clean:lib && webpack --watch\",\n    \"watch:dev\": \"webpack --config dev.webpack.config --watch\"\n  },\n  \"keywords\": [\n    \"esdoc\",\n    \"theme\",\n    \"jsdoc\",\n    \"esdoc-template\",\n    \"custom-theme\",\n    \"documentation-theme\"\n  ],\n  \"files\": [\n    \"template\"\n  ],\n  \"dependencies\": {\n    \"codemirror\": \"^5.34.0\"\n  },\n  \"devDependencies\": {\n    \"@commitlint/cli\": \"^6.0.2\",\n    \"@commitlint/config-conventional\": \"^6.0.2\",\n    \"babel-core\": \"^6.26.0\",\n    \"babel-loader\": \"^7.1.2\",\n    \"babel-minify-webpack-plugin\": \"^0.3.0\",\n    \"babel-plugin-transform-class-properties\": \"^6.24.1\",\n    \"babel-plugin-transform-decorators-legacy\": \"^1.3.4\",\n    \"babel-preset-env\": \"^1.6.1\",\n    \"babel-preset-stage-2\": \"^6.24.1\",\n    \"copy-webpack-plugin\": \"^4.4.1\",\n    \"cross-env\": \"^5.1.3\",\n    \"css-loader\": \"^0.28.9\",\n    \"esdoc\": \"^1.0.4\",\n    \"esdoc-brand-plugin\": \"^1.0.0\",\n    \"esdoc-ecmascript-proposal-plugin\": \"^1.0.0\",\n    \"esdoc-importpath-plugin\": \"^1.0.1\",\n    \"esdoc-inject-style-plugin\": \"^1.0.0\",\n    \"esdoc-lint-plugin\": \"1.0.1\",\n    \"esdoc-publish-html-plugin\": \"^1.1.0\",\n    \"esdoc-standard-plugin\": \"^1.0.0\",\n    \"extract-text-webpack-plugin\": \"^3.0.2\",\n    \"html-webpack-plugin\": \"^2.30.1\",\n    \"husky\": \"^0.14.3\",\n    \"node-sass\": \"^4.7.2\",\n    \"npm-run-all\": \"^4.1.2\",\n    \"prettier\": \"^1.10.2\",\n    \"rimraf\": \"^2.6.2\",\n    \"sass-loader\": \"^6.0.6\",\n    \"standard-version\": \"^4.3.0\",\n    \"style-loader\": \"^0.20.1\",\n    \"uglifyjs-webpack-plugin\": \"^1.1.8\",\n    \"webpack\": \"^3.10.0\",\n    \"xo\": \"^0.18.2\"\n  }\n}\n",
+    "content": "{\n  \"name\": \"esdoc-custom-theme\",\n  \"version\": \"1.1.0\",\n  \"description\": \"A customizable theme for esdoc\",\n  \"repository\": \"git@github.com:sinnerschrader/esdoc-custom-theme.git\",\n  \"author\": \"Gregor Adams <greg@pixelass.com>\",\n  \"license\": \"MIT\",\n  \"scripts\": {\n    \"build\": \"cross-env NODE_ENV=production webpack\",\n    \"clean\": \"npm run clean:modules; npm run clean:lib\",\n    \"clean:lib\": \"rimraf template\",\n    \"clean:modules\": \"rimraf node_modules\",\n    \"commitmsg\": \"commitlint -e $GIT_PARAMS\",\n    \"docs\": \"rimraf docs && esdoc\",\n    \"format:js\": \"prettier --write src/**/*.js\",\n    \"prebuild\": \"npm run clean:lib\",\n    \"prerelease\": \"npm run build\",\n    \"release\": \"standard-version --no-verify\",\n    \"watch\": \"npm run clean:lib && webpack --watch\",\n    \"watch:dev\": \"webpack --config dev.webpack.config --watch\"\n  },\n  \"keywords\": [\n    \"esdoc\",\n    \"theme\",\n    \"jsdoc\",\n    \"esdoc-template\",\n    \"custom-theme\",\n    \"documentation-theme\"\n  ],\n  \"files\": [\n    \"template\"\n  ],\n  \"dependencies\": {\n    \"codemirror\": \"^5.34.0\"\n  },\n  \"devDependencies\": {\n    \"@commitlint/cli\": \"^6.0.2\",\n    \"@commitlint/config-conventional\": \"^6.0.2\",\n    \"babel-core\": \"^6.26.0\",\n    \"babel-loader\": \"^7.1.2\",\n    \"babel-minify-webpack-plugin\": \"^0.3.0\",\n    \"babel-plugin-transform-class-properties\": \"^6.24.1\",\n    \"babel-plugin-transform-decorators-legacy\": \"^1.3.4\",\n    \"babel-preset-env\": \"^1.6.1\",\n    \"babel-preset-stage-2\": \"^6.24.1\",\n    \"copy-webpack-plugin\": \"^4.4.1\",\n    \"cross-env\": \"^5.1.3\",\n    \"css-loader\": \"^0.28.9\",\n    \"esdoc\": \"^1.0.4\",\n    \"esdoc-accessor-plugin\": \"^1.0.0\",\n    \"esdoc-brand-plugin\": \"^1.0.0\",\n    \"esdoc-coverage-plugin\": \"^1.1.0\",\n    \"esdoc-ecmascript-proposal-plugin\": \"^1.0.0\",\n    \"esdoc-external-webapi-plugin\": \"^1.0.0\",\n    \"esdoc-importpath-plugin\": \"^1.0.1\",\n    \"esdoc-inject-style-plugin\": \"^1.0.0\",\n    \"esdoc-integrate-manual-plugin\": \"^1.0.0\",\n    \"esdoc-lint-plugin\": \"1.0.1\",\n    \"esdoc-publish-html-plugin\": \"^1.1.0\",\n    \"esdoc-standard-plugin\": \"^1.0.0\",\n    \"extract-text-webpack-plugin\": \"^3.0.2\",\n    \"html-webpack-plugin\": \"^2.30.1\",\n    \"husky\": \"^0.14.3\",\n    \"node-sass\": \"^4.7.2\",\n    \"npm-run-all\": \"^4.1.2\",\n    \"prettier\": \"^1.10.2\",\n    \"rimraf\": \"^2.6.2\",\n    \"sass-loader\": \"^6.0.6\",\n    \"standard-version\": \"^4.3.0\",\n    \"style-loader\": \"^0.20.1\",\n    \"uglifyjs-webpack-plugin\": \"^1.1.8\",\n    \"webpack\": \"^3.10.0\",\n    \"xo\": \"^0.18.2\"\n  }\n}\n",
     "longname": "/Users/greada/Documents/workspace/s2/esdoc-custom-theme/package.json",
     "name": "package.json",
     "static": true,
@@ -3091,7 +3308,7 @@
     "kind": "manual",
     "longname": "/Users/greada/Documents/workspace/s2/esdoc-custom-theme/CHANGELOG.md",
     "name": "./CHANGELOG.md",
-    "content": "# Change Log\n\nAll notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.\n\n<a name=\"1.0.1\"></a>\n## [1.0.1](https://github.com/sinnerschrader/esdoc-custom-theme/compare/v1.0.0...v1.0.1) (2018-02-12)\n\n\n\n<a name=\"1.0.0\"></a>\n# [1.0.0](https://github.com/sinnerschrader/esdoc-custom-theme/compare/v1.0.0-rc1.1...v1.0.0) (2018-02-12)\n\n\n### Bug Fixes\n\n* **kind:** add styles for kind-icons ([773f13d](https://github.com/sinnerschrader/esdoc-custom-theme/commit/773f13d))\n\n\n\n<a name=\"1.0.0-rc1.1\"></a>\n# [1.0.0-rc1.1](https://github.com/sinnerschrader/esdoc-custom-theme/compare/v1.0.0-rc1.0...v1.0.0-rc1.1) (2018-02-12)\n\n\n### Bug Fixes\n\n* **codemirror:** make highlighted and default pre scrollable ([8618585](https://github.com/sinnerschrader/esdoc-custom-theme/commit/8618585))\n* **kind:** add missing kinds ([de449d3](https://github.com/sinnerschrader/esdoc-custom-theme/commit/de449d3))\n* **syntax-highlighter:** add falback and fix matching ([4c67d40](https://github.com/sinnerschrader/esdoc-custom-theme/commit/4c67d40))\n* **syntax-highlighter:** add missing import ([ad8c8ee](https://github.com/sinnerschrader/esdoc-custom-theme/commit/ad8c8ee))\n\n\n### Features\n\n* **base:** activate hash-targets ([5b1e019](https://github.com/sinnerschrader/esdoc-custom-theme/commit/5b1e019))\n\n\n\n<a name=\"1.0.0-rc1.0\"></a>\n# 1.0.0-rc1.0 (2018-02-12)\n\n\n### Bug Fixes\n\n* **settings-switch:** correct classname ([c7369ef](https://github.com/sinnerschrader/esdoc-custom-theme/commit/c7369ef))\n* **sidebar:** fix injected classnames ([694c453](https://github.com/sinnerschrader/esdoc-custom-theme/commit/694c453))\n* **sidebar:** fix kind width ([d821106](https://github.com/sinnerschrader/esdoc-custom-theme/commit/d821106))\n* **sidebar:** parse url correctly ([cf75332](https://github.com/sinnerschrader/esdoc-custom-theme/commit/cf75332))\n* **syntax-highlighter:** activate line number ([50c633e](https://github.com/sinnerschrader/esdoc-custom-theme/commit/50c633e))\n* **syntax-highlighter:** add css modes ([c112551](https://github.com/sinnerschrader/esdoc-custom-theme/commit/c112551))\n* **syntax-highlighter:** better mode handling ([9955d82](https://github.com/sinnerschrader/esdoc-custom-theme/commit/9955d82))\n\n\n### Features\n\n* initial version ([b5d6086](https://github.com/sinnerschrader/esdoc-custom-theme/commit/b5d6086))\n* **colorscheme-selector:** allow setting a colorscheme ([6161148](https://github.com/sinnerschrader/esdoc-custom-theme/commit/6161148))\n* **layout:** responsive layout ([7708cf4](https://github.com/sinnerschrader/esdoc-custom-theme/commit/7708cf4))\n* **layout:** responsive tables ([40e3e52](https://github.com/sinnerschrader/esdoc-custom-theme/commit/40e3e52))\n",
+    "content": "# Change Log\n\nAll notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.\n\n<a name=\"1.1.0\"></a>\n# [1.1.0](https://github.com/sinnerschrader/esdoc-custom-theme/compare/v1.0.1...v1.1.0) (2018-02-12)\n\n\n### Bug Fixes\n\n* **menu-switch:** hide on large viewports ([9ace3d1](https://github.com/sinnerschrader/esdoc-custom-theme/commit/9ace3d1)), closes [#1](https://github.com/sinnerschrader/esdoc-custom-theme/issues/1)\n* **syntax-highlighter:** handle hashParsing for link-targets ([5042eb4](https://github.com/sinnerschrader/esdoc-custom-theme/commit/5042eb4)), closes [#3](https://github.com/sinnerschrader/esdoc-custom-theme/issues/3)\n\n\n### Features\n\n* **sidebar:** toggle sidebars on body click ([3290a9c](https://github.com/sinnerschrader/esdoc-custom-theme/commit/3290a9c)), closes [#4](https://github.com/sinnerschrader/esdoc-custom-theme/issues/4)\n\n\n\n<a name=\"1.0.1\"></a>\n## [1.0.1](https://github.com/sinnerschrader/esdoc-custom-theme/compare/v1.0.0...v1.0.1) (2018-02-12)\n\n\n\n<a name=\"1.0.0\"></a>\n# [1.0.0](https://github.com/sinnerschrader/esdoc-custom-theme/compare/v1.0.0-rc1.1...v1.0.0) (2018-02-12)\n\n\n### Bug Fixes\n\n* **kind:** add styles for kind-icons ([773f13d](https://github.com/sinnerschrader/esdoc-custom-theme/commit/773f13d))\n\n\n\n<a name=\"1.0.0-rc1.1\"></a>\n# [1.0.0-rc1.1](https://github.com/sinnerschrader/esdoc-custom-theme/compare/v1.0.0-rc1.0...v1.0.0-rc1.1) (2018-02-12)\n\n\n### Bug Fixes\n\n* **codemirror:** make highlighted and default pre scrollable ([8618585](https://github.com/sinnerschrader/esdoc-custom-theme/commit/8618585))\n* **kind:** add missing kinds ([de449d3](https://github.com/sinnerschrader/esdoc-custom-theme/commit/de449d3))\n* **syntax-highlighter:** add falback and fix matching ([4c67d40](https://github.com/sinnerschrader/esdoc-custom-theme/commit/4c67d40))\n* **syntax-highlighter:** add missing import ([ad8c8ee](https://github.com/sinnerschrader/esdoc-custom-theme/commit/ad8c8ee))\n\n\n### Features\n\n* **base:** activate hash-targets ([5b1e019](https://github.com/sinnerschrader/esdoc-custom-theme/commit/5b1e019))\n\n\n\n<a name=\"1.0.0-rc1.0\"></a>\n# 1.0.0-rc1.0 (2018-02-12)\n\n\n### Bug Fixes\n\n* **settings-switch:** correct classname ([c7369ef](https://github.com/sinnerschrader/esdoc-custom-theme/commit/c7369ef))\n* **sidebar:** fix injected classnames ([694c453](https://github.com/sinnerschrader/esdoc-custom-theme/commit/694c453))\n* **sidebar:** fix kind width ([d821106](https://github.com/sinnerschrader/esdoc-custom-theme/commit/d821106))\n* **sidebar:** parse url correctly ([cf75332](https://github.com/sinnerschrader/esdoc-custom-theme/commit/cf75332))\n* **syntax-highlighter:** activate line number ([50c633e](https://github.com/sinnerschrader/esdoc-custom-theme/commit/50c633e))\n* **syntax-highlighter:** add css modes ([c112551](https://github.com/sinnerschrader/esdoc-custom-theme/commit/c112551))\n* **syntax-highlighter:** better mode handling ([9955d82](https://github.com/sinnerschrader/esdoc-custom-theme/commit/9955d82))\n\n\n### Features\n\n* initial version ([b5d6086](https://github.com/sinnerschrader/esdoc-custom-theme/commit/b5d6086))\n* **colorscheme-selector:** allow setting a colorscheme ([6161148](https://github.com/sinnerschrader/esdoc-custom-theme/commit/6161148))\n* **layout:** responsive layout ([7708cf4](https://github.com/sinnerschrader/esdoc-custom-theme/commit/7708cf4))\n* **layout:** responsive tables ([40e3e52](https://github.com/sinnerschrader/esdoc-custom-theme/commit/40e3e52))\n",
     "static": true,
     "access": "public"
   }

@@ -22,3 +22,11 @@
     background: var(--light-switch-background);
   }
 }
+
+.no-js body {
+  opacity: 0;
+}
+
+.js body {
+  opacity: 1;
+}

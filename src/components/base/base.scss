@@ -23,14 +23,6 @@ body {
   color: var(--main-color);
 }
 
-.no-js body {
-  opacity: 0;
-}
-
-.js body {
-  opacity: 1;
-}
-
 h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   margin: 0 0 0.5em 0;
@@ -40,10 +32,4 @@ h1, h2, h3, h4, h5, h6 {
 input, button, select {
   font-family: var(--sans-serif);
   font-size: 1em;
-}
-
-.active-target {
-  background: var(--active-target-background);
-  color: var(--active-target-color);
-  border-bottom: 1px solid var(--active-target-border-color);
 }

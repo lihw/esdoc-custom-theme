@@ -13,14 +13,14 @@ import './components/main'
 import './components/kind'
 
 /**
- * Code related (colorschemes)
- */
-import './components/syntax-highlighter'
-
-/**
  * Mode related (dark, light ...)
  */
 import './components/mode-selector'
+
+/**
+ * Code related (colorschemes)
+ */
+import './components/syntax-highlighter'
 
 /**
  * Manual related
@@ -59,6 +59,5 @@ import './components/menu-switch'
 /**
  * Addons, patches...
  */
+import './components/hash-targets'
 import './components/patch-for-local'
-
-documentElement.classList.replace('no-js', 'js')

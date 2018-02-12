@@ -14,6 +14,7 @@
     "docs": "rimraf docs && esdoc",
     "format:js": "prettier --write src/**/*.js",
     "prebuild": "npm run clean:lib",
+    "prerelease": "npm run build",
     "release": "standard-version --no-verify",
     "watch": "npm run clean:lib && webpack --watch",
     "watch:dev": "webpack --config dev.webpack.config --watch"

@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.0.0"></a>
+# [1.0.0](https://github.com/sinnerschrader/esdoc-custom-theme/compare/v1.0.0-rc1.1...v1.0.0) (2018-02-12)
+
+
+### Bug Fixes
+
+* **kind:** add styles for kind-icons ([773f13d](https://github.com/sinnerschrader/esdoc-custom-theme/commit/773f13d))
+
+
+
 <a name="1.0.0-rc1.1"></a>
 # [1.0.0-rc1.1](https://github.com/sinnerschrader/esdoc-custom-theme/compare/v1.0.0-rc1.0...v1.0.0-rc1.1) (2018-02-12)
 

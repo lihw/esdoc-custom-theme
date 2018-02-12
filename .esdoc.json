@@ -39,7 +39,8 @@
       "name": "esdoc-publish-html-plugin",
       "option": {
         "template": "./template"
-      }},
+      }
+    },
     {
       "name": "esdoc-standard-plugin",
       "option": {

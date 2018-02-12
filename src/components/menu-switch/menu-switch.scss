@@ -1,7 +1,11 @@
 .menu-switch {
   position: relative;
-  display: flex;
+  display: none;
   order: -2;
+
+  @media (max-width: 45rem) {
+    display: flex;
+  }
 
   .icon {
     display: flex;

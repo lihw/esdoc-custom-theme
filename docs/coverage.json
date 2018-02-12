@@ -1,6 +1,6 @@
 {
   "coverage": "0%",
-  "expectCount": 69,
+  "expectCount": 70,
   "actualCount": 0,
   "files": {
     "src/components/codemirror/codemirror.js": {
@@ -33,7 +33,7 @@
       ]
     },
     "src/components/global-elements/index.js": {
-      "expectCount": 21,
+      "expectCount": 22,
       "actualCount": 0,
       "undocumentLines": [
         1,
@@ -49,14 +49,15 @@
         41,
         43,
         44,
-        46,
-        48,
+        45,
+        47,
         49,
         50,
-        52,
+        51,
         53,
-        55,
-        57
+        54,
+        56,
+        58
       ]
     },
     "src/components/mode-selector/index.js": {

@@ -150,6 +150,12 @@ window.esdocSearchIndex = [
     "variable"
   ],
   [
+    "esdoc-custom-theme~menuswitch",
+    "variable/index.html#static-variable-menuSwitch",
+    "<span>menuSwitch</span> <span class=\"search-result-import-path\">esdoc-custom-theme</span>",
+    "variable"
+  ],
+  [
     "esdoc-custom-theme~modeswitch",
     "variable/index.html#static-variable-modeSwitch",
     "<span>modeSwitch</span> <span class=\"search-result-import-path\">esdoc-custom-theme</span>",
@@ -663,6 +669,12 @@ window.esdocSearchIndex = [
     "src/components/main/index.js",
     "file/src/components/main/index.js.html",
     "src/components/main/index.js",
+    "file"
+  ],
+  [
+    "src/components/menu-switch/index.js",
+    "file/src/components/menu-switch/index.js.html",
+    "src/components/menu-switch/index.js",
     "file"
   ],
   [

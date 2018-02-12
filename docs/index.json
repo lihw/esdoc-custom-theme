@@ -834,7 +834,7 @@
     "__docId__": 63,
     "kind": "file",
     "name": "src/components/global-elements/index.js",
-    "content": "export const jsSelector = name => `.js_${name}`\nexport const $$ = (selector, context = document) => [\n  ...context.querySelectorAll(selector)\n]\n\nexport const $ = (selector, context = document) =>\n  context.querySelector(selector)\n\nexport const _$$ = (name, context = document) => [\n  ...context.querySelectorAll(jsSelector(name))\n]\n\nexport const _$ = (name, context = document) =>\n  context.querySelector(jsSelector(name))\n\nexport const createElement = (tag, props, child) => {\n  const wrapper = document.createElement(tag)\n  for (const prop in props) {\n    wrapper.setAttribute(prop, props[prop])\n  }\n  switch (typeof child) {\n    case 'string':\n      wrapper.innerHTML = child\n      break\n    case 'object':\n      if (child.namespaceURI === 'http://www.w3.org/1999/xhtml') {\n        wrapper.appendChild(child)\n      }\n      break\n    default:\n      break\n  }\n  return wrapper\n}\n\nexport const body = document.body\nexport const documentElement = document.documentElement\n\nexport const mainHeader = _$('mainHeader', body)\nexport const sidebarLeft = _$('sidebarLeft', body)\nexport const sidebarRight = _$('sidebarRight', body)\n\nexport const settingsSwitch = _$('settingsSwitch', mainHeader)\nexport const modeSwitch = _$('modeSwitch', mainHeader)\n\nexport const searchBox = _$('searchBox', mainHeader)\n\nexport const searchInput = _$('searchInput', searchBox)\nexport const searchResult = _$('searchResult', searchBox)\nexport const searchIcon = _$('searchIcon', searchBox)\n\nexport const colorschemeOptions = _$('colorschemeOptions', sidebarRight)\nexport const fontOptions = _$('fontOptions', sidebarRight)\n\nexport const githubLink = $(`${jsSelector('mainHeader')} > a:last-child`)\n\nexport const codeBlocks = $$('pre')\n",
+    "content": "export const jsSelector = name => `.js_${name}`\nexport const $$ = (selector, context = document) => [\n  ...context.querySelectorAll(selector)\n]\n\nexport const $ = (selector, context = document) =>\n  context.querySelector(selector)\n\nexport const _$$ = (name, context = document) => [\n  ...context.querySelectorAll(jsSelector(name))\n]\n\nexport const _$ = (name, context = document) =>\n  context.querySelector(jsSelector(name))\n\nexport const createElement = (tag, props, child) => {\n  const wrapper = document.createElement(tag)\n  for (const prop in props) {\n    wrapper.setAttribute(prop, props[prop])\n  }\n  switch (typeof child) {\n    case 'string':\n      wrapper.innerHTML = child\n      break\n    case 'object':\n      if (child.namespaceURI === 'http://www.w3.org/1999/xhtml') {\n        wrapper.appendChild(child)\n      }\n      break\n    default:\n      break\n  }\n  return wrapper\n}\n\nexport const body = document.body\nexport const documentElement = document.documentElement\n\nexport const mainHeader = _$('mainHeader', body)\nexport const sidebarLeft = _$('sidebarLeft', body)\nexport const sidebarRight = _$('sidebarRight', body)\n\nexport const settingsSwitch = _$('settingsSwitch', mainHeader)\nexport const modeSwitch = _$('modeSwitch', mainHeader)\nexport const menuSwitch = _$('menuSwitch', mainHeader)\n\nexport const searchBox = _$('searchBox', mainHeader)\n\nexport const searchInput = _$('searchInput', searchBox)\nexport const searchResult = _$('searchResult', searchBox)\nexport const searchIcon = _$('searchIcon', searchBox)\n\nexport const colorschemeOptions = _$('colorschemeOptions', sidebarRight)\nexport const fontOptions = _$('fontOptions', sidebarRight)\n\nexport const githubLink = $(`${jsSelector('mainHeader')} > a:last-child`)\n\nexport const codeBlocks = $$('pre')\n",
     "static": true,
     "longname": "/Users/greada/Documents/workspace/s2/esdoc-custom-theme/src/components/global-elements/index.js",
     "access": "public",
@@ -1194,16 +1194,16 @@
   {
     "__docId__": 77,
     "kind": "variable",
-    "name": "searchBox",
+    "name": "menuSwitch",
     "memberof": "src/components/global-elements/index.js",
     "static": true,
-    "longname": "src/components/global-elements/index.js~searchBox",
+    "longname": "src/components/global-elements/index.js~menuSwitch",
     "access": "public",
     "export": true,
     "importPath": "esdoc-custom-theme",
-    "importStyle": "{searchBox}",
+    "importStyle": "{menuSwitch}",
     "description": null,
-    "lineNumber": 46,
+    "lineNumber": 45,
     "undocument": true,
     "type": {
       "types": [
@@ -1214,16 +1214,16 @@
   {
     "__docId__": 78,
     "kind": "variable",
-    "name": "searchInput",
+    "name": "searchBox",
     "memberof": "src/components/global-elements/index.js",
     "static": true,
-    "longname": "src/components/global-elements/index.js~searchInput",
+    "longname": "src/components/global-elements/index.js~searchBox",
     "access": "public",
     "export": true,
     "importPath": "esdoc-custom-theme",
-    "importStyle": "{searchInput}",
+    "importStyle": "{searchBox}",
     "description": null,
-    "lineNumber": 48,
+    "lineNumber": 47,
     "undocument": true,
     "type": {
       "types": [
@@ -1234,14 +1234,14 @@
   {
     "__docId__": 79,
     "kind": "variable",
-    "name": "searchResult",
+    "name": "searchInput",
     "memberof": "src/components/global-elements/index.js",
     "static": true,
-    "longname": "src/components/global-elements/index.js~searchResult",
+    "longname": "src/components/global-elements/index.js~searchInput",
     "access": "public",
     "export": true,
     "importPath": "esdoc-custom-theme",
-    "importStyle": "{searchResult}",
+    "importStyle": "{searchInput}",
     "description": null,
     "lineNumber": 49,
     "undocument": true,
@@ -1254,14 +1254,14 @@
   {
     "__docId__": 80,
     "kind": "variable",
-    "name": "searchIcon",
+    "name": "searchResult",
     "memberof": "src/components/global-elements/index.js",
     "static": true,
-    "longname": "src/components/global-elements/index.js~searchIcon",
+    "longname": "src/components/global-elements/index.js~searchResult",
     "access": "public",
     "export": true,
     "importPath": "esdoc-custom-theme",
-    "importStyle": "{searchIcon}",
+    "importStyle": "{searchResult}",
     "description": null,
     "lineNumber": 50,
     "undocument": true,
@@ -1274,16 +1274,16 @@
   {
     "__docId__": 81,
     "kind": "variable",
-    "name": "colorschemeOptions",
+    "name": "searchIcon",
     "memberof": "src/components/global-elements/index.js",
     "static": true,
-    "longname": "src/components/global-elements/index.js~colorschemeOptions",
+    "longname": "src/components/global-elements/index.js~searchIcon",
     "access": "public",
     "export": true,
     "importPath": "esdoc-custom-theme",
-    "importStyle": "{colorschemeOptions}",
+    "importStyle": "{searchIcon}",
     "description": null,
-    "lineNumber": 52,
+    "lineNumber": 51,
     "undocument": true,
     "type": {
       "types": [
@@ -1294,14 +1294,14 @@
   {
     "__docId__": 82,
     "kind": "variable",
-    "name": "fontOptions",
+    "name": "colorschemeOptions",
     "memberof": "src/components/global-elements/index.js",
     "static": true,
-    "longname": "src/components/global-elements/index.js~fontOptions",
+    "longname": "src/components/global-elements/index.js~colorschemeOptions",
     "access": "public",
     "export": true,
     "importPath": "esdoc-custom-theme",
-    "importStyle": "{fontOptions}",
+    "importStyle": "{colorschemeOptions}",
     "description": null,
     "lineNumber": 53,
     "undocument": true,
@@ -1314,16 +1314,16 @@
   {
     "__docId__": 83,
     "kind": "variable",
-    "name": "githubLink",
+    "name": "fontOptions",
     "memberof": "src/components/global-elements/index.js",
     "static": true,
-    "longname": "src/components/global-elements/index.js~githubLink",
+    "longname": "src/components/global-elements/index.js~fontOptions",
     "access": "public",
     "export": true,
     "importPath": "esdoc-custom-theme",
-    "importStyle": "{githubLink}",
+    "importStyle": "{fontOptions}",
     "description": null,
-    "lineNumber": 55,
+    "lineNumber": 54,
     "undocument": true,
     "type": {
       "types": [
@@ -1334,16 +1334,16 @@
   {
     "__docId__": 84,
     "kind": "variable",
-    "name": "codeBlocks",
+    "name": "githubLink",
     "memberof": "src/components/global-elements/index.js",
     "static": true,
-    "longname": "src/components/global-elements/index.js~codeBlocks",
+    "longname": "src/components/global-elements/index.js~githubLink",
     "access": "public",
     "export": true,
     "importPath": "esdoc-custom-theme",
-    "importStyle": "{codeBlocks}",
+    "importStyle": "{githubLink}",
     "description": null,
-    "lineNumber": 57,
+    "lineNumber": 56,
     "undocument": true,
     "type": {
       "types": [
@@ -1353,6 +1353,26 @@
   },
   {
     "__docId__": 85,
+    "kind": "variable",
+    "name": "codeBlocks",
+    "memberof": "src/components/global-elements/index.js",
+    "static": true,
+    "longname": "src/components/global-elements/index.js~codeBlocks",
+    "access": "public",
+    "export": true,
+    "importPath": "esdoc-custom-theme",
+    "importStyle": "{codeBlocks}",
+    "description": null,
+    "lineNumber": 58,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 86,
     "kind": "file",
     "name": "src/components/header/index.js",
     "content": "// CSS file generation\nimport './header.scss'\n",
@@ -1363,7 +1383,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 86,
+    "__docId__": 87,
     "kind": "file",
     "name": "src/components/kind/index.js",
     "content": "// CSS file generation\nimport './kind.scss'\n",
@@ -1374,7 +1394,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 87,
+    "__docId__": 88,
     "kind": "file",
     "name": "src/components/layout/index.js",
     "content": "// CSS file generation\nimport './layout.scss'\n",
@@ -1385,7 +1405,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 88,
+    "__docId__": 89,
     "kind": "file",
     "name": "src/components/link/index.js",
     "content": "// CSS file generation\nimport './link.scss'\n",
@@ -1396,7 +1416,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 89,
+    "__docId__": 90,
     "kind": "file",
     "name": "src/components/list/index.js",
     "content": "// CSS file generation\nimport './list.scss'\n",
@@ -1407,7 +1427,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 90,
+    "__docId__": 91,
     "kind": "file",
     "name": "src/components/main/index.js",
     "content": "// CSS file generation\nimport './main.scss'\n",
@@ -1418,7 +1438,18 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 91,
+    "__docId__": 92,
+    "kind": "file",
+    "name": "src/components/menu-switch/index.js",
+    "content": "import store, {setLocalStorage} from '../store'\nimport {sidebarLeft, menuSwitch} from '../global-elements'\n\n// CSS file generation\nimport './menu-switch.scss'\n\nmenuSwitch.addEventListener('click', e => {\n  e.preventDefault()\n  const open = store.sidebarLeft === true\n  sidebarLeft.classList.remove('initial')\n  sidebarLeft.classList.toggle('closed', open)\n  setLocalStorage('sideBarLeft', !open)\n  store.sidebarLeft = !open\n})\n\nsidebarLeft.classList.toggle('closed', !store.sidebarLeft)\n",
+    "static": true,
+    "longname": "/Users/greada/Documents/workspace/s2/esdoc-custom-theme/src/components/menu-switch/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 93,
     "kind": "file",
     "name": "src/components/mode-selector/index.js",
     "content": "import store, {setLocalStorage} from '../store'\nimport {documentElement, modeSwitch} from '../global-elements'\n\n// CSS file generation\nimport './root.scss'\nimport './dark.scss'\nimport './light.scss'\nimport './mode-switch.scss'\n\nconst toggle = (a, b, c) => (a === b ? c : b)\n\nexport const switchLight = e => {\n  e.preventDefault()\n  const {mode} = store\n  const newMode = toggle(mode, 'light', 'dark')\n  store.mode = newMode\n\n  setLocalStorage('mode', newMode)\n  setLight(newMode, mode)\n}\n\nconst setLight = (mode, oldMode) => {\n  documentElement.classList.replace(oldMode, mode)\n}\n\nmodeSwitch.addEventListener('click', switchLight)\nsetLight(store.mode, toggle(store.mode, 'light', 'dark'))\n",
@@ -1429,7 +1460,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 92,
+    "__docId__": 94,
     "kind": "function",
     "name": "toggle",
     "memberof": "src/components/mode-selector/index.js",
@@ -1468,7 +1499,7 @@
     "ignore": true
   },
   {
-    "__docId__": 93,
+    "__docId__": 95,
     "kind": "function",
     "name": "switchLight",
     "memberof": "src/components/mode-selector/index.js",
@@ -1494,7 +1525,7 @@
     "return": null
   },
   {
-    "__docId__": 94,
+    "__docId__": 96,
     "kind": "function",
     "name": "setLight",
     "memberof": "src/components/mode-selector/index.js",
@@ -1527,7 +1558,7 @@
     "ignore": true
   },
   {
-    "__docId__": 95,
+    "__docId__": 97,
     "kind": "file",
     "name": "src/components/navigation/index.js",
     "content": "// CSS file generation\nimport './main-nav.scss'\n",
@@ -1538,7 +1569,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 96,
+    "__docId__": 98,
     "kind": "file",
     "name": "src/components/patch-for-local/index.js",
     "content": "import {protocol} from '../url'\nimport {$$} from '../global-elements'\n\nif (protocol === 'file:') {\n  const homeLinks = $$('a[href=\"./\"]')\n  homeLinks.forEach(link => {\n    link.href = './index.html'\n  })\n}\n",
@@ -1549,7 +1580,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 97,
+    "__docId__": 99,
     "kind": "file",
     "name": "src/components/quote/index.js",
     "content": "// CSS file generation\nimport './quote.scss'\n",
@@ -1560,7 +1591,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 98,
+    "__docId__": 100,
     "kind": "file",
     "name": "src/components/searchbar/activate.js",
     "content": "import store from '../store'\n\nconst activate = (node, target) => {\n  const current = node.children[store.selectedIndex]\n  let li = target\n  while (li) {\n    if (li.nodeName === 'LI') {\n      break\n    }\n    li = li.parentElement\n  }\n\n  if (li) {\n    store.selectedIndex = [...node.children].indexOf(li)\n  }\n}\n\nexport default activate\n",
@@ -1571,7 +1602,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 99,
+    "__docId__": 101,
     "kind": "function",
     "name": "activate",
     "memberof": "src/components/searchbar/activate.js",
@@ -1603,7 +1634,7 @@
     "return": null
   },
   {
-    "__docId__": 100,
+    "__docId__": 102,
     "kind": "file",
     "name": "src/components/searchbar/index.js",
     "content": "import appStorage from '../store'\nimport {body, searchBox, searchInput, searchResult} from '../global-elements'\n\nimport {openResults, closeResults} from './toggle-result'\nimport searchIndex from './search-index'\nimport search from './search'\nimport select from './select'\nimport activate from './activate'\n\n// CSS file generation\nimport './search-result.scss'\nimport './search-box.scss'\n\nconst sendSearch = e =>\n  search(e.target.value.trim().toLowerCase(), searchResult)\nconst sendSelect = e => select(e, searchResult)\nconst sendActivate = e => activate(e.target, searchResult)\n\n// search on keyup (typing)\nsearchInput.addEventListener('keyup', sendSearch)\n// select on keydown (up, down, enter/return)\nsearchInput.addEventListener('keydown', sendSelect)\n\n// select search result when search result is mouse over.\nsearchResult.addEventListener('mousemove', sendActivate)\n\n// Clear search result when body is clicked.\nbody.addEventListener('click', e => {\n  closeResults(searchResult)\n})\n",
@@ -1614,7 +1645,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 101,
+    "__docId__": 103,
     "kind": "function",
     "name": "sendSearch",
     "memberof": "src/components/searchbar/index.js",
@@ -1641,7 +1672,7 @@
     "ignore": true
   },
   {
-    "__docId__": 102,
+    "__docId__": 104,
     "kind": "function",
     "name": "sendSelect",
     "memberof": "src/components/searchbar/index.js",
@@ -1668,7 +1699,7 @@
     "ignore": true
   },
   {
-    "__docId__": 103,
+    "__docId__": 105,
     "kind": "function",
     "name": "sendActivate",
     "memberof": "src/components/searchbar/index.js",
@@ -1695,7 +1726,7 @@
     "ignore": true
   },
   {
-    "__docId__": 104,
+    "__docId__": 106,
     "kind": "file",
     "name": "src/components/searchbar/search-index.js",
     "content": "export default window.esdocSearchIndex\n",
@@ -1706,7 +1737,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 105,
+    "__docId__": 107,
     "kind": "file",
     "name": "src/components/searchbar/search.js",
     "content": "import store from '../store'\nimport {closeResults, openResults} from './toggle-result'\nimport searchIndex from './search-index'\n\nconst search = (text, output) => {\n  if (!text) {\n    closeResults(output)\n    return\n  }\n\n  if (text === store.prevText) {\n    return\n  }\n\n  store.prevText = text\n\n  const html = {\n    class: [],\n    method: [],\n    member: [],\n    function: [],\n    variable: [],\n    typedef: [],\n    external: [],\n    file: [],\n    test: [],\n    testFile: []\n  }\n\n  searchIndex.forEach((item, index) => {\n    const [src, href, label, kind] = item\n    if (src.indexOf(text) > -1) {\n      html[kind].push(`\n        <li class=\"search-result-item\">\n          <a class=\"search-result-link\" href=\"${href}\">\n            ${label}\n          </a>\n        </li>\n      `)\n    }\n  })\n\n  const innerHTML = Object.keys(html)\n    .map(kind => {\n      const list = html[kind].join('')\n      if (!list) {\n        return ''\n      }\n      return `\n      <li class=\"search-separator\">\n        ${kind}\n      </li>\n    ${list}`\n    })\n    .join('')\n\n  if (!innerHTML) {\n    closeResults(output)\n    return\n  }\n  openResults(output, innerHTML)\n}\n\nexport default search\n",
@@ -1717,7 +1748,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 106,
+    "__docId__": 108,
     "kind": "function",
     "name": "search",
     "memberof": "src/components/searchbar/search.js",
@@ -1749,7 +1780,7 @@
     "return": null
   },
   {
-    "__docId__": 107,
+    "__docId__": 109,
     "kind": "file",
     "name": "src/components/searchbar/select.js",
     "content": "import store from '../store'\nimport {setHref} from '../url'\n\nconst select = (e, node) => {\n  const {keyCode} = e\n  if (keyCode === 40) {\n    // arrow down\n    const current = node.children[store.selectedIndex]\n    let selected = node.children[store.selectedIndex + 1]\n    if (selected && selected.classList.contains('search-separator')) {\n      selected = node.children[store.selectedIndex + 2]\n      store.selectedIndex++\n    }\n\n    if (selected) {\n      if (current) {\n        current.classList.remove('selected')\n      }\n      store.selectedIndex++\n      selected.classList.add('selected')\n    }\n  } else if (keyCode === 38) {\n    // arrow up\n    const current = node.children[store.selectedIndex]\n    let selected = node.children[store.selectedIndex - 1]\n    if (selected && selected.classList.contains('search-separator')) {\n      selected = node.children[store.selectedIndex - 2]\n      store.selectedIndex--\n    }\n\n    if (selected) {\n      if (current) {\n        current.classList.remove('selected')\n      }\n      store.selectedIndex--\n      selected.classList.add('selected')\n    }\n  } else if (keyCode === 13) {\n    // enter\n    const current = node.children[store.selectedIndex]\n    if (current) {\n      const link = current.querySelector('a')\n      if (link) {\n        setHref(link.href)\n      }\n    }\n  } else {\n    return\n  }\n  e.preventDefault()\n}\n\nexport default select\n",
@@ -1760,7 +1791,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 108,
+    "__docId__": 110,
     "kind": "function",
     "name": "select",
     "memberof": "src/components/searchbar/select.js",
@@ -1792,7 +1823,7 @@
     "return": null
   },
   {
-    "__docId__": 109,
+    "__docId__": 111,
     "kind": "file",
     "name": "src/components/searchbar/toggle-result.js",
     "content": "import store from '../store'\n\nexport const closeResults = node => {\n  store.selectedIndex = -1\n  node.classList.add('hidden')\n  node.innerHTML = ''\n}\n\nexport const openResults = (node, content) => {\n  store.selectedIndex = -1\n  node.innerHTML = content\n  node.classList.remove('hidden')\n}\n",
@@ -1803,7 +1834,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 110,
+    "__docId__": 112,
     "kind": "function",
     "name": "closeResults",
     "memberof": "src/components/searchbar/toggle-result.js",
@@ -1829,7 +1860,7 @@
     "return": null
   },
   {
-    "__docId__": 111,
+    "__docId__": 113,
     "kind": "function",
     "name": "openResults",
     "memberof": "src/components/searchbar/toggle-result.js",
@@ -1861,7 +1892,7 @@
     "return": null
   },
   {
-    "__docId__": 112,
+    "__docId__": 114,
     "kind": "file",
     "name": "src/components/sidebar/activate-links.js",
     "content": "import {sidebarLeft} from '../global-elements'\n\nconst activate = e => {\n  const {newURL} = e\n  const url = newURL.replace(/.*\\/manual\\//, 'manual/')\n  const [slug, hash] = url.split('#')\n  const urlLinks = []\n  const activatedLinks = [...sidebarLeft.querySelectorAll(`.active-link`)]\n  const activeLinks = [\n    ...sidebarLeft.querySelectorAll(`[href='${slug}']`),\n    ...sidebarLeft.querySelectorAll(`[href='${url}']`)\n  ]\n  activatedLinks.forEach(link => {\n    link.classList.remove('active-link')\n  })\n  activeLinks.forEach(link => {\n    link.classList.add('active-link')\n  })\n}\n\nexport default activate\n",
@@ -1872,7 +1903,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 113,
+    "__docId__": 115,
     "kind": "function",
     "name": "activate",
     "memberof": "src/components/sidebar/activate-links.js",
@@ -1898,7 +1929,7 @@
     "return": null
   },
   {
-    "__docId__": 114,
+    "__docId__": 116,
     "kind": "file",
     "name": "src/components/sidebar/index.js",
     "content": "import {href as newURL} from '../url'\nimport activateLinks from './activate-links'\nimport './toggle-sidebar'\n\n// CSS file generation\nimport './sidebar.scss'\nimport './sidebar-left.scss'\nimport './sidebar-right.scss'\n\nactivateLinks({newURL})\nwindow.addEventListener('hashchange', activateLinks)\n",
@@ -1909,7 +1940,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 115,
+    "__docId__": 117,
     "kind": "file",
     "name": "src/components/sidebar/toggle-sidebar.js",
     "content": "import {sidebarRight, settingsSwitch} from '../global-elements'\n\nsettingsSwitch.addEventListener('click', e => {\n  e.preventDefault()\n  sidebarRight.classList.toggle('closed')\n})\n",
@@ -1920,10 +1951,10 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 116,
+    "__docId__": 118,
     "kind": "file",
     "name": "src/components/store/index.js",
-    "content": "export const {localStorage} = window\nexport const storageId = name => `__esdoc-custom-theme__${name}__`\nexport const getLocalStorage = name => localStorage.getItem(storageId(name))\nexport const setLocalStorage = (name, value) =>\n  localStorage.setItem(storageId(name), value)\n\nconst defaultColorscheme = 'zenburn'\nconst defaultMode = 'dark'\n\nconst colorscheme = getLocalStorage('colorscheme') || defaultColorscheme\nconst mode = getLocalStorage('mode') || defaultMode\n\nconst store = {\n  colorscheme,\n  mode,\n  selectedIndex: -1,\n  prevText: ''\n}\n\nexport default store\n",
+    "content": "export const {localStorage} = window\nexport const storageId = name => `__esdoc-custom-theme__${name}__`\nexport const getLocalStorage = name => localStorage.getItem(storageId(name))\nexport const setLocalStorage = (name, value) =>\n  localStorage.setItem(storageId(name), value)\n\nconst defaultColorscheme = 'zenburn'\nconst defaultMode = 'dark'\n\nconst colorscheme = getLocalStorage('colorscheme') || defaultColorscheme\nconst mode = getLocalStorage('mode') || defaultMode\n\nconst store = {\n  colorscheme,\n  mode,\n  selectedIndex: -1,\n  prevText: '',\n  sidebarLeft: getLocalStorage('sideBarLeft') === 'true'\n}\n\nexport default store\n",
     "static": true,
     "longname": "/Users/greada/Documents/workspace/s2/esdoc-custom-theme/src/components/store/index.js",
     "access": "public",
@@ -1931,7 +1962,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 117,
+    "__docId__": 119,
     "kind": "variable",
     "name": "localStorage",
     "memberof": "src/components/store/index.js",
@@ -1951,7 +1982,7 @@
     }
   },
   {
-    "__docId__": 118,
+    "__docId__": 120,
     "kind": "function",
     "name": "storageId",
     "memberof": "src/components/store/index.js",
@@ -1977,7 +2008,7 @@
     "return": null
   },
   {
-    "__docId__": 119,
+    "__docId__": 121,
     "kind": "function",
     "name": "getLocalStorage",
     "memberof": "src/components/store/index.js",
@@ -2003,7 +2034,7 @@
     "return": null
   },
   {
-    "__docId__": 120,
+    "__docId__": 122,
     "kind": "function",
     "name": "setLocalStorage",
     "memberof": "src/components/store/index.js",
@@ -2035,7 +2066,7 @@
     "return": null
   },
   {
-    "__docId__": 121,
+    "__docId__": 123,
     "kind": "variable",
     "name": "defaultColorscheme",
     "memberof": "src/components/store/index.js",
@@ -2056,7 +2087,7 @@
     "ignore": true
   },
   {
-    "__docId__": 122,
+    "__docId__": 124,
     "kind": "variable",
     "name": "defaultMode",
     "memberof": "src/components/store/index.js",
@@ -2077,7 +2108,7 @@
     "ignore": true
   },
   {
-    "__docId__": 123,
+    "__docId__": 125,
     "kind": "variable",
     "name": "colorscheme",
     "memberof": "src/components/store/index.js",
@@ -2098,7 +2129,7 @@
     "ignore": true
   },
   {
-    "__docId__": 124,
+    "__docId__": 126,
     "kind": "variable",
     "name": "mode",
     "memberof": "src/components/store/index.js",
@@ -2119,7 +2150,7 @@
     "ignore": true
   },
   {
-    "__docId__": 125,
+    "__docId__": 127,
     "kind": "variable",
     "name": "store",
     "memberof": "src/components/store/index.js",
@@ -2134,12 +2165,12 @@
     "undocument": true,
     "type": {
       "types": [
-        "{\"colorscheme\": *, \"mode\": *, \"selectedIndex\": *, \"prevText\": *}"
+        "{\"colorscheme\": *, \"mode\": *, \"selectedIndex\": *, \"prevText\": *, \"sidebarLeft\": *}"
       ]
     }
   },
   {
-    "__docId__": 126,
+    "__docId__": 128,
     "kind": "file",
     "name": "src/components/syntax-highlighter/get-active-lines.js",
     "content": "import {hash} from '../url'\nimport normalizeLines from './normalize-lines'\n\nconst getActiveLines = hl => {\n  const matched = location.hash.match(/activeLines=([\\d,]+)/)\n  if (matched) {\n    const lines = normalizeLines(matched[1])\n    lines.forEach((line, i) =>\n      hl.addLineClass(line, 'wrap', 'CodeMirror-activeline-background')\n    )\n    hl.scrollIntoView(lines[0])\n  }\n}\n\nexport default getActiveLines\n",
@@ -2150,7 +2181,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 127,
+    "__docId__": 129,
     "kind": "function",
     "name": "getActiveLines",
     "memberof": "src/components/syntax-highlighter/get-active-lines.js",
@@ -2176,7 +2207,7 @@
     "return": null
   },
   {
-    "__docId__": 128,
+    "__docId__": 130,
     "kind": "file",
     "name": "src/components/syntax-highlighter/get-error-lines.js",
     "content": "import {hash} from '../url'\n\nconst getErrorLines = hl => {\n  const matched = hash.match(/errorLines=([\\d,]+)/)\n  if (matched) {\n    const lines = normalizeLines(matched[1])\n    lines.forEach((line, i) =>\n      hl.addLineClass(line, 'wrap', 'CodeMirror-errorline-background')\n    )\n    hl.scrollIntoView(lines[0])\n  }\n}\n\nexport default getErrorLines\n",
@@ -2187,7 +2218,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 129,
+    "__docId__": 131,
     "kind": "function",
     "name": "getErrorLines",
     "memberof": "src/components/syntax-highlighter/get-error-lines.js",
@@ -2213,7 +2244,7 @@
     "return": null
   },
   {
-    "__docId__": 130,
+    "__docId__": 132,
     "kind": "file",
     "name": "src/components/syntax-highlighter/get-line-number.js",
     "content": "import {hash} from '../url'\n\nconst getlineNumber = hl => {\n  const matched = hash.match(/lineNumber([\\d]+)/)\n  if (matched) {\n    const lineNumber = parseInt(matched[1], 10)\n    hl.addLineClass(lineNumber - 1, 'wrap', 'CodeMirror-activeline-background')\n    hl.scrollIntoView(lineNumber)\n  }\n}\n\nexport default getlineNumber\n",
@@ -2224,7 +2255,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 131,
+    "__docId__": 133,
     "kind": "function",
     "name": "getlineNumber",
     "memberof": "src/components/syntax-highlighter/get-line-number.js",
@@ -2250,7 +2281,7 @@
     "return": null
   },
   {
-    "__docId__": 132,
+    "__docId__": 134,
     "kind": "file",
     "name": "src/components/syntax-highlighter/highlight.js",
     "content": "import {pathname} from '../url'\nimport {simpleMode, fullMode} from '../codemirror'\n\nconst CSS = 'css'\nconst SCSS = 'text/x-scss'\nconst LESS = 'text/x-less'\nconst JAVASCRIPT = 'javascript'\nconst JSX = 'jsx'\nconst TYPESCRIPT = 'text/typescript'\nconst JSON_LD = 'application/ld+json'\nconst SHELL = 'shell'\n\nconst modes = {\n  css: CSS,\n  scss: SCSS,\n  less: LESS,\n  bash: SHELL,\n  shell: SHELL,\n  javascript: JAVASCRIPT,\n  js: JAVASCRIPT,\n  jsx: JSX,\n  typescript: TYPESCRIPT,\n  ts: TYPESCRIPT,\n  tsx: TYPESCRIPT,\n  json: JSON_LD\n}\n\nconst highlight = blocks => {\n  return blocks.map(block => {\n    const {innerText: value} = block\n    const code = block.querySelector('code')\n    const lang = !code\n      ? ''\n      : code.className.split(',').filter(x => x.match('lang'))[0] || ''\n    // default to JSX\n    const isJSFile = pathname.match('.js.html')\n    const isTSFile = pathname.match('.ts.html')\n    const isJSXFile = pathname.match('.jsx.html')\n    const isTSXFile = pathname.match('.tsx.html')\n    const isFile = isJSFile || isTSFile || isJSXFile || isTSXFile\n    let mode = lang.replace(/lang(uage)?-/, '')\n\n    if (isJSFile || isJSXFile) {\n      mode = 'jsx'\n    }\n    if (isTSFile || isTSXFile) {\n      mode = 'ts'\n    }\n    return isFile\n      ? fullMode(value, modes[mode], block)\n      : simpleMode(value, modes[mode], block)\n  })\n}\n\nexport default highlight\n",
@@ -2261,7 +2292,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 133,
+    "__docId__": 135,
     "kind": "variable",
     "name": "CSS",
     "memberof": "src/components/syntax-highlighter/highlight.js",
@@ -2282,7 +2313,7 @@
     "ignore": true
   },
   {
-    "__docId__": 134,
+    "__docId__": 136,
     "kind": "variable",
     "name": "SCSS",
     "memberof": "src/components/syntax-highlighter/highlight.js",
@@ -2303,7 +2334,7 @@
     "ignore": true
   },
   {
-    "__docId__": 135,
+    "__docId__": 137,
     "kind": "variable",
     "name": "LESS",
     "memberof": "src/components/syntax-highlighter/highlight.js",
@@ -2324,7 +2355,7 @@
     "ignore": true
   },
   {
-    "__docId__": 136,
+    "__docId__": 138,
     "kind": "variable",
     "name": "JAVASCRIPT",
     "memberof": "src/components/syntax-highlighter/highlight.js",
@@ -2345,7 +2376,7 @@
     "ignore": true
   },
   {
-    "__docId__": 137,
+    "__docId__": 139,
     "kind": "variable",
     "name": "JSX",
     "memberof": "src/components/syntax-highlighter/highlight.js",
@@ -2366,7 +2397,7 @@
     "ignore": true
   },
   {
-    "__docId__": 138,
+    "__docId__": 140,
     "kind": "variable",
     "name": "TYPESCRIPT",
     "memberof": "src/components/syntax-highlighter/highlight.js",
@@ -2387,7 +2418,7 @@
     "ignore": true
   },
   {
-    "__docId__": 139,
+    "__docId__": 141,
     "kind": "variable",
     "name": "JSON_LD",
     "memberof": "src/components/syntax-highlighter/highlight.js",
@@ -2408,7 +2439,7 @@
     "ignore": true
   },
   {
-    "__docId__": 140,
+    "__docId__": 142,
     "kind": "variable",
     "name": "SHELL",
     "memberof": "src/components/syntax-highlighter/highlight.js",
@@ -2429,7 +2460,7 @@
     "ignore": true
   },
   {
-    "__docId__": 141,
+    "__docId__": 143,
     "kind": "variable",
     "name": "modes",
     "memberof": "src/components/syntax-highlighter/highlight.js",
@@ -2450,7 +2481,7 @@
     "ignore": true
   },
   {
-    "__docId__": 142,
+    "__docId__": 144,
     "kind": "function",
     "name": "highlight",
     "memberof": "src/components/syntax-highlighter/highlight.js",
@@ -2480,7 +2511,7 @@
     }
   },
   {
-    "__docId__": 143,
+    "__docId__": 145,
     "kind": "file",
     "name": "src/components/syntax-highlighter/index.js",
     "content": "import CodeMirror, {colorschemes} from '../codemirror'\nimport {codeBlocks} from '../global-elements'\n\nimport highlight from './highlight'\nimport getErrorLines from './get-error-lines'\nimport getActiveLines from './get-active-lines'\nimport getlineNumber from './get-line-number'\n\nconst instances = highlight(codeBlocks)\nexport const fullHighlighters = instances\n  .filter(x => Boolean(x.cm))\n  .map(x => x.cm)\nexport const simpleHighlighters = instances\n  .filter(x => Boolean(x.hl))\n  .map(x => x.hl)\nexport const [fileHighlighter] = fullHighlighters\ngetErrorLines(fileHighlighter)\ngetActiveLines(fileHighlighter)\ngetlineNumber(fileHighlighter)\n",
@@ -2491,7 +2522,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 144,
+    "__docId__": 146,
     "kind": "variable",
     "name": "instances",
     "memberof": "src/components/syntax-highlighter/index.js",
@@ -2512,7 +2543,7 @@
     "ignore": true
   },
   {
-    "__docId__": 145,
+    "__docId__": 147,
     "kind": "variable",
     "name": "fullHighlighters",
     "memberof": "src/components/syntax-highlighter/index.js",
@@ -2532,7 +2563,7 @@
     }
   },
   {
-    "__docId__": 146,
+    "__docId__": 148,
     "kind": "variable",
     "name": "simpleHighlighters",
     "memberof": "src/components/syntax-highlighter/index.js",
@@ -2552,7 +2583,7 @@
     }
   },
   {
-    "__docId__": 147,
+    "__docId__": 149,
     "kind": "variable",
     "name": "fileHighlighter",
     "memberof": "src/components/syntax-highlighter/index.js",
@@ -2572,7 +2603,7 @@
     }
   },
   {
-    "__docId__": 148,
+    "__docId__": 150,
     "kind": "file",
     "name": "src/components/syntax-highlighter/normalize-lines.js",
     "content": "const normalizeLines = lines =>\n  lines\n    .split(',')\n    .map(line => parseInt(line, 10) - 1)\n    .sort((a, b) => a - b)\n\nexport default normalizeLines\n",
@@ -2583,7 +2614,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 149,
+    "__docId__": 151,
     "kind": "function",
     "name": "normalizeLines",
     "memberof": "src/components/syntax-highlighter/normalize-lines.js",
@@ -2609,7 +2640,7 @@
     "return": null
   },
   {
-    "__docId__": 150,
+    "__docId__": 152,
     "kind": "file",
     "name": "src/components/table/index.js",
     "content": "// CSS file generation\nimport './table.scss'\n",
@@ -2620,7 +2651,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 151,
+    "__docId__": 153,
     "kind": "file",
     "name": "src/components/url/index.js",
     "content": "export const {\n  hash,\n  search,\n  protocol,\n  host,\n  hostname,\n  origin,\n  port,\n  pathname,\n  href\n} = window.location\n\nexport const setURL = (type, value) => {\n  window.location[type] = value\n}\n\nexport const setHash = value => {\n  setURL('hash', value)\n}\n\nexport const setHref = value => {\n  setURL('href', value)\n}\n",
@@ -2631,7 +2662,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 152,
+    "__docId__": 154,
     "kind": "variable",
     "name": "hash",
     "memberof": "src/components/url/index.js",
@@ -2651,7 +2682,7 @@
     }
   },
   {
-    "__docId__": 153,
+    "__docId__": 155,
     "kind": "function",
     "name": "setURL",
     "memberof": "src/components/url/index.js",
@@ -2683,7 +2714,7 @@
     "return": null
   },
   {
-    "__docId__": 154,
+    "__docId__": 156,
     "kind": "function",
     "name": "setHash",
     "memberof": "src/components/url/index.js",
@@ -2709,7 +2740,7 @@
     "return": null
   },
   {
-    "__docId__": 155,
+    "__docId__": 157,
     "kind": "function",
     "name": "setHref",
     "memberof": "src/components/url/index.js",
@@ -2735,10 +2766,10 @@
     "return": null
   },
   {
-    "__docId__": 156,
+    "__docId__": 158,
     "kind": "file",
     "name": "src/index.js",
-    "content": "import {documentElement} from './components/global-elements'\n\n/**\n * Elements & layout\n */\nimport './components/base'\nimport './components/layout'\nimport './components/list'\nimport './components/link'\nimport './components/quote'\nimport './components/table'\nimport './components/main'\nimport './components/kind'\n\n/**\n * Code related (colorschemes)\n */\nimport './components/syntax-highlighter'\n\n/**\n * Mode related (dark, light ...)\n */\nimport './components/mode-selector'\n\n/**\n * Manual related\n */\nimport './components/cards'\n\n/**\n * Header related\n */\nimport './components/header'\nimport './components/navigation'\nimport './components/searchbar'\n// Add customizers\nimport './components/mode-selector'\nimport './components/colorscheme-selector'\n// Modify the injected github link\nimport './components/github-link'\n\n/**\n * Main related\n */\nimport './components/main'\nimport './components/content'\n\n/**\n * Footer related\n */\nimport './components/footer'\n\n/**\n * Sidebar related\n */\nimport './components/sidebar'\n\n/**\n * Addons, patches...\n */\nimport './components/patch-for-local'\n\ndocumentElement.classList.replace('no-js', 'js')\n",
+    "content": "import {documentElement} from './components/global-elements'\n\n/**\n * Elements & layout\n */\nimport './components/base'\nimport './components/layout'\nimport './components/list'\nimport './components/link'\nimport './components/quote'\nimport './components/table'\nimport './components/main'\nimport './components/kind'\n\n/**\n * Code related (colorschemes)\n */\nimport './components/syntax-highlighter'\n\n/**\n * Mode related (dark, light ...)\n */\nimport './components/mode-selector'\n\n/**\n * Manual related\n */\nimport './components/cards'\n\n/**\n * Header related\n */\nimport './components/header'\nimport './components/navigation'\nimport './components/searchbar'\n// Add customizers\nimport './components/mode-selector'\nimport './components/colorscheme-selector'\n// Modify the injected github link\nimport './components/github-link'\n\n/**\n * Main related\n */\nimport './components/main'\nimport './components/content'\n\n/**\n * Footer related\n */\nimport './components/footer'\n\n/**\n * Sidebar related\n */\nimport './components/sidebar'\nimport './components/menu-switch'\n\n/**\n * Addons, patches...\n */\nimport './components/patch-for-local'\n\ndocumentElement.classList.replace('no-js', 'js')\n",
     "static": true,
     "longname": "/Users/greada/Documents/workspace/s2/esdoc-custom-theme/src/index.js",
     "access": "public",
@@ -2755,7 +2786,7 @@
   },
   {
     "kind": "packageJSON",
-    "content": "{\n  \"name\": \"esdoc-custom-theme\",\n  \"version\": \"1.0.0\",\n  \"description\": \"A customizable theme for esdoc\",\n  \"repository\": \"git@github.com:sinnerschrader/esdoc-custom-theme.git\",\n  \"author\": \"Gregor Adams <greg@pixelass.com>\",\n  \"license\": \"MIT\",\n  \"scripts\": {\n    \"build\": \"cross-env NODE_ENV=production webpack\",\n    \"clean\": \"npm run clean:modules; npm run clean:lib\",\n    \"clean:lib\": \"rimraf template\",\n    \"clean:modules\": \"rimraf node_modules\",\n    \"commitmsg\": \"commitlint -e $GIT_PARAMS\",\n    \"docs\": \"rimraf docs && esdoc\",\n    \"format:js\": \"prettier --write src/**/*.js\",\n    \"prebuild\": \"npm run clean:lib\",\n    \"watch\": \"npm run clean:lib && webpack --watch\"\n  },\n  \"keywords\": [\n    \"esdoc\",\n    \"theme\",\n    \"jsdoc\",\n    \"esdoc-template\",\n    \"custom-theme\",\n    \"documentation-theme\"\n  ],\n  \"files\": [\n    \"template\"\n  ],\n  \"dependencies\": {\n    \"codemirror\": \"^5.34.0\"\n  },\n  \"devDependencies\": {\n    \"@commitlint/cli\": \"^6.0.2\",\n    \"@commitlint/config-conventional\": \"^6.0.2\",\n    \"babel-core\": \"^6.26.0\",\n    \"babel-loader\": \"^7.1.2\",\n    \"babel-minify-webpack-plugin\": \"^0.3.0\",\n    \"babel-plugin-transform-class-properties\": \"^6.24.1\",\n    \"babel-plugin-transform-decorators-legacy\": \"^1.3.4\",\n    \"babel-preset-env\": \"^1.6.1\",\n    \"babel-preset-stage-2\": \"^6.24.1\",\n    \"copy-webpack-plugin\": \"^4.4.1\",\n    \"cross-env\": \"^5.1.3\",\n    \"css-loader\": \"^0.28.9\",\n    \"esdoc\": \"^1.0.4\",\n    \"esdoc-brand-plugin\": \"^1.0.0\",\n    \"esdoc-ecmascript-proposal-plugin\": \"^1.0.0\",\n    \"esdoc-importpath-plugin\": \"^1.0.1\",\n    \"esdoc-inject-style-plugin\": \"^1.0.0\",\n    \"esdoc-lint-plugin\": \"1.0.1\",\n    \"esdoc-publish-html-plugin\": \"^1.1.0\",\n    \"esdoc-standard-plugin\": \"^1.0.0\",\n    \"extract-text-webpack-plugin\": \"^3.0.2\",\n    \"html-webpack-plugin\": \"^2.30.1\",\n    \"husky\": \"^0.14.3\",\n    \"node-sass\": \"^4.7.2\",\n    \"npm-run-all\": \"^4.1.2\",\n    \"prettier\": \"^1.10.2\",\n    \"rimraf\": \"^2.6.2\",\n    \"sass-loader\": \"^6.0.6\",\n    \"style-loader\": \"^0.20.1\",\n    \"uglifyjs-webpack-plugin\": \"^1.1.8\",\n    \"webpack\": \"^3.10.0\",\n    \"xo\": \"^0.18.2\"\n  }\n}\n",
+    "content": "{\n  \"name\": \"esdoc-custom-theme\",\n  \"version\": \"1.0.0\",\n  \"description\": \"A customizable theme for esdoc\",\n  \"repository\": \"git@github.com:sinnerschrader/esdoc-custom-theme.git\",\n  \"author\": \"Gregor Adams <greg@pixelass.com>\",\n  \"license\": \"MIT\",\n  \"scripts\": {\n    \"build\": \"cross-env NODE_ENV=production webpack\",\n    \"clean\": \"npm run clean:modules; npm run clean:lib\",\n    \"clean:lib\": \"rimraf template\",\n    \"clean:modules\": \"rimraf node_modules\",\n    \"commitmsg\": \"commitlint -e $GIT_PARAMS\",\n    \"docs\": \"rimraf docs && esdoc\",\n    \"format:js\": \"prettier --write src/**/*.js\",\n    \"prebuild\": \"npm run clean:lib\",\n    \"watch\": \"npm run clean:lib && webpack --watch\",\n    \"watch:dev\": \"webpack --config dev.webpack.config --watch\"\n  },\n  \"keywords\": [\n    \"esdoc\",\n    \"theme\",\n    \"jsdoc\",\n    \"esdoc-template\",\n    \"custom-theme\",\n    \"documentation-theme\"\n  ],\n  \"files\": [\n    \"template\"\n  ],\n  \"dependencies\": {\n    \"codemirror\": \"^5.34.0\"\n  },\n  \"devDependencies\": {\n    \"@commitlint/cli\": \"^6.0.2\",\n    \"@commitlint/config-conventional\": \"^6.0.2\",\n    \"babel-core\": \"^6.26.0\",\n    \"babel-loader\": \"^7.1.2\",\n    \"babel-minify-webpack-plugin\": \"^0.3.0\",\n    \"babel-plugin-transform-class-properties\": \"^6.24.1\",\n    \"babel-plugin-transform-decorators-legacy\": \"^1.3.4\",\n    \"babel-preset-env\": \"^1.6.1\",\n    \"babel-preset-stage-2\": \"^6.24.1\",\n    \"copy-webpack-plugin\": \"^4.4.1\",\n    \"cross-env\": \"^5.1.3\",\n    \"css-loader\": \"^0.28.9\",\n    \"esdoc\": \"^1.0.4\",\n    \"esdoc-brand-plugin\": \"^1.0.0\",\n    \"esdoc-ecmascript-proposal-plugin\": \"^1.0.0\",\n    \"esdoc-importpath-plugin\": \"^1.0.1\",\n    \"esdoc-inject-style-plugin\": \"^1.0.0\",\n    \"esdoc-lint-plugin\": \"1.0.1\",\n    \"esdoc-publish-html-plugin\": \"^1.1.0\",\n    \"esdoc-standard-plugin\": \"^1.0.0\",\n    \"extract-text-webpack-plugin\": \"^3.0.2\",\n    \"html-webpack-plugin\": \"^2.30.1\",\n    \"husky\": \"^0.14.3\",\n    \"node-sass\": \"^4.7.2\",\n    \"npm-run-all\": \"^4.1.2\",\n    \"prettier\": \"^1.10.2\",\n    \"rimraf\": \"^2.6.2\",\n    \"sass-loader\": \"^6.0.6\",\n    \"style-loader\": \"^0.20.1\",\n    \"uglifyjs-webpack-plugin\": \"^1.1.8\",\n    \"webpack\": \"^3.10.0\",\n    \"xo\": \"^0.18.2\"\n  }\n}\n",
     "longname": "/Users/greada/Documents/workspace/s2/esdoc-custom-theme/package.json",
     "name": "package.json",
     "static": true,

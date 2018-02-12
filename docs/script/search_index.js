@@ -66,9 +66,21 @@ window.esdocSearchIndex = [
     "variable"
   ],
   [
+    "esdoc-custom-theme~filehighlighter",
+    "variable/index.html#static-variable-fileHighlighter",
+    "<span>fileHighlighter</span> <span class=\"search-result-import-path\">esdoc-custom-theme</span>",
+    "variable"
+  ],
+  [
     "esdoc-custom-theme~fontoptions",
     "variable/index.html#static-variable-fontOptions",
     "<span>fontOptions</span> <span class=\"search-result-import-path\">esdoc-custom-theme</span>",
+    "variable"
+  ],
+  [
+    "esdoc-custom-theme~fullhighlighters",
+    "variable/index.html#static-variable-fullHighlighters",
+    "<span>fullHighlighters</span> <span class=\"search-result-import-path\">esdoc-custom-theme</span>",
     "variable"
   ],
   [
@@ -156,12 +168,6 @@ window.esdocSearchIndex = [
     "function"
   ],
   [
-    "esdoc-custom-theme~optionsswitch",
-    "variable/index.html#static-variable-optionsSwitch",
-    "<span>optionsSwitch</span> <span class=\"search-result-import-path\">esdoc-custom-theme</span>",
-    "variable"
-  ],
-  [
     "esdoc-custom-theme~search",
     "function/index.html#static-function-search",
     "<span>search</span> <span class=\"search-result-import-path\">esdoc-custom-theme</span>",
@@ -222,6 +228,12 @@ window.esdocSearchIndex = [
     "function"
   ],
   [
+    "esdoc-custom-theme~settingsswitch",
+    "variable/index.html#static-variable-settingsSwitch",
+    "<span>settingsSwitch</span> <span class=\"search-result-import-path\">esdoc-custom-theme</span>",
+    "variable"
+  ],
+  [
     "esdoc-custom-theme~sidebarleft",
     "variable/index.html#static-variable-sidebarLeft",
     "<span>sidebarLeft</span> <span class=\"search-result-import-path\">esdoc-custom-theme</span>",
@@ -231,6 +243,12 @@ window.esdocSearchIndex = [
     "esdoc-custom-theme~sidebarright",
     "variable/index.html#static-variable-sidebarRight",
     "<span>sidebarRight</span> <span class=\"search-result-import-path\">esdoc-custom-theme</span>",
+    "variable"
+  ],
+  [
+    "esdoc-custom-theme~simplehighlighters",
+    "variable/index.html#static-variable-simpleHighlighters",
+    "<span>simpleHighlighters</span> <span class=\"search-result-import-path\">esdoc-custom-theme</span>",
     "variable"
   ],
   [
@@ -717,6 +735,12 @@ window.esdocSearchIndex = [
     "src/components/sidebar/index.js",
     "file/src/components/sidebar/index.js.html",
     "src/components/sidebar/index.js",
+    "file"
+  ],
+  [
+    "src/components/sidebar/toggle-sidebar.js",
+    "file/src/components/sidebar/toggle-sidebar.js.html",
+    "src/components/sidebar/toggle-sidebar.js",
     "file"
   ],
   [

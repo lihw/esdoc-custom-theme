@@ -1,6 +1,6 @@
 {
   "coverage": "0%",
-  "expectCount": 65,
+  "expectCount": 69,
   "actualCount": 0,
   "files": {
     "src/components/codemirror/codemirror.js": {
@@ -25,6 +25,13 @@
         4
       ]
     },
+    "src/components/colorscheme-selector/index.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        37
+      ]
+    },
     "src/components/global-elements/index.js": {
       "expectCount": 21,
       "actualCount": 0,
@@ -35,21 +42,21 @@
         9,
         13,
         16,
-        25,
-        26,
-        28,
-        29,
-        30,
-        32,
-        33,
-        35,
+        36,
         37,
-        38,
         39,
+        40,
         41,
-        42,
+        43,
         44,
-        46
+        46,
+        48,
+        49,
+        50,
+        52,
+        53,
+        55,
+        57
       ]
     },
     "src/components/mode-selector/index.js": {
@@ -143,7 +150,7 @@
       ]
     },
     "src/components/syntax-highlighter/highlight.js": {
-      "expectCount": 7,
+      "expectCount": 10,
       "actualCount": 0,
       "undocumentLines": [
         4,
@@ -151,8 +158,11 @@
         6,
         7,
         8,
+        9,
         10,
-        22
+        11,
+        13,
+        28
       ]
     },
     "src/components/syntax-highlighter/index.js": {
@@ -161,8 +171,8 @@
       "undocumentLines": [
         9,
         10,
-        11,
-        12
+        13,
+        16
       ]
     },
     "src/components/syntax-highlighter/normalize-lines.js": {

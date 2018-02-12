@@ -13,11 +13,22 @@ export const _$$ = (name, context = document) =&gt; [
 export const _$ = (name, context = document) =&gt;
   context.querySelector(jsSelector(name))
 
-export const createElement = (tag, {className = &apos;&apos;}, child) =&gt; {
+export const createElement = (tag, props, child) =&gt; {
   const wrapper = document.createElement(tag)
-  wrapper.classList.add(className)
-  if (child) {
-    wrapper.appendChild(child)
+  for (const prop in props) {
+    wrapper.setAttribute(prop, props[prop])
+  }
+  switch (typeof child) {
+    case &apos;string&apos;:
+      wrapper.innerHTML = child
+      break
+    case &apos;object&apos;:
+      if (child.namespaceURI === &apos;http://www.w3.org/1999/xhtml&apos;) {
+        wrapper.appendChild(child)
+      }
+      break
+    default:
+      break
   }
   return wrapper
 }
@@ -29,7 +40,7 @@ export const mainHeader = _$(&apos;mainHeader&apos;, body)
 export const sidebarLeft = _$(&apos;sidebarLeft&apos;, body)
 export const sidebarRight = _$(&apos;sidebarRight&apos;, body)
 
-export const optionsSwitch = _$(&apos;optionsSwitch&apos;, mainHeader)
+export const settingsSwitch = _$(&apos;settingsSwitch&apos;, mainHeader)
 export const modeSwitch = _$(&apos;modeSwitch&apos;, mainHeader)
 
 export const searchBox = _$(&apos;searchBox&apos;, mainHeader)
@@ -60,11 +71,11 @@ export const codeBlocks = $$(&apos;pre&apos;)
 <li class="nav-item _" data-ice="doc"><div class="fake-nav-link _"><span class="kind _kind-variable" data-ice="kind">V</span> <span class="name _" data-ice="name"><span><a href="variable/index.html#static-variable-githubLink">githubLink</a></span></span></div></li>
 <li class="nav-item _" data-ice="doc"><div class="fake-nav-link _"><span class="kind _kind-variable" data-ice="kind">V</span> <span class="name _" data-ice="name"><span><a href="variable/index.html#static-variable-mainHeader">mainHeader</a></span></span></div></li>
 <li class="nav-item _" data-ice="doc"><div class="fake-nav-link _"><span class="kind _kind-variable" data-ice="kind">V</span> <span class="name _" data-ice="name"><span><a href="variable/index.html#static-variable-modeSwitch">modeSwitch</a></span></span></div></li>
-<li class="nav-item _" data-ice="doc"><div class="fake-nav-link _"><span class="kind _kind-variable" data-ice="kind">V</span> <span class="name _" data-ice="name"><span><a href="variable/index.html#static-variable-optionsSwitch">optionsSwitch</a></span></span></div></li>
 <li class="nav-item _" data-ice="doc"><div class="fake-nav-link _"><span class="kind _kind-variable" data-ice="kind">V</span> <span class="name _" data-ice="name"><span><a href="variable/index.html#static-variable-searchBox">searchBox</a></span></span></div></li>
 <li class="nav-item _" data-ice="doc"><div class="fake-nav-link _"><span class="kind _kind-variable" data-ice="kind">V</span> <span class="name _" data-ice="name"><span><a href="variable/index.html#static-variable-searchIcon">searchIcon</a></span></span></div></li>
 <li class="nav-item _" data-ice="doc"><div class="fake-nav-link _"><span class="kind _kind-variable" data-ice="kind">V</span> <span class="name _" data-ice="name"><span><a href="variable/index.html#static-variable-searchInput">searchInput</a></span></span></div></li>
 <li class="nav-item _" data-ice="doc"><div class="fake-nav-link _"><span class="kind _kind-variable" data-ice="kind">V</span> <span class="name _" data-ice="name"><span><a href="variable/index.html#static-variable-searchResult">searchResult</a></span></span></div></li>
+<li class="nav-item _" data-ice="doc"><div class="fake-nav-link _"><span class="kind _kind-variable" data-ice="kind">V</span> <span class="name _" data-ice="name"><span><a href="variable/index.html#static-variable-settingsSwitch">settingsSwitch</a></span></span></div></li>
 <li class="nav-item _" data-ice="doc"><div class="fake-nav-link _"><span class="kind _kind-variable" data-ice="kind">V</span> <span class="name _" data-ice="name"><span><a href="variable/index.html#static-variable-sidebarLeft">sidebarLeft</a></span></span></div></li>
 <li class="nav-item _" data-ice="doc"><div class="fake-nav-link _"><span class="kind _kind-variable" data-ice="kind">V</span> <span class="name _" data-ice="name"><span><a href="variable/index.html#static-variable-sidebarRight">sidebarRight</a></span></span></div></li>
 <li class="nav-item _" data-ice="doc"><a class="nav-link" data-ice="dirPath" href="identifiers.html#components-mode-selector">components/mode-selector</a><div class="fake-nav-link _"><span class="kind _kind-function" data-ice="kind">F</span> <span class="name _" data-ice="name"><span><a href="function/index.html#static-function-switchLight">switchLight</a></span></span></div></li>
@@ -84,8 +95,11 @@ export const codeBlocks = $$(&apos;pre&apos;)
 <li class="nav-item _" data-ice="doc"><div class="fake-nav-link _"><span class="kind _kind-function" data-ice="kind">F</span> <span class="name _" data-ice="name"><span><a href="function/index.html#static-function-getlineNumber">getlineNumber</a></span></span></div></li>
 <li class="nav-item _" data-ice="doc"><div class="fake-nav-link _"><span class="kind _kind-function" data-ice="kind">F</span> <span class="name _" data-ice="name"><span><a href="function/index.html#static-function-highlight">highlight</a></span></span></div></li>
 <li class="nav-item _" data-ice="doc"><div class="fake-nav-link _"><span class="kind _kind-function" data-ice="kind">F</span> <span class="name _" data-ice="name"><span><a href="function/index.html#static-function-normalizeLines">normalizeLines</a></span></span></div></li>
+<li class="nav-item _" data-ice="doc"><div class="fake-nav-link _"><span class="kind _kind-variable" data-ice="kind">V</span> <span class="name _" data-ice="name"><span><a href="variable/index.html#static-variable-fileHighlighter">fileHighlighter</a></span></span></div></li>
+<li class="nav-item _" data-ice="doc"><div class="fake-nav-link _"><span class="kind _kind-variable" data-ice="kind">V</span> <span class="name _" data-ice="name"><span><a href="variable/index.html#static-variable-fullHighlighters">fullHighlighters</a></span></span></div></li>
+<li class="nav-item _" data-ice="doc"><div class="fake-nav-link _"><span class="kind _kind-variable" data-ice="kind">V</span> <span class="name _" data-ice="name"><span><a href="variable/index.html#static-variable-simpleHighlighters">simpleHighlighters</a></span></span></div></li>
 <li class="nav-item _" data-ice="doc"><a class="nav-link" data-ice="dirPath" href="identifiers.html#components-url">components/url</a><div class="fake-nav-link _"><span class="kind _kind-function" data-ice="kind">F</span> <span class="name _" data-ice="name"><span><a href="function/index.html#static-function-setHash">setHash</a></span></span></div></li>
 <li class="nav-item _" data-ice="doc"><div class="fake-nav-link _"><span class="kind _kind-function" data-ice="kind">F</span> <span class="name _" data-ice="name"><span><a href="function/index.html#static-function-setHref">setHref</a></span></span></div></li>
 <li class="nav-item _" data-ice="doc"><div class="fake-nav-link _"><span class="kind _kind-function" data-ice="kind">F</span> <span class="name _" data-ice="name"><span><a href="function/index.html#static-function-setURL">setURL</a></span></span></div></li>
 <li class="nav-item _" data-ice="doc"><div class="fake-nav-link _"><span class="kind _kind-variable" data-ice="kind">V</span> <span class="name _" data-ice="name"><span><a href="variable/index.html#static-variable-hash">hash</a></span></span></div></li>
-</ul></nav></aside><aside class="sidebar js_sidebarRight sidebar-right"><nav class="nav colorschemes-nav"><ul class="nav-list js_colorschemeOptions"></ul></nav><nav class="nav fonts-nav"><ul class="nav-list js_fontOptions"></ul></nav></aside><script src="script/bundle.js"></script></body></html>
+</ul></nav></aside><aside class="sidebar closed js_sidebarRight sidebar-right"><nav class="colorschemes-nav nav"><ul class="js_colorschemeOptions nav-list"></ul></nav></aside><script src="script/bundle.js"></script></body></html>

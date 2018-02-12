@@ -2219,7 +2219,7 @@
     "__docId__": 130,
     "kind": "file",
     "name": "src/components/syntax-highlighter/highlight.js",
-    "content": "import {pathname} from '../url'\nimport {simpleMode, fullMode} from '../codemirror'\n\nconst highlight = blocks => {\n  return blocks.map(block => {\n    const {innerText: value} = block\n    const code = block.querySelector('code')\n    const lang = !code\n      ? ''\n      : code.className.split(',').filter(x => x.match('lang'))[0] || ''\n    // default to JSX\n    const isJSFile = pathname.match('.js.html')\n    const isTSFile = pathname.match('.ts.html')\n    const isJSXFile = pathname.match('.jsx.html')\n    const isTSXFile = pathname.match('.tsx.html')\n    const isFile = isJSFile || isTSFile || isJSXFile || isTSXFile\n    let mode = lang.replace(/lang(uage)?-/, '')\n    if (isJSFile || isJSXFile) {\n      mode = 'jsx'\n    }\n    if (isTSFile || isTSXFile) {\n      mode = 'tsx'\n    }\n    return isFile\n      ? fullMode(value, mode, block)\n      : simpleMode(value, mode, block)\n  })\n}\n\nexport default highlight\n",
+    "content": "import {pathname} from '../url'\nimport {simpleMode, fullMode} from '../codemirror'\n\nconst JAVASCRIPT = 'javascript'\nconst JSX = 'jsx'\nconst TYPESCRIPT = 'text/typescript'\nconst JSON_LD = 'application/ld+json'\nconst SHELL = 'shell'\n\nconst modes = {\n  bash: SHELL,\n  shell: SHELL,\n  javascript: JAVASCRIPT,\n  js: JAVASCRIPT,\n  jsx: JSX,\n  typescript: TYPESCRIPT,\n  ts: TYPESCRIPT,\n  tsx: TYPESCRIPT,\n  json: JSON_LD\n}\n\nconst highlight = blocks => {\n  return blocks.map(block => {\n    const {innerText: value} = block\n    const code = block.querySelector('code')\n    const lang = !code\n      ? ''\n      : code.className.split(',').filter(x => x.match('lang'))[0] || ''\n    // default to JSX\n    const isJSFile = pathname.match('.js.html')\n    const isTSFile = pathname.match('.ts.html')\n    const isJSXFile = pathname.match('.jsx.html')\n    const isTSXFile = pathname.match('.tsx.html')\n    const isFile = isJSFile || isTSFile || isJSXFile || isTSXFile\n    let mode = lang.replace(/lang(uage)?-/, '')\n\n    if (isJSFile || isJSXFile) {\n      mode = 'jsx'\n    }\n    if (isTSFile || isTSXFile) {\n      mode = 'ts'\n    }\n    return isFile\n      ? fullMode(value, modes[mode], block)\n      : simpleMode(value, modes[mode], block)\n  })\n}\n\nexport default highlight\n",
     "static": true,
     "longname": "/Users/greada/Documents/workspace/s2/esdoc-custom-theme/src/components/syntax-highlighter/highlight.js",
     "access": "public",
@@ -2228,6 +2228,132 @@
   },
   {
     "__docId__": 131,
+    "kind": "variable",
+    "name": "JAVASCRIPT",
+    "memberof": "src/components/syntax-highlighter/highlight.js",
+    "static": true,
+    "longname": "src/components/syntax-highlighter/highlight.js~JAVASCRIPT",
+    "access": "public",
+    "export": false,
+    "importPath": "esdoc-custom-theme",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 132,
+    "kind": "variable",
+    "name": "JSX",
+    "memberof": "src/components/syntax-highlighter/highlight.js",
+    "static": true,
+    "longname": "src/components/syntax-highlighter/highlight.js~JSX",
+    "access": "public",
+    "export": false,
+    "importPath": "esdoc-custom-theme",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 133,
+    "kind": "variable",
+    "name": "TYPESCRIPT",
+    "memberof": "src/components/syntax-highlighter/highlight.js",
+    "static": true,
+    "longname": "src/components/syntax-highlighter/highlight.js~TYPESCRIPT",
+    "access": "public",
+    "export": false,
+    "importPath": "esdoc-custom-theme",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 6,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 134,
+    "kind": "variable",
+    "name": "JSON_LD",
+    "memberof": "src/components/syntax-highlighter/highlight.js",
+    "static": true,
+    "longname": "src/components/syntax-highlighter/highlight.js~JSON_LD",
+    "access": "public",
+    "export": false,
+    "importPath": "esdoc-custom-theme",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 7,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 135,
+    "kind": "variable",
+    "name": "SHELL",
+    "memberof": "src/components/syntax-highlighter/highlight.js",
+    "static": true,
+    "longname": "src/components/syntax-highlighter/highlight.js~SHELL",
+    "access": "public",
+    "export": false,
+    "importPath": "esdoc-custom-theme",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 8,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 136,
+    "kind": "variable",
+    "name": "modes",
+    "memberof": "src/components/syntax-highlighter/highlight.js",
+    "static": true,
+    "longname": "src/components/syntax-highlighter/highlight.js~modes",
+    "access": "public",
+    "export": false,
+    "importPath": "esdoc-custom-theme",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 10,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{\"bash\": *, \"shell\": *, \"javascript\": *, \"js\": *, \"jsx\": *, \"typescript\": *, \"ts\": *, \"tsx\": *, \"json\": *}"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 137,
     "kind": "function",
     "name": "highlight",
     "memberof": "src/components/syntax-highlighter/highlight.js",
@@ -2240,7 +2366,7 @@
     "importPath": "esdoc-custom-theme",
     "importStyle": "highlight",
     "description": null,
-    "lineNumber": 4,
+    "lineNumber": 22,
     "undocument": true,
     "params": [
       {
@@ -2257,7 +2383,7 @@
     }
   },
   {
-    "__docId__": 132,
+    "__docId__": 138,
     "kind": "file",
     "name": "src/components/syntax-highlighter/index.js",
     "content": "import CodeMirror, {colorschemes} from '../codemirror'\nimport {codeBlocks} from '../global-elements'\n\nimport highlight from './highlight'\nimport getErrorLines from './get-error-lines'\nimport getActiveLines from './get-active-lines'\nimport getlineNumber from './get-line-number'\n\nconst instances = highlight(codeBlocks)\nconst fullHighlighters = instances.filter(x => Boolean(x.cm)).map(x => x.cm)\nconst simpleHighlighters = instances.filter(x => Boolean(x.hl)).map(x => x.hl)\nconst [fileHighlighter] = fullHighlighters\ngetErrorLines(fileHighlighter)\ngetActiveLines(fileHighlighter)\ngetlineNumber(fileHighlighter)\n",
@@ -2268,7 +2394,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 133,
+    "__docId__": 139,
     "kind": "variable",
     "name": "instances",
     "memberof": "src/components/syntax-highlighter/index.js",
@@ -2289,7 +2415,7 @@
     "ignore": true
   },
   {
-    "__docId__": 134,
+    "__docId__": 140,
     "kind": "variable",
     "name": "fullHighlighters",
     "memberof": "src/components/syntax-highlighter/index.js",
@@ -2310,7 +2436,7 @@
     "ignore": true
   },
   {
-    "__docId__": 135,
+    "__docId__": 141,
     "kind": "variable",
     "name": "simpleHighlighters",
     "memberof": "src/components/syntax-highlighter/index.js",
@@ -2331,7 +2457,7 @@
     "ignore": true
   },
   {
-    "__docId__": 136,
+    "__docId__": 142,
     "kind": "variable",
     "name": "fileHighlighter",
     "memberof": "src/components/syntax-highlighter/index.js",
@@ -2352,7 +2478,7 @@
     "ignore": true
   },
   {
-    "__docId__": 137,
+    "__docId__": 143,
     "kind": "file",
     "name": "src/components/syntax-highlighter/normalize-lines.js",
     "content": "const normalizeLines = lines =>\n  lines\n    .split(',')\n    .map(line => parseInt(line, 10) - 1)\n    .sort((a, b) => a - b)\n\nexport default normalizeLines\n",
@@ -2363,7 +2489,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 138,
+    "__docId__": 144,
     "kind": "function",
     "name": "normalizeLines",
     "memberof": "src/components/syntax-highlighter/normalize-lines.js",
@@ -2389,7 +2515,7 @@
     "return": null
   },
   {
-    "__docId__": 139,
+    "__docId__": 145,
     "kind": "file",
     "name": "src/components/table/index.js",
     "content": "// CSS file generation\nimport './table.scss'\n",
@@ -2400,7 +2526,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 140,
+    "__docId__": 146,
     "kind": "file",
     "name": "src/components/url/index.js",
     "content": "export const {\n  hash,\n  search,\n  protocol,\n  host,\n  hostname,\n  origin,\n  port,\n  pathname,\n  href\n} = window.location\n\nexport const setURL = (type, value) => {\n  window.location[type] = value\n}\n\nexport const setHash = value => {\n  setURL('hash', value)\n}\n\nexport const setHref = value => {\n  setURL('href', value)\n}\n",
@@ -2411,7 +2537,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 141,
+    "__docId__": 147,
     "kind": "variable",
     "name": "hash",
     "memberof": "src/components/url/index.js",
@@ -2431,7 +2557,7 @@
     }
   },
   {
-    "__docId__": 142,
+    "__docId__": 148,
     "kind": "function",
     "name": "setURL",
     "memberof": "src/components/url/index.js",
@@ -2463,7 +2589,7 @@
     "return": null
   },
   {
-    "__docId__": 143,
+    "__docId__": 149,
     "kind": "function",
     "name": "setHash",
     "memberof": "src/components/url/index.js",
@@ -2489,7 +2615,7 @@
     "return": null
   },
   {
-    "__docId__": 144,
+    "__docId__": 150,
     "kind": "function",
     "name": "setHref",
     "memberof": "src/components/url/index.js",
@@ -2515,7 +2641,7 @@
     "return": null
   },
   {
-    "__docId__": 145,
+    "__docId__": 151,
     "kind": "file",
     "name": "src/index.js",
     "content": "import {documentElement} from './components/global-elements'\n\n/**\n * Elements & layout\n */\nimport './components/base'\nimport './components/layout'\nimport './components/list'\nimport './components/link'\nimport './components/quote'\nimport './components/table'\nimport './components/main'\nimport './components/kind'\n\n/**\n * Code related (colorschemes)\n */\nimport './components/syntax-highlighter'\n\n/**\n * Mode related (dark, light ...)\n */\nimport './components/mode-selector'\n\n/**\n * Manual related\n */\nimport './components/cards'\n\n/**\n * Header related\n */\nimport './components/header'\nimport './components/navigation'\nimport './components/searchbar'\n// Add customizers\nimport './components/mode-selector'\nimport './components/colorscheme-selector'\n// Modify the injected github link\nimport './components/github-link'\n\n/**\n * Main related\n */\nimport './components/main'\nimport './components/content'\n\n/**\n * Footer related\n */\nimport './components/footer'\n\n/**\n * Sidebar related\n */\nimport './components/sidebar'\n\n/**\n * Addons, patches...\n */\nimport './components/patch-for-local'\n\ndocumentElement.classList.replace('no-js', 'js')\n",

@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.0.0-rc1.1"></a>
+# [1.0.0-rc1.1](https://github.com/sinnerschrader/esdoc-custom-theme/compare/v1.0.0-rc1.0...v1.0.0-rc1.1) (2018-02-12)
+
+
+### Bug Fixes
+
+* **codemirror:** make highlighted and default pre scrollable ([8618585](https://github.com/sinnerschrader/esdoc-custom-theme/commit/8618585))
+* **kind:** add missing kinds ([de449d3](https://github.com/sinnerschrader/esdoc-custom-theme/commit/de449d3))
+* **syntax-highlighter:** add falback and fix matching ([4c67d40](https://github.com/sinnerschrader/esdoc-custom-theme/commit/4c67d40))
+* **syntax-highlighter:** add missing import ([ad8c8ee](https://github.com/sinnerschrader/esdoc-custom-theme/commit/ad8c8ee))
+
+
+### Features
+
+* **base:** activate hash-targets ([5b1e019](https://github.com/sinnerschrader/esdoc-custom-theme/commit/5b1e019))
+
+
+
 <a name="1.0.0-rc1.0"></a>
 # 1.0.0-rc1.0 (2018-02-12)
 

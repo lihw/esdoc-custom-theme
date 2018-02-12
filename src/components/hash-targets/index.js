@@ -1,11 +1,7 @@
 import {hash} from '../url'
 import {$, $$} from '../global-elements'
 
-// CSS file generation
-import './hash-targets.scss'
-
-const validIdPattern = /#([\w\d\-_]+)/
-const isValidId = str => str.replace(validIdPattern, '') === ''
+const isValidId = str => !str.replace(/#([\w\d\-_]+)/, '')
 
 const markHashTarget = hash => {
   if (hash && isValidId(hash)) {

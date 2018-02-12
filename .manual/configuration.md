@@ -74,6 +74,12 @@ have classNames so you can still go crazy and modify whatever you want.
   --main-focus-width: 2px;
   --left-sidebar-padding-left: var(--global-padding);
   --left-sidebar-padding: calc(var(--global-padding) / 2) var(--global-padding) calc(var(--global-padding) / 2) var(--left-sidebar-padding-left);
+  --right-sidebar-padding-left: var(--global-padding);
+  --right-sidebar-padding: calc(var(--global-padding) / 2) var(--global-padding) calc(var(--global-padding) / 2) var(--right-sidebar-padding-left);
+  --left-sidebar-speed: 0.25s;
+  --left-sidebar-easing: ease-in-out;
+  --right-sidebar-speed: 0.25s;
+  --right-sidebar-easing: ease-in-out;
 }
 ```
 
@@ -104,6 +110,14 @@ have classNames so you can still go crazy and modify whatever you want.
   --left-sidebar-indent-background: none;
   --left-sidebar-shadow: none;
 
+  --right-sidebar-background: #212429;
+  --right-sidebar-background-active: #16181f;
+  --right-sidebar-color-active: #fff;
+  --right-sidebar-color: #fff;
+  --right-sidebar-border-color: #2d3038;
+  --right-sidebar-indent-background: none;
+  --right-sidebar-shadow: -0.125rem 0 0.25rem rgba(0, 0, 0, 0.25), -0.175rem 0 0.35rem rgba(0, 0, 0, 0.45);
+
   --card-link-hover-shade: rgba(0, 0, 0, 0.1);
 
   --search-separator-background: #3300d1;
@@ -121,10 +135,6 @@ have classNames so you can still go crazy and modify whatever you want.
   --main-code-color: #0d6663;
   --main-code-border-color: #c9d0d5;
 
-  --pretty-code-background: initial;
-  --pretty-code-color: initial;
-  --pretty-code-border-color: currentColor;
-  --pretty-code-shadow: none;
   --pretty-code-error-background: #7f012a;
   --pretty-code-error-color: #fff;
 
@@ -182,6 +192,14 @@ have classNames so you can still go crazy and modify whatever you want.
   --left-sidebar-indent-background: none;
   --left-sidebar-shadow: none;
 
+  --right-sidebar-background: #f2f5f9;
+  --right-sidebar-background-active: #acb4b7;
+  --right-sidebar-color-active: #000;
+  --right-sidebar-color: #000;
+  --right-sidebar-border-color: #c9d0d5;
+  --right-sidebar-indent-background: none;
+  --right-sidebar-shadow: -0.125rem 0 0.25rem rgba(0, 0, 0, 0.25), -0.175rem 0 0.35rem rgba(0, 0, 0, 0.45);
+
   --card-link-hover-shade: rgba(255, 255, 255, 0.1);
 
   --search-separator-background: #fc0043;
@@ -200,10 +218,6 @@ have classNames so you can still go crazy and modify whatever you want.
   --main-code-color: #8dffdb;
   --main-code-border-color: #2d3038;
 
-  --pretty-code-background: initial;
-  --pretty-code-color: initial;
-  --pretty-code-border-color: transparent;
-  --pretty-code-shadow: none;
   --pretty-code-error-background: #7f012a;
   --pretty-code-error-color: #fff;
 

@@ -1,6 +1,9 @@
 import {pathname} from '../url'
 import {simpleMode, fullMode} from '../codemirror'
 
+const CSS = 'css'
+const SCSS = 'text/x-scss'
+const LESS = 'text/x-less'
 const JAVASCRIPT = 'javascript'
 const JSX = 'jsx'
 const TYPESCRIPT = 'text/typescript'
@@ -8,6 +11,9 @@ const JSON_LD = 'application/ld+json'
 const SHELL = 'shell'
 
 const modes = {
+  css: CSS,
+  scss: SCSS,
+  less: LESS,
   bash: SHELL,
   shell: SHELL,
   javascript: JAVASCRIPT,

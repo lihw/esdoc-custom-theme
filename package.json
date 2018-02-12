@@ -1,6 +1,6 @@
 {
   "name": "esdoc-custom-theme",
-  "version": "1.0.0",
+  "version": "1.0.0-rc1.0",
   "description": "A customizable theme for esdoc",
   "repository": "git@github.com:sinnerschrader/esdoc-custom-theme.git",
   "author": "Gregor Adams <greg@pixelass.com>",

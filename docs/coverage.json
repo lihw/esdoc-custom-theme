@@ -1,6 +1,6 @@
 {
-  "coverage": "1.12%",
-  "expectCount": 89,
+  "coverage": "1.03%",
+  "expectCount": 97,
   "actualCount": 1,
   "files": {
     "src/components/codemirror/codemirror.js": {
@@ -37,10 +37,10 @@
       "actualCount": 0,
       "undocumentLines": [
         14,
-        42,
-        43,
-        44,
-        46
+        39,
+        40,
+        41,
+        43
       ]
     },
     "src/components/fonts/index.js": {
@@ -58,7 +58,7 @@
       ]
     },
     "src/components/global-elements/index.js": {
-      "expectCount": 22,
+      "expectCount": 24,
       "actualCount": 0,
       "undocumentLines": [
         1,
@@ -67,30 +67,33 @@
         9,
         13,
         16,
-        36,
-        37,
-        39,
+        18,
+        20,
         40,
         41,
         43,
         44,
         45,
         47,
+        48,
         49,
-        50,
         51,
         53,
         54,
-        56,
-        58
+        55,
+        57,
+        58,
+        60,
+        62
       ]
     },
     "src/components/hash-targets/index.js": {
-      "expectCount": 2,
+      "expectCount": 3,
       "actualCount": 0,
       "undocumentLines": [
         4,
-        6
+        6,
+        8
       ]
     },
     "src/components/menu-switch/index.js": {
@@ -150,10 +153,15 @@
       ]
     },
     "src/components/sidebar/activate-links.js": {
-      "expectCount": 1,
+      "expectCount": 6,
       "actualCount": 0,
       "undocumentLines": [
-        3
+        3,
+        19,
+        30,
+        40,
+        54,
+        80
       ]
     },
     "src/components/store/index.js": {

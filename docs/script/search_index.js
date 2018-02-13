@@ -24,6 +24,12 @@ window.esdocSearchIndex = [
     "function"
   ],
   [
+    "esdoc-custom-theme~_closest",
+    "function/index.html#static-function-_closest",
+    "<span>_closest</span> <span class=\"search-result-import-path\">esdoc-custom-theme</span>",
+    "function"
+  ],
+  [
     "esdoc-custom-theme~activate",
     "function/index.html#static-function-activate",
     "<span>activate</span> <span class=\"search-result-import-path\">esdoc-custom-theme</span>",
@@ -51,6 +57,12 @@ window.esdocSearchIndex = [
     "esdoc-custom-theme~closesidebar",
     "function/index.html#static-function-closeSidebar",
     "<span>closeSidebar</span> <span class=\"search-result-import-path\">esdoc-custom-theme</span>",
+    "function"
+  ],
+  [
+    "esdoc-custom-theme~closest",
+    "function/index.html#static-function-closest",
+    "<span>closest</span> <span class=\"search-result-import-path\">esdoc-custom-theme</span>",
     "function"
   ],
   [

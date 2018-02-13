@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.3.0"></a>
+# [1.3.0](https://github.com/sinnerschrader/esdoc-custom-theme/compare/v1.2.0...v1.3.0) (2018-02-13)
+
+
+### Bug Fixes
+
+* **hash-targets:** handle dirty IDs ([33170d8](https://github.com/sinnerschrader/esdoc-custom-theme/commit/33170d8))
+* **list:** don't reset paddings and margins ([03c282e](https://github.com/sinnerschrader/esdoc-custom-theme/commit/03c282e))
+
+
+### Features
+
+* **active-links:** acgive links and collapsible sections ([1f37115](https://github.com/sinnerschrader/esdoc-custom-theme/commit/1f37115))
+* **global-elements:** helper for closest parent ([44b7522](https://github.com/sinnerschrader/esdoc-custom-theme/commit/44b7522))
+* **mode-selector:** added variables for new features ([534508c](https://github.com/sinnerschrader/esdoc-custom-theme/commit/534508c))
+* **searchbar:** highlight matches in results ([5e9ded5](https://github.com/sinnerschrader/esdoc-custom-theme/commit/5e9ded5))
+
+
+
 <a name="1.2.0"></a>
 # [1.2.0](https://github.com/sinnerschrader/esdoc-custom-theme/compare/v1.1.0...v1.2.0) (2018-02-13)
 

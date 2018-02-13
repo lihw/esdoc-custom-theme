@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.2.0"></a>
+# [1.2.0](https://github.com/sinnerschrader/esdoc-custom-theme/compare/v1.1.0...v1.2.0) (2018-02-13)
+
+
+### Bug Fixes
+
+* **kind:** minor style glitch ([bb0f7ad](https://github.com/sinnerschrader/esdoc-custom-theme/commit/bb0f7ad))
+
+
+### Features
+
+* integrate normalize ([7dcd962](https://github.com/sinnerschrader/esdoc-custom-theme/commit/7dcd962))
+* style details & active-targets ([70618a3](https://github.com/sinnerschrader/esdoc-custom-theme/commit/70618a3))
+* **fonts:** added a font for dyslexia ([c9596ee](https://github.com/sinnerschrader/esdoc-custom-theme/commit/c9596ee))
+
+
+
 <a name="1.1.0"></a>
 # [1.1.0](https://github.com/sinnerschrader/esdoc-custom-theme/compare/v1.0.1...v1.1.0) (2018-02-12)
 

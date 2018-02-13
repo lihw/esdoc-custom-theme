@@ -13,6 +13,10 @@ export const _$$ = (name, context = document) => [
 export const _$ = (name, context = document) =>
   context.querySelector(jsSelector(name))
 
+export const _closest = (node, name) => node.closest(jsSelector(name))
+
+export const closest = (node, selector) => node.closest(selector)
+
 export const createElement = (tag, props, child) => {
   const wrapper = document.createElement(tag)
   for (const prop in props) {

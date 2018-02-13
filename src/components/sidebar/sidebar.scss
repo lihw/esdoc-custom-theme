@@ -27,6 +27,10 @@
     display: flex;
   }
 
+  .fake-nav-link.hidden {
+    display: none;
+  }
+
   .fake-nav-link span {
     flex: 1;
   }

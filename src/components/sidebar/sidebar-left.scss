@@ -98,4 +98,9 @@
   ._indent-h4 .nav-link:before {
     width: calc(var(--global-padding) * 2);
   }
+
+  a[href*="#bug-fixes"],
+  a[href*="#features"] {
+    display: none!important;
+  }
 }

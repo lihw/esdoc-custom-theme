@@ -14,15 +14,32 @@
     a {
       color: var(--content-detail-link-color);
     }
+  }
 
-    &.active-target {
-      background: var(--active-target-background);
-      color: var(--active-target-color);
-      border-bottom: 1px solid var(--active-target-border-color);
+  .active-target {
+    background: var(--active-target-background);
+    color: var(--active-target-color);
+    border-bottom: 1px solid var(--active-target-border-color);
 
-      a {
-        color: var(--active-target-link-color);
-      }
+    a {
+      color: var(--active-target-link-color);
+    }
+  }
+
+  h1.active-target,
+  h2.active-target,
+  h3.active-target,
+  h1.active-target {
+    background: var(--active-target-background);
+    color: var(--active-target-color);
+    border-bottom: 1px solid var(--active-target-border-color);
+    margin-left: -2em;
+    margin-right: -2em;
+    padding-left: 2em;
+    padding-right: 2em;
+
+    a {
+      color: var(--active-target-link-color);
     }
   }
 }

@@ -78,6 +78,18 @@ window.esdocSearchIndex = [
     "function"
   ],
   [
+    "esdoc-custom-theme~data",
+    "variable/index.html#static-variable-data",
+    "<span>data</span> <span class=\"search-result-import-path\">esdoc-custom-theme</span>",
+    "variable"
+  ],
+  [
+    "esdoc-custom-theme~defaultfont",
+    "variable/index.html#static-variable-defaultFont",
+    "<span>defaultFont</span> <span class=\"search-result-import-path\">esdoc-custom-theme</span>",
+    "variable"
+  ],
+  [
     "esdoc-custom-theme~documentelement",
     "variable/index.html#static-variable-documentElement",
     "<span>documentElement</span> <span class=\"search-result-import-path\">esdoc-custom-theme</span>",
@@ -693,6 +705,24 @@ window.esdocSearchIndex = [
     "src/components/content/index.js",
     "file/src/components/content/index.js.html",
     "src/components/content/index.js",
+    "file"
+  ],
+  [
+    "src/components/font-selector/index.js",
+    "file/src/components/font-selector/index.js.html",
+    "src/components/font-selector/index.js",
+    "file"
+  ],
+  [
+    "src/components/fonts/index.js",
+    "file/src/components/fonts/index.js.html",
+    "src/components/fonts/index.js",
+    "file"
+  ],
+  [
+    "src/components/fonts/open-dyslexic/index.js",
+    "file/src/components/fonts/open-dyslexic/index.js.html",
+    "src/components/fonts/open-dyslexic/index.js",
     "file"
   ],
   [

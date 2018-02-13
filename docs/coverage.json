@@ -1,6 +1,6 @@
 {
-  "coverage": "1.21%",
-  "expectCount": 82,
+  "coverage": "1.12%",
+  "expectCount": 89,
   "actualCount": 1,
   "files": {
     "src/components/codemirror/codemirror.js": {
@@ -32,6 +32,31 @@
         37
       ]
     },
+    "src/components/font-selector/index.js": {
+      "expectCount": 5,
+      "actualCount": 0,
+      "undocumentLines": [
+        14,
+        42,
+        43,
+        44,
+        46
+      ]
+    },
+    "src/components/fonts/index.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        3
+      ]
+    },
+    "src/components/fonts/open-dyslexic/index.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        4
+      ]
+    },
     "src/components/global-elements/index.js": {
       "expectCount": 22,
       "actualCount": 0,
@@ -61,12 +86,11 @@
       ]
     },
     "src/components/hash-targets/index.js": {
-      "expectCount": 3,
+      "expectCount": 2,
       "actualCount": 0,
       "undocumentLines": [
-        7,
-        8,
-        10
+        4,
+        6
       ]
     },
     "src/components/menu-switch/index.js": {
@@ -133,18 +157,19 @@
       ]
     },
     "src/components/store/index.js": {
-      "expectCount": 9,
+      "expectCount": 10,
       "actualCount": 0,
       "undocumentLines": [
-        1,
-        2,
         3,
         4,
-        7,
-        8,
+        5,
+        6,
+        9,
         10,
-        11,
-        13
+        12,
+        13,
+        14,
+        16
       ]
     },
     "src/components/syntax-highlighter/get-active-lines.js": {

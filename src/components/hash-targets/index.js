@@ -1,11 +1,13 @@
 import {hash} from '../url'
 import {$, $$} from '../global-elements'
 
-const isValidId = str => !str.replace(/#([\w\d\-_]+)/, '')
+const cleanId = str => str.replace(/^#/, '')
+
+const isValidId = str => !str.replace('#', '')[0].match(/\d/)
 
 const markHashTarget = hash => {
-  if (hash && isValidId(hash)) {
-    const target = $(hash)
+  if (hash) {
+    const target = isValidId(hash) ? $(hash) : $(`[id="${cleanId(hash)}"]`)
     if (target) {
       target.classList.add('active-target')
     }

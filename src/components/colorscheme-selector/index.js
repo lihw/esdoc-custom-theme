@@ -27,7 +27,7 @@ colorschemes.forEach(colorscheme => {
     e.preventDefault()
     setLocalStorage('colorscheme', colorscheme)
     setColorscheme(colorscheme)
-    $('.active-link', sidebarRight).classList.remove('active-link')
+    $('.active-link', colorschemeOptions).classList.remove('active-link')
     a.classList.add('active-link')
   })
   const li = createElement('li', {class: 'nav-item'}, a)

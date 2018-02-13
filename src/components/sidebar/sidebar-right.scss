@@ -49,4 +49,9 @@
     background: var(--right-sidebar-background-active);
     color: var(--right-sidebar-color-active);
   }
+
+  .nav-link.headline {
+    background: var(--right-sidebar-headline-background);
+    color: var(--right-sidebar-headline-color);
+  }
 }

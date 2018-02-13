@@ -16,11 +16,6 @@ import './components/main'
 import './components/kind'
 
 /**
- * Mode related (dark, light ...)
- */
-import './components/mode-selector'
-
-/**
  * Code related (colorschemes)
  */
 import './components/syntax-highlighter'
@@ -39,6 +34,7 @@ import './components/searchbar'
 // Add customizers
 import './components/mode-selector'
 import './components/colorscheme-selector'
+import './components/font-selector'
 // Modify the injected github link
 import './components/github-link'
 

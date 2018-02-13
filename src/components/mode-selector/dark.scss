@@ -29,6 +29,8 @@
   --left-sidebar-border-color: #2d3038;
   --left-sidebar-indent-background: none;
   --left-sidebar-shadow: none;
+  --left-sidebar-headline-background: #fc0043;
+  --left-sidebar-headline-color: #fff;
 
   @media (max-width: 45rem) {
     --left-sidebar-shadow: 0.125rem 0 0.25rem rgba(0, 0, 0, 0.25), 0.175rem 0 0.35rem rgba(0, 0, 0, 0.45);
@@ -41,6 +43,8 @@
   --right-sidebar-border-color: #2d3038;
   --right-sidebar-indent-background: none;
   --right-sidebar-shadow: -0.125rem 0 0.25rem rgba(0, 0, 0, 0.25), -0.175rem 0 0.35rem rgba(0, 0, 0, 0.45);;
+  --right-sidebar-headline-background: #fc0043;
+  --right-sidebar-headline-color: #fff;
 
   --card-link-hover-shade: rgba(255, 255, 255, 0.1);
 

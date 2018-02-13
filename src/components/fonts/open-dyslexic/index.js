@@ -7,12 +7,7 @@ const data = {
   className: 'dyslexic',
   css: 'Open Dyslexic',
   file: 'OpenDyslexic-*.woff',
-  styles: [
-    '400',
-    '400i',
-    '700',
-    '700i'
-  ],
+  styles: ['400', '400i', '700', '700i'],
   keywords: [
     'accessible',
     'accessibility',

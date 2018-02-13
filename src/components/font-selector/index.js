@@ -13,16 +13,13 @@ import './fonts-selector.scss'
 
 const fonts = Object.keys(fontObject).map(font => fontObject[font])
 
-Object
-  .keys(fontObject)
+Object.keys(fontObject)
   .map(font => fontObject[font])
   .forEach(font => {
     const a = createElement(
       'a',
       {
-        class: `nav-link${
-          font.key === store.font ? ' active-link' : ''
-        }`,
+        class: `nav-link${font.key === store.font ? ' active-link' : ''}`,
         href: '#'
       },
       font.name
@@ -41,7 +38,7 @@ Object
 
 const prefix = 'font-'
 const pattern = new RegExp(`${prefix}[a-z0-9_-]+`, 'ig')
-const fontName = name => name ? `${prefix}${name}` : ''
+const fontName = name => (name ? `${prefix}${name}` : '')
 
 const setFont = (font = {}) => {
   const {className} = documentElement
@@ -49,8 +46,9 @@ const setFont = (font = {}) => {
     .replace(pattern, '')
     .split(' ')
     .filter(Boolean)
-  documentElement.className = [...classNames, fontName(font.className)].join(' ')
-
+  documentElement.className = [...classNames, fontName(font.className)].join(
+    ' '
+  )
 }
 
 setFont(fontObject[store.font])

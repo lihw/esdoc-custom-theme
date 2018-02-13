@@ -29,11 +29,29 @@ const search = (text, output) => {
 
   searchIndex.forEach((item, index) => {
     const [src, href, label, kind] = item
-    if (src.indexOf(text) > -1) {
+    if (text.length > 1 && src.indexOf(text) > -1) {
+      const cleanLabel = label
+        .split(/<\/?span.*?>/g)
+        .filter(x => Boolean(x.trim()))
+        .join(' ')
+
+      const nonMatches = cleanLabel.split(text)
+      const matches = cleanLabel.match(
+        new RegExp(text.replace(/\$/g, '\\$'), 'ig')
+      )
+      const modifiedLabel = nonMatches
+        .map(
+          (str, i) =>
+            str +
+            (matches[i]
+              ? `<strong class="search-match">${matches[i]}</strong>`
+              : '')
+        )
+        .join('')
       html[kind].push(`
         <li class="search-result-item">
           <a class="search-result-link" href="${href}">
-            ${label}
+            ${modifiedLabel}
           </a>
         </li>
       `)

@@ -55,4 +55,9 @@
     color: var(--search-result-selected-color);
     box-shadow: inset 0 0 0 var(--main-focus-width) var(--search-result-focus-color);
   }
+
+  .search-match {
+    background: var(--search-match-background);
+    color: var(--search-match-color);
+  }
 }

@@ -90,8 +90,6 @@ const activate = e => {
   if (!hash) {
     return
   }
-  console.log(hash)
-
   const items = $$(`[href*="${char}${hash}"]`, sidebarLeft)
   items.forEach(item => {
     if (item.href === newURL) {

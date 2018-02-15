@@ -35,7 +35,7 @@ const search = (text, output) => {
         .filter(x => Boolean(x.trim()))
         .join(' ')
 
-      const nonMatches = cleanLabel.split(text)
+      const nonMatches = cleanLabel.split(new RegExp(text, 'i'))
       const matches = cleanLabel.match(
         new RegExp(text.replace(/\$/g, '\\$'), 'ig')
       )

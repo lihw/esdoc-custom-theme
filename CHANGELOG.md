@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.3.3"></a>
+## [1.3.3](https://github.com/sinnerschrader/esdoc-custom-theme/compare/v1.3.2...v1.3.3) (2018-02-15)
+
+
+### Bug Fixes
+
+* **searchbar:** search matches did work with uppercase characters ([9ed80ed](https://github.com/sinnerschrader/esdoc-custom-theme/commit/9ed80ed)), closes [#5](https://github.com/sinnerschrader/esdoc-custom-theme/issues/5)
+* **sidebar:** remove console.log ([35be343](https://github.com/sinnerschrader/esdoc-custom-theme/commit/35be343))
+
+
+
 <a name="1.3.2"></a>
 ## [1.3.2](https://github.com/sinnerschrader/esdoc-custom-theme/compare/v1.3.1...v1.3.2) (2018-02-15)
 

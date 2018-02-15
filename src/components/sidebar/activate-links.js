@@ -84,7 +84,13 @@ const activate = e => {
     return handleManualLinks(newURL)
   }
   const [slug, hash] = newURL.split(/[#~]/)
-  const [char] = newURL.match(/[#~]/)
+  const [char] = newURL.match(/[#~]/) || []
+
+  // url might not have a hash or appendix
+  if (!hash) {
+    return
+  }
+  console.log(hash)
 
   const items = $$(`[href*="${char}${hash}"]`, sidebarLeft)
   items.forEach(item => {

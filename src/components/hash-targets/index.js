@@ -3,7 +3,7 @@ import {$, $$} from '../global-elements'
 
 const cleanId = str => str.replace(/^#/, '')
 
-const isValidId = str => !str.replace('#', '')[0].match(/\d/)
+const isValidId = str => !str.replace('#', '')[0].match(/\d/) && !str.match(/$/)
 
 const markHashTarget = hash => {
   if (hash) {
@@ -21,8 +21,9 @@ window.addEventListener('hashchange', e => {
     target.classList.remove('active-target')
   })
   const {newURL} = e
-  const [, hash] = newURL.split('#')
+  const [char] = newURL.match(/[#~]/)
+  const [, hash] = newURL.split(/[#~]/)
   if (hash) {
-    markHashTarget(`#${hash}`)
+    markHashTarget(`${char}${hash}`)
   }
 })

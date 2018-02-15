@@ -9,3 +9,4 @@ import './sidebar-right.scss'
 
 activateLinks({newURL})
 window.addEventListener('hashchange', activateLinks)
+window.addEventListener('load', activateLinks)

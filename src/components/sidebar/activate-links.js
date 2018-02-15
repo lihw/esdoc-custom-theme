@@ -1,8 +1,9 @@
 import {$, $$, _$$, _$, _closest, sidebarLeft} from '../global-elements'
+import {href} from '../url'
 
 const handleManualLinks = newURL => {
   const url = newURL.replace(/.*\/manual\//, 'manual/')
-  const [slug, hash] = url.split('#')
+  const [slug] = url.split('#')
   const urlLinks = []
   const activatedLinks = [...sidebarLeft.querySelectorAll(`.active-link`)]
   const slugs = $$(`[href='${slug}']`, sidebarLeft)
@@ -78,12 +79,14 @@ const findOpenSection = (parentNavItem, activeLink) => {
 }
 
 const activate = e => {
-  const {newURL} = e
+  const {newURL = href} = e
   if (newURL.match(/.*\/manual\//)) {
     return handleManualLinks(newURL)
   }
-  const [slug, hash] = newURL.split('#')
-  const items = $$(`[href*="#${hash}"]`, sidebarLeft)
+  const [slug, hash] = newURL.split(/[#~]/)
+  const [char] = newURL.match(/[#~]/)
+
+  const items = $$(`[href*="${char}${hash}"]`, sidebarLeft)
   items.forEach(item => {
     if (item.href === newURL) {
       const navItem = _closest(item, 'navItem')

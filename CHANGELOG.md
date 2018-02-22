@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.3.4"></a>
+## [1.3.4](https://github.com/sinnerschrader/esdoc-custom-theme/compare/v1.3.3...v1.3.4) (2018-02-22)
+
+
+### Bug Fixes
+
+* **syntax-highlighter:** better file name handling with regex ([119b327](https://github.com/sinnerschrader/esdoc-custom-theme/commit/119b327))
+
+
+
 <a name="1.3.3"></a>
 ## [1.3.3](https://github.com/sinnerschrader/esdoc-custom-theme/compare/v1.3.2...v1.3.3) (2018-02-15)
 

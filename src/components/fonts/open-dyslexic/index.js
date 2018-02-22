@@ -1,6 +1,10 @@
 // CSS file generation
 import './styles.css'
 
+/**
+ *
+ * @type {{name: string, key: string, className: string, css: string, file: string, styles: string[], keywords: string[]}}
+ */
 const data = {
   name: 'Open Dyslexic',
   key: 'dyslexic',

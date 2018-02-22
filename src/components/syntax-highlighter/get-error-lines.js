@@ -1,6 +1,10 @@
 import {hash} from '../url'
 import normalizeLines from './normalize-lines'
 
+/**
+ * Highlights error lines from the URL hash
+ * @param {CodeMirror} hl An instance of CodeMirror
+ */
 const getErrorLines = hl => {
   const matched = hash.match(/errorLines=([\d,]+)/)
   if (matched) {

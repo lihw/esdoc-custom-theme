@@ -26,10 +26,10 @@ const modes = {
   json: JSON_LD
 }
 
-const isJSFile = pathname.match('.js.html')
-const isTSFile = pathname.match('.ts.html')
-const isJSXFile = pathname.match('.jsx.html')
-const isTSXFile = pathname.match('.tsx.html')
+const isJSFile = pathname.match(/\.js\.html/)
+const isTSFile = pathname.match(/\.ts\.html/)
+const isJSXFile = pathname.match(/\.jsx\.html/)
+const isTSXFile = pathname.match(/\.tsx\.html/)
 const isFile = isJSFile || isTSFile || isJSXFile || isTSXFile
 
 const simpleOrFull = block => {

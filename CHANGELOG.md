@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.3.5"></a>
+## [1.3.5](https://github.com/sinnerschrader/esdoc-custom-theme/compare/v1.3.4...v1.3.5) (2018-02-27)
+
+
+### Bug Fixes
+
+* better monospace font for box drawing on OS X ([601fa19](https://github.com/sinnerschrader/esdoc-custom-theme/commit/601fa19))
+
+
+
 <a name="1.3.4"></a>
 ## [1.3.4](https://github.com/sinnerschrader/esdoc-custom-theme/compare/v1.3.3...v1.3.4) (2018-02-22)
 

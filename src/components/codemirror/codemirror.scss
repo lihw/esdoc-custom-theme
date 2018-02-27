@@ -13,6 +13,7 @@
 .CodeMirror {
   height: auto;
   margin: var(--global-margin) 0;
+  font-family: var(--monospace);
 
   .CodeMirror-errorline-background {
     background: var(--pretty-code-error-background);

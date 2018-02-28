@@ -5,15 +5,23 @@ const handleManualLinks = newURL => {
   const url = newURL.replace(/.*\/manual\//, 'manual/')
   const [slug] = url.split('#')
   const urlLinks = []
-  const activatedLinks = [...sidebarLeft.querySelectorAll(`.active-link`)]
+  const activatedLinks = $$('.active-link', sidebarLeft)
+  const openedLinks = $$('.opened-link', sidebarLeft)
+  const openLinks = $$(`[href*='${slug}']`, sidebarLeft)
   const slugs = $$(`[href='${slug}']`, sidebarLeft)
   const urls = $$(`[href='${url}']`, sidebarLeft)
   const activeLinks = [...slugs, ...urls]
   activatedLinks.forEach(link => {
     link.classList.remove('active-link')
   })
+  openedLinks.forEach(link => {
+    link.classList.remove('opened-link')
+  })
   activeLinks.forEach(link => {
     link.classList.add('active-link')
+  })
+  openLinks.forEach(link => {
+    link.classList.add('opened-link')
   })
 }
 

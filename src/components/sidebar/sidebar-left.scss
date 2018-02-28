@@ -76,7 +76,7 @@
   ._indent-h4 .nav-link:before {
     content: '';
     display: flex;
-    flex: initial;
+    flex: 0;
     height: 3rem;
     background: var(--left-sidebar-indent-background);
     transform: translateX(calc(-1 * var(--left-sidebar-padding-left)));
@@ -84,19 +84,33 @@
 
   .indent-h1 .nav-link:before,
   ._indent-h1 .nav-link:before {
-    width: 0;
+    flex-basis: 0;
   }
+
   .indent-h2 .nav-link:before,
   ._indent-h2 .nav-link:before {
-    width: var(--global-padding);
+    flex-basis: var(--global-padding);
+    opacity: 0.3;
   }
+
   .indent-h3 .nav-link:before,
   ._indent-h3 .nav-link:before {
-    width: calc(var(--global-padding) * 2);
+    flex-basis: calc(var(--global-padding) * 2);
+    opacity: 0.6;
   }
+
   .indent-h4 .nav-link:before,
   ._indent-h4 .nav-link:before {
-    width: calc(var(--global-padding) * 2);
+    flex-basis: calc(var(--global-padding) * 4);
+    opacity: 1;
+  }
+
+  .nav-item:not(._indent-h1) .nav-link {
+    display: none;
+
+    &.opened-link {
+      display: flex;
+    }
   }
 
   a[href*="#bug-fixes"],

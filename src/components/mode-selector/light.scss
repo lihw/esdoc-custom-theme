@@ -27,7 +27,7 @@
   --left-sidebar-color-active: #000;
   --left-sidebar-color: #000;
   --left-sidebar-border-color: #c9d0d5;
-  --left-sidebar-indent-background: none;
+  --left-sidebar-indent-background: #3300d1;
   --left-sidebar-shadow: none;
   --left-sidebar-headline-background: #3300d1;
   --left-sidebar-headline-color: #fff;
@@ -41,7 +41,7 @@
   --right-sidebar-color-active: #000;
   --right-sidebar-color: #000;
   --right-sidebar-border-color: #c9d0d5;
-  --right-sidebar-indent-background: none;
+  --right-sidebar-indent-background: #3300d1;
   --right-sidebar-shadow: -0.125rem 0 0.25rem rgba(0, 0, 0, 0.25), -0.175rem 0 0.35rem rgba(0, 0, 0, 0.45);
   --right-sidebar-headline-background: #3300d1;
   --right-sidebar-headline-color: #fff;
@@ -103,4 +103,7 @@
 
   --light-switch-color: #fff;
   --light-switch-background: #212429;
+
+  --blockquote-background: #f2f5f9;
+  --blockquote-border-color: #c9d0d5;
 }

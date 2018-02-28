@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.4.1"></a>
+## [1.4.1](https://github.com/sinnerschrader/esdoc-custom-theme/compare/v1.4.0...v1.4.1) (2018-02-28)
+
+
+### Bug Fixes
+
+* **sidebar-left:** opened links caused empty sidebar ([1907e97](https://github.com/sinnerschrader/esdoc-custom-theme/commit/1907e97))
+
+
+
 <a name="1.4.0"></a>
 # [1.4.0](https://github.com/sinnerschrader/esdoc-custom-theme/compare/v1.3.5...v1.4.0) (2018-02-28)
 

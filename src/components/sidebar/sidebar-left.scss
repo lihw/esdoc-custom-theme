@@ -105,7 +105,9 @@
     opacity: 1;
   }
 
-  .nav-item:not(._indent-h1) .nav-link {
+  
+
+  .manual-nav .nav-item:not(._indent-h1) .nav-link {
     display: none;
 
     &.opened-link {

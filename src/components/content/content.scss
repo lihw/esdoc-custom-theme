@@ -9,17 +9,23 @@
     margin: calc(var(--global-margin) * 2) 0 var(--global-margin);
     background: var(--content-detail-background);
     color: var(--content-detail-color);
-    border-bottom: 1px solid var(--content-detail-border-color);
+    border-bottom: 2px solid var(--content-detail-border-color);
 
     a {
       color: var(--content-detail-link-color);
     }
   }
 
+  h1, h2, h3, h4, h5, h6 {
+    border-bottom: 4px solid var(--main-border-color);
+    margin: 1em -1em;
+    padding: 0.5em 1em;
+  }
+
   .active-target {
     background: var(--active-target-background);
     color: var(--active-target-color);
-    border-bottom: 1px solid var(--active-target-border-color);
+    border-color: var(--active-target-border-color);
 
     a {
       color: var(--active-target-link-color);
@@ -32,11 +38,7 @@
   h1.active-target {
     background: var(--active-target-background);
     color: var(--active-target-color);
-    border-bottom: 1px solid var(--active-target-border-color);
-    margin-left: -2em;
-    margin-right: -2em;
-    padding-left: 2em;
-    padding-right: 2em;
+    border-color: var(--active-target-border-color);
 
     a {
       color: var(--active-target-link-color);
